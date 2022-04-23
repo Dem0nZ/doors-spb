@@ -6,6 +6,7 @@ import InfoBlock from './components/infoblock/InfoBlock'
 import Catalogue from './components/catalogue/Catalogue'
 import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
+import Calculator from './components/calculator/Calculator'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Header />
           <Intro />
           <InfoBlock />
+          <Calculator />
           <Catalogue />
           <Gallery />
           <Footer />
