@@ -2,33 +2,27 @@
     box-sizing: border-box;
 }
 
-.screen4__wrapper a {
+.screen1__wrapper a {
     text-decoration: none;
     display: inline-block;
     color: black;
 }
 
-.screen4__wrapper a:visited {
+.screen1__wrapper a:visited {
     color: black;
 }
 
 
-.screen4__title {
+.screen1__title {
     margin-top: 40px;
     margin-left: 50px;
     font-size: 64px;
     font-weight: 600;
 }
 
-.screen4__separator {
-    height: 1px;
-    width: 950px;
-    margin: auto;
-    background-color: black;
 
-}
 
-.screen4__separator_down {
+.screen1__separator_down {
     height: 1px;
     width: 950px;
     margin: auto;
@@ -36,76 +30,76 @@
     margin-top: 70px;
 }
 
-.screen4__button {
+.screen1__button {
     margin: auto;
     margin-top: 70px;
     width: 200px;
 }
 
-.screen4__imgBlock {
+.screen1__imgBlock {
     margin-top: 40px;
 }
 
-.screen4__img1 {
+.screen1__img1 {
     width: 950px;
     margin-left: 50px;
 }
 
-.screen4__img2 {
+.screen1__img2 {
     width: 600px;
 }
 
-.screen4__img2,
-.screen4__img3 {
+.screen1__img2,
+.screen1__img3 {
     width: 290px;
     height: 290px;
     margin-left: 27px;
 }
 
-.screen4__img3 {
+.screen1__img3 {
     margin-top: 10px;
 }
 
-.screen4__img4 {
+.screen1__img4 {
     margin-left: 80px;
     margin-top: -20px;
     width: 600px;
 }
 
-.screen4__img5 {
+.screen1__img5 {
     width: 399px;
     height: 750px;
 }
 
 
-.screen4__row3_block2 {
+.screen1__row3_block2 {
     margin-left: 150px;
 
 }
 
-.screen4__row3__text {
+.screen1__row3__text {
     width: 402px;
 }
 
-.screen4__img6 {
+.screen1__img6 {
     margin-top: 160px;
     width: 402px;
     height: 503px;
 }
 
-.screen4__img7 {
+.screen1__img7 {
     margin-left: 115px;
     width: 402px;
     height: 503px;
 }
 
-.screen4__row4 li {
+.screen1__row4 li {
     margin-top: 16px;
     list-style-type: disc;
 
 }
 
-.screen4__row4 ul {
+.screen1__row4 ul {
     margin-top: 100px;
     height: 293px;
     width: 435px;
@@ -113,35 +107,35 @@
 
 
 
-.screen4__row2,
-.screen4__row3 {
+.screen1__row2,
+.screen1__row3 {
     margin-top: 150px;
 }
 
-.screen4__row2 {
+.screen1__row2 {
     display: flex;
     flex-direction: row;
 }
 
-.screen4__row3 {
+.screen1__row3 {
     display: flex;
     flex-direction: row;
     margin-left: 50px;
 }
 
-.screen4__row4 {
+.screen1__row4 {
     display: flex;
     flex-direction: row;
     margin-left: 50px;
     margin-top: 20px;
 }
 
-.screen4__button img {
+.screen1__button img {
     width: 200px;
     height: 60px;
 }
 
-.screen4__row4 button {
+.screen1__row4 button {
     margin-top: 97px;
     width: 400px;
     height: 60px;

@@ -7,7 +7,7 @@ import Catalogue from './components/catalogue/Catalogue'
 import Footer from './components/footer/Footer'
 import Calculator from './components/calculator/Calculator'
 import PreFooter from './components/prefooter/PreFooter'
-import Slider from './components/slider/Slider'
+
 
 class App extends Component {
   render() {
@@ -19,7 +19,6 @@ class App extends Component {
           <InfoBlock />
           <Calculator />
           <Catalogue />
-          <Slider />
           <PreFooter/>
           <Footer />
         </div>
