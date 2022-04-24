@@ -13,7 +13,7 @@ const Screen_2 = (props) => {
         <div className={classes.screen2__wrapper}>
 
             <div className={classes.screen2__title}>
-                ДВЕРИ ТАКИЕ
+                ДВЕРИ СЯКИЕ
             </div>
             <div className={classes.screen2__imgBlock}>
 
