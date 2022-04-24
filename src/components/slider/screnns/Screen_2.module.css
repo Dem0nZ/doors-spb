@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+.screen2__wrapper a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.screen2__wrapper a:visited {
+    color: black;
+}
+
+
+.screen2__title {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.screen2__separator {
+    height: 1px;
+    width: 950px;
+    margin: auto;
+    background-color: black;
+
+}
+
+.screen2__separator_down {
+    height: 1px;
+    width: 950px;
+    margin: auto;
+    background-color: black;
+    margin-top: 70px;
+}
+
+.screen2__button {
+    margin: auto;
+    margin-top: 70px;
+    width: 200px;
+}
+
+.screen2__imgBlock {
+    margin-top: 40px;
+}
+
+.screen2__img1 {
+    width: 950px;
+    margin-left: 50px;
+}
+
+.screen2__img2 {
+    width: 600px;
+}
+
+.screen2__img2,
+.screen2__img3 {
+    width: 290px;
+    height: 290px;
+    margin-left: 27px;
+}
+
+.screen2__img3 {
+    margin-top: 10px;
+}
+
+.screen2__img4 {
+    margin-left: 80px;
+    margin-top: -20px;
+    width: 600px;
+}
+
+.screen2__img5 {
+    width: 399px;
+    height: 750px;
+}
+
+
+.screen2__row3_block2 {
+    margin-left: 150px;
+
+}
+
+.screen2__row3__text {
+    width: 402px;
+}
+
+.screen2__img6 {
+    margin-top: 160px;
+    width: 402px;
+    height: 503px;
+}
+
+.screen2__img7 {
+    margin-left: 115px;
+    width: 402px;
+    height: 503px;
+}
+
+.screen2__row4 li {
+    margin-top: 16px;
+    list-style-type: disc;
+
+}
+
+.screen2__row4 ul {
+    margin-top: 100px;
+    height: 293px;
+    width: 435px;
+}
+
+
+
+.screen2__row2,
+.screen2__row3 {
+    margin-top: 150px;
+}
+
+.screen2__row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.screen2__row3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.screen2__row4 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.screen2__button img {
+    width: 200px;
+    height: 60px;
+}
+
+.screen2__row4 button {
+    margin-top: 97px;
+    width: 400px;
+    height: 60px;
+    font-size: 14px;
+    background-color: white;
+
+}
