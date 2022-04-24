@@ -2,12 +2,14 @@
     box-sizing: border-box;
 }
 
-a {
+.header__wrapper a {
     text-decoration: none;
     display: inline-block;
+    color: #161616;
+
 }
 
-a:visited {
+.header__wrapper a:visited {
     color: #161616;
 }
 
@@ -65,6 +67,7 @@ li {
 
 .header__menu li {
     display: inline-block;
+    
 }
 
 .header__catalogue {

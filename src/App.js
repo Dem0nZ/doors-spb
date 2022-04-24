@@ -4,9 +4,10 @@ import Header from './components/header/Header'
 import Intro from './components/intro/Intro'
 import InfoBlock from './components/infoblock/InfoBlock'
 import Catalogue from './components/catalogue/Catalogue'
-import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
 import Calculator from './components/calculator/Calculator'
+import PreFooter from './components/prefooter/PreFooter'
+import Slider from './components/slider/Slider'
 
 class App extends Component {
   render() {
@@ -18,7 +19,8 @@ class App extends Component {
           <InfoBlock />
           <Calculator />
           <Catalogue />
-          <Gallery />
+          <Slider />
+          <PreFooter/>
           <Footer />
         </div>
       </div>
