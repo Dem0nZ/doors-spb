@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:visited {
+    color: #161616;
+}
+
+.catalogue__wrapper {
+    margin: auto;
+    margin-top: 25px;
+    width: 950px;
+}
+
+.catalogue__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.catalogue__body {
+margin-top: 70px;
+margin-left: 50px;
+
+}
+
+.catalogue__body__row{
+    margin-bottom: 26.43px;
+}
+
+.catalogue__body__row a{
+    margin-right: 47.17px;
+    font-size: 14px;
+
+}
+
+.catalogue__btnCalc {
+    margin-top: 84px;
+    margin-left: 55px;
+    width: 400px;
+    height: 60px;
+    font-size: 14px;
+    background-color: white;
+}

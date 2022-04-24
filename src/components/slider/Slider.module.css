@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.slider__wrapper a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.slider__wrapper a:visited {
+    color: black;
+}
+
+.slider__wrapper {
+    margin: auto;
+    margin-top: 150px;
+    width: 1600px;
+}
+
+
+.slider__title {
+    margin-left: 300px;
+    margin-top: 40px;
+    margin-bottom: 2000px;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.slider__separator {
+    height: 1px;
+    width: 1000px;
+    margin: auto;
+    background-color: black;
+
+}
+
+.slider__button {
+    margin: auto;
+    margin-top: 70px;
+    width: 200px;
+}
+
+.slider__wrapper img {
+        width: 200px;
+    height: 60px;
+}
