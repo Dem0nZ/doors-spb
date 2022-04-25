@@ -11,10 +11,12 @@ a:visited {
     color: #161616;
 }
 
-.calculator__wrapper { 
+.calculator__wrapper {
     margin: auto;
-    margin-top: 400px;
-    padding-left: 200px;
+    margin-top: 109px;
+    padding-left: 180px;
+    width: 1000px;
+
 
 }
 

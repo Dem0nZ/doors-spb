@@ -13,8 +13,9 @@ a:visited {
 
 .infoBlock__wrapper {
     margin: auto;
-    margin-top: 1110px;
-    padding-left: 440px;
+    margin-top: 112px;
+    width: 1000px;
+    height: 530px;
 }
 
 .infoBlock__title {

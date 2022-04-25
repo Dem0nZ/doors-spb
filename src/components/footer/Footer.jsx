@@ -47,7 +47,7 @@ const Footer = (props) => {
                     <a href="#">info@wowowow.com</a>
                     </div>
                 </div>
-                <div className={classes.footer__body_column}>
+                <div className={classes.footer__body_column_last}>
                 <div className={classes.footer__body_column_title}>
                     <dix className={classes.footer__body__line}></dix>
                     <div>
@@ -62,7 +62,10 @@ const Footer = (props) => {
 
                 </div>
             </div>
-            <div className={classes.footer__separator}></div>
+            
+            <div className={classes.footer__separator_wrapper}>
+                <div className={classes.footer__separator}></div>
+            </div>
             <div className={classes.footer__footer}>
                 <div className={classes.footer__copyright}>
                     © your doors. all rights reserved

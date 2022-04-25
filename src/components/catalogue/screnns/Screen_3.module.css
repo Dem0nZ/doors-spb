@@ -15,14 +15,19 @@
 
 .screen3__title {
     margin-top: 40px;
-    margin-left: 50px;
     font-size: 64px;
     font-weight: 600;
 }
 
 
 
-
+.screen3__separator_down {
+    height: 1px;
+    width: 950px;
+    margin: auto;
+    background-color: black;
+    margin-top: 70px;
+}
 
 .screen3__button {
     margin: auto;
@@ -35,8 +40,10 @@
 }
 
 .screen3__img1 {
-    width: 950px;
-    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	 
+ 
 }
 
 .screen3__img2 {
@@ -47,7 +54,6 @@
 .screen3__img3 {
     width: 290px;
     height: 290px;
-    margin-left: 27px;
 }
 
 .screen3__img3 {
@@ -55,7 +61,7 @@
 }
 
 .screen3__img4 {
-    margin-left: 80px;
+    margin-left: 120px;
     margin-top: -20px;
     width: 600px;
 }
@@ -67,7 +73,7 @@
 
 
 .screen3__row3_block2 {
-    margin-left: 150px;
+    margin-left: 200px;
 
 }
 
@@ -82,7 +88,7 @@
 }
 
 .screen3__img7 {
-    margin-left: 115px;
+    margin-left: 165px;
     width: 402px;
     height: 503px;
 }
@@ -99,7 +105,10 @@
     width: 435px;
 }
 
-
+.screen3__row1 {
+    margin: auto;
+    width: 1000px;
+}
 
 .screen3__row2,
 .screen3__row3 {
@@ -114,13 +123,11 @@
 .screen3__row3 {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
 }
 
 .screen3__row4 {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
     margin-top: 20px;
 }
 

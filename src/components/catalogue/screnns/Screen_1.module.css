@@ -15,7 +15,6 @@
 
 .screen1__title {
     margin-top: 40px;
-    margin-left: 50px;
     font-size: 64px;
     font-weight: 600;
 }
@@ -41,8 +40,10 @@
 }
 
 .screen1__img1 {
-    width: 950px;
-    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;	 
+ 
 }
 
 .screen1__img2 {
@@ -53,7 +54,6 @@
 .screen1__img3 {
     width: 290px;
     height: 290px;
-    margin-left: 27px;
 }
 
 .screen1__img3 {
@@ -61,7 +61,7 @@
 }
 
 .screen1__img4 {
-    margin-left: 80px;
+    margin-left: 120px;
     margin-top: -20px;
     width: 600px;
 }
@@ -73,7 +73,7 @@
 
 
 .screen1__row3_block2 {
-    margin-left: 150px;
+    margin-left: 200px;
 
 }
 
@@ -88,7 +88,7 @@
 }
 
 .screen1__img7 {
-    margin-left: 115px;
+    margin-left: 165px;
     width: 402px;
     height: 503px;
 }
@@ -105,7 +105,10 @@
     width: 435px;
 }
 
-
+.screen1__row1 {
+    margin: auto;
+    width: 1000px;
+}
 
 .screen1__row2,
 .screen1__row3 {
@@ -120,13 +123,11 @@
 .screen1__row3 {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
 }
 
 .screen1__row4 {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
     margin-top: 20px;
 }
 
