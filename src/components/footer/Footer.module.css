@@ -14,7 +14,7 @@
 
 .footer__wrapper {
     margin: auto;
-    width: 100%;
+    width: 1800px;
     margin-top: 150px;
     padding-left: 260px;
     background-color: black;
@@ -30,7 +30,6 @@
     padding-top: 50px;
     width: 1600px;
     padding-left: 80px;
-
 }
 
 .footer__logo {
@@ -53,14 +52,12 @@
     width: 2px;
     height: 60px;
     margin-left: 5px;
-
 }
 
 .footer__logo__name {
     margin-top: 9px;
     padding-left: 15px;
     line-height: 25px;
-
 }
 
 .footer__body_column_left {
@@ -84,8 +81,6 @@
     flex-direction: row;
 }
 
-
-
 .footer__body__line {
     height: 1px;
     width: 32px;
@@ -97,24 +92,20 @@
 .footer__body_column1__text {
     margin-top: 38px;
     margin-left: 50px;
-
     width: 400px;
     height: 51px;
     line-height: px;
-
 }
 
 .footer__body__column_text {
     margin-top: 40px;
     line-height: 33px;
-
 }
 
 .footer__separator_wrapper {
     margin: auto;
     width: 1600px;
     padding-left: 140px;
-
 }
 
 .footer__separator {

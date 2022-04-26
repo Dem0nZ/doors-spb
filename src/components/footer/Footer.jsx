@@ -7,6 +7,7 @@ const Footer = (props) => {
         <div className={classes.footer__wrapper}>
 
             <div className={classes.footer__body}>
+                
                 <div className={classes.footer__body_column_left}>
                     <div className={classes.footer__logo}>
                         <img src={logo} alt="img" />

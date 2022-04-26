@@ -6,7 +6,6 @@
     text-decoration: none;
     display: inline-block;
     color: #161616;
-
 }
 
 .header__wrapper a:visited {
@@ -18,7 +17,6 @@ li {
     margin: 0;
     padding: 0;
 }
-
 
 .header__body {
     display: flex;
@@ -53,7 +51,6 @@ li {
     width: 2px;
     height: 32px;
     margin-left: 5px;
-
 }
 
 .header__logo__name {
@@ -67,7 +64,6 @@ li {
 
 .header__menu li {
     display: inline-block;
-    
 }
 
 .header__catalogue {
@@ -80,12 +76,10 @@ li {
     display: block;
     position: relative;
     margin-left: 18px;
-
 }
 
 .header__calculate {
     margin-left: 138.43px;
-
 }
 
 .header__menu img {
@@ -94,7 +88,6 @@ li {
     height: 17px;
     width: 17px;
     margin-left: 367.46px;
-
 }
 
 .header__share {
@@ -103,10 +96,11 @@ li {
 
 .header__separator {
     position: absolute;
-    width: 500vw;
+    width: 3800px;
     height: 1.5px;
     background-color: #161616;
 }
+
 .header__wrapper__links {
     width: 1200px;
     height: 56px;
@@ -124,14 +118,13 @@ li {
 }
 
 .header__inst_1 {
-     width: 24px;
-     height: 24px;
+    width: 24px;
+    height: 24px;
     margin: 20px 0px 21px 13px;
 }
 
 .header__fcb_1 {
     width: 24px;
-     height: 24px;
-     margin: 20px 0px 21px 17px;
-
+    height: 24px;
+    margin: 20px 0px 21px 17px;
 }
