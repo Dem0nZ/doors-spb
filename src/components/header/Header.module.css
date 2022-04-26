@@ -91,7 +91,12 @@ li {
 }
 
 .header__share {
-    margin-left: 13.48px;
+margin-left: 300px;
+}
+
+.header__share::before {
+    content: url(../../images/linc.png);
+    margin-right: 10px;
 }
 
 .header__separator {

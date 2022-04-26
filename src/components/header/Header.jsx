@@ -28,11 +28,8 @@ const Header = (props) => {
                     <li>
                         <a className={classes.header__calculate} href="#">РАСЧИТАТЬ СТОИМОСТЬ</a>
                     </li>
-                    <li >
-                        <img src={linc} alt="img" />
-                    </li>
-                    <li>
 
+                    <li>
                         <a className={classes.header__share} href="#">ПОДЕЛИТЬСЯ</a>
                     </li>
                 </ul>

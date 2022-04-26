@@ -1,7 +1,7 @@
-.wrapperApp {
+.App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
-
+  margin: auto;
 }
+
