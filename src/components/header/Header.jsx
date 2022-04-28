@@ -49,6 +49,6 @@ const Header = (props) => {
     )
 }
 
-const HeaderBody = tw.div`flex w-[1200px] m-auto h-[56px] py-2 px-4 bg-white font-medium text-sm text-[#161616]`;
+const HeaderBody = tw.div`flex w-[1200px] m-auto h-[56px] py-2 px-4 bg-white font-medium text-sm text-blacked`;
 
 export default Header
