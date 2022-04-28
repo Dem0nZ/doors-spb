@@ -1,12 +1,12 @@
 import React from 'react'
 import classes from './Screen_2.module.css'
-import img1 from '../../../images/slider/img1.svg'
-import img2 from '../../../images/slider/img2.svg'
-import img3 from '../../../images/slider/img3.svg'
-import img4 from '../../../images/slider/img4.svg'
-import img5 from '../../../images/slider/img5.svg'
-import img6 from '../../../images/slider/img6.svg'
-import img7 from '../../../images/slider/img7.svg'
+import img1 from '../../../assets/slider/img1.svg'
+import img2 from '../../../assets/slider/img2.svg'
+import img3 from '../../../assets/slider/img3.svg'
+import img4 from '../../../assets/slider/img4.svg'
+import img5 from '../../../assets/slider/img5.svg'
+import img6 from '../../../assets/slider/img6.svg'
+import img7 from '../../../assets/slider/img7.svg'
 
 const Screen_2 = (props) => {
     return (

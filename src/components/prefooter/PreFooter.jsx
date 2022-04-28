@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './PreFooter.module.css'
-import inst from '../../images/inst_1.png'
-import fcb from '../../images/fcb_1.png'
+import inst from '../../assets/inst_1.png'
+import fcb from '../../assets/fcb_1.png'
 
 const PreFooter = (props) => {
     return (

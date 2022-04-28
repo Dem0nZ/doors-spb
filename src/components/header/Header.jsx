@@ -1,15 +1,16 @@
 import React from 'react'
 import classes from './Header.module.css'
-import logo from '../../images/logo.png'
-import linc from '../../images/linc.png'
-import fcb_1 from '../../images/fcb_1.png'
-import inst_1 from '../../images/inst_1.png'
+import logo from '../../assets/logo.png'
+import linc from '../../assets/linc.png'
+import fcb_1 from '../../assets/fcb_1.png'
+import inst_1 from '../../assets/inst_1.png'
+import tw from 'twin.macro';
 
 
 const Header = (props) => {
     return (
-        <div className={classes.header__wrapper}>
-            <div className={classes.header__body}>
+        <div>
+            <HeaderBody>
                 <div className={classes.header__logo}>
                     <img src={logo} alt="img" />
                     <div className={classes.header__logo__separator}></div>
@@ -33,7 +34,7 @@ const Header = (props) => {
                         <a className={classes.header__share} href="#">ПОДЕЛИТЬСЯ</a>
                     </li>
                 </ul>
-            </div>
+            </HeaderBody>
             <div className={classes.header__separator} />
             <div className={classes.header__wrapper__links}>
                 <div className={classes.header__links}>
@@ -47,5 +48,7 @@ const Header = (props) => {
         </div>
     )
 }
+
+const HeaderBody = tw.div`flex w-[1200px] m-auto h-[56px] py-2 px-4 bg-white font-medium text-sm text-[#161616]`;
 
 export default Header

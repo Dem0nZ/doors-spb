@@ -1,12 +1,12 @@
 import React from 'react'
 import classes from './InfoBlock.module.css'
-import arrowdown from '../../images/infoBlock/arrowDown.svg'
-import bed from '../../images/infoBlock/bed.svg'
-import home from '../../images/infoBlock/home.svg'
-import pc from '../../images/infoBlock/pc.svg'
-import fabric from '../../images/infoBlock/fabric.svg'
-import hoot from '../../images/infoBlock/hoot.svg'
-import say from '../../images/infoBlock/say.svg'
+import arrowdown from '../../assets/infoBlock/arrowDown.svg'
+import bed from '../../assets/infoBlock/bed.svg'
+import home from '../../assets/infoBlock/home.svg'
+import pc from '../../assets/infoBlock/pc.svg'
+import fabric from '../../assets/infoBlock/fabric.svg'
+import hoot from '../../assets/infoBlock/hoot.svg'
+import say from '../../assets/infoBlock/say.svg'
 
 const InfoBlock = (props) => {
     return (

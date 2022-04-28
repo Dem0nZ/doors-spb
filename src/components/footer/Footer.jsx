@@ -1,13 +1,13 @@
 import React from 'react'
 import classes from './Footer.module.css'
-import logo from '../../images/logo_white.svg'
+import logo from '../../assets/logo_white.svg'
 
 const Footer = (props) => {
     return (
         <div className={classes.footer__wrapper}>
 
             <div className={classes.footer__body}>
-                
+
                 <div className={classes.footer__body_column_left}>
                     <div className={classes.footer__logo}>
                         <img src={logo} alt="img" />
@@ -25,21 +25,21 @@ const Footer = (props) => {
                 </div>
                 <div className={classes.footer__body_column}>
                     <div className={classes.footer__body_column_title}>
-                        <dix className={classes.footer__body__line}></dix>
-                        <dix>
+                        <div className={classes.footer__body__line}></div>
+                        <div>
                             ЗВОНИТЕ
-                        </dix>
+                        </div>
                     </div>
                     <div className={classes.footer__body__column_text}>
                     <a href="tel:RU74993227009">RU +7 499 3227009</a>
                     <a href="tel:RU74993227009">RU +7 499 3227009</a>
                     </div>
 
-                    
+
                 </div>
                 <div className={classes.footer__body_column}>
                 <div className={classes.footer__body_column_title}>
-                    <dix className={classes.footer__body__line}></dix>
+                    <div className={classes.footer__body__line}></div>
                     <div>
                         ПИШИТЕ
                     </div>
@@ -50,7 +50,7 @@ const Footer = (props) => {
                 </div>
                 <div className={classes.footer__body_column_last}>
                 <div className={classes.footer__body_column_title}>
-                    <dix className={classes.footer__body__line}></dix>
+                    <div className={classes.footer__body__line}></div>
                     <div>
                         ПРИЕЗЖАЙТЕ
                     </div>
@@ -63,7 +63,7 @@ const Footer = (props) => {
 
                 </div>
             </div>
-            
+
             <div className={classes.footer__separator_wrapper}>
                 <div className={classes.footer__separator}></div>
             </div>

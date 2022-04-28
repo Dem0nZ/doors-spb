@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Intro.module.css'
-import intro from '../../images/intro.png'
+import intro from '../../assets/intro.png'
 
 const Intro = (props) => {
     return (
