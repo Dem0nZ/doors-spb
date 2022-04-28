@@ -13,7 +13,6 @@ class App extends Component {
   render() {
     return (
       <div className={classes.App}>
-        <div className={classes.wrapperApp}>
           <Header />
           <Intro />
           <InfoBlock />
@@ -21,7 +20,6 @@ class App extends Component {
           <Catalogue />
           <PreFooter/>
           <Footer />
-        </div>
       </div>
     );
   }

@@ -14,19 +14,6 @@ li {
     padding: 0;
 }
 
-.header__body {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
-    height: 56px;
-    margin: auto;
-    padding: 1 15px;
-    background: white;
-    font-weight: 500;
-    font-size: 14px;
-    color: #161616;
-}
-
 .header__logo {
     display: flex;
     flex-direction: row;
@@ -41,13 +28,6 @@ li {
     height: 24px;
 }
 
-.header__logo__separator {
-    margin-top: 11px;
-    background-color: #161616;
-    width: 2px;
-    height: 32px;
-    margin-left: 5px;
-}
 
 .header__logo__name {
     margin-top: 9px;
@@ -65,7 +45,7 @@ li {
 .header__catalogue {
     display: block;
     position: relative;
-    margin-left: 402.57;
+    margin-left: 402px;
 }
 
 .header__contacts {
@@ -93,13 +73,6 @@ margin-left: 300px;
 .header__share::before {
     content: url(../../assets/linc.png);
     margin-right: 10px;
-}
-
-.header__separator {
-    position: absolute;
-    width: 3800px;
-    height: 1.5px;
-    background-color: #161616;
 }
 
 .header__wrapper__links {

@@ -13,7 +13,6 @@ const Header = (props) => {
             <HeaderBody>
                 <div className={classes.header__logo}>
                     <img src={logo} alt="img" />
-                    <div className={classes.header__logo__separator}></div>
                     <div className={classes.header__logo__name}>
                         your<br />
                         door
@@ -49,6 +48,6 @@ const Header = (props) => {
     )
 }
 
-const HeaderBody = tw.div`flex w-[1200px] m-auto h-[56px] py-2 px-4 bg-white font-medium text-sm text-blacked`;
+const HeaderBody = tw.div`flex justify-center mb-2 h-[56px] py-2 px-4 bg-white font-medium text-sm text-[#161616] border-b-2 border-black`;
 
 export default Header
