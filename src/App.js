@@ -12,17 +12,24 @@ import PreFooter from './components/prefooter/PreFooter'
 class App extends Component {
   render() {
     return (
-      <div className={classes.App}>
+      <AppContainer>
+
+        <Wrapper>
           <Header />
-          <Intro />
-          <InfoBlock />
-          <Calculator />
-          <Catalogue />
-          <PreFooter/>
-          <Footer />
-      </div>
+        </Wrapper>
+
+
+          {/*<Intro />*/}
+          {/*<InfoBlock />*/}
+          {/*<Calculator />*/}
+          {/*<Catalogue />*/}
+          {/*<PreFooter/>*/}
+          {/*<Footer />*/}
+      </AppContainer>
     );
   }
 }
+const Wrapper = tw.div`w-[1000px]`
+const AppContainer = tw.div`flex w-screen justify-center`
 
 export default App;
