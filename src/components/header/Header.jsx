@@ -60,7 +60,7 @@ const HeaderLogo = tw.div`flex justify-between max-w-[100px] min-w-[70px]`
 const LogoImage = tw.img`h-[24px] w-[24px]`
 const LogoSeparator = tw.div`inline-block bg-current w-[1px] h-[30px]`
 const LogoName = tw.div`text-right text-xs`
-const HeaderMenu = tw.ul`flex justify-around w-full`
+const HeaderMenu = tw.ul`flex justify-around w-full text-xs  md:text-base`
 const HeaderMenuLi = tw.li`inline-block`
 const HeaderMenuCatalogue = tw.div`  text-right `
 const HeaderMenuContakts = tw.div` text-right pl-[10px]`
@@ -68,7 +68,7 @@ const HeaderMenuCalculator = tw.div`text-center `
 const HeaderMenuLink = tw.img`inline-block h-[17px] w-[17px]`
 const HeaderMenuShare = tw.div`inline-block pl-2 text-right`
 const HeaderLinkContainer = tw.div`flex justify-center w-full`
-const Headerlinkwrapper = tw.div`flex justify-end  w-[1030px] `
+const Headerlinkwrapper = tw.div`flex justify-end  w-3/5 `
 const Headerlinks = tw.div`flex justify-between w-[94px] h-[64px]  shadow-md`
 const LinkImg = tw.img`w-[24px] h-[24px] left-[5px] mx-[11px] my-[20px]`
 

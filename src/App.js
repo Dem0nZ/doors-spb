@@ -15,20 +15,20 @@ class App extends Component {
     return (
       <AppContainer>
         <Header />
-        
+
         <Wrapper>
-         {/* <Intro />
-         <InfoBlock />
-         <Calculator />
-         <Catalogue />
-         <PreFooter/> */}
+          <Intro />
+          <InfoBlock />
+          {/*<Calculator />
+          <Catalogue />
+          <PreFooter /> */}
         </Wrapper>
-        {/*<Footer />*/}
+        {/* <Footer /> */}
       </AppContainer>
     );
   }
 }
-const Wrapper = tw.div`w-[1000px]`
-const AppContainer = tw.div`flex flex-col w-screen justify-center`
+const Wrapper = tw.div`flex flex-col justify-center max-w-[1000px]`
+const AppContainer = tw.div`flex flex-col items-center w-screen `
 
 export default App;
