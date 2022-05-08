@@ -19,7 +19,7 @@ class App extends Component {
         <Wrapper>
           <Intro />
           <InfoBlock />
-          {/*<Calculator />
+            {/*<Calculator />
           <Catalogue />
           <PreFooter /> */}
         </Wrapper>
