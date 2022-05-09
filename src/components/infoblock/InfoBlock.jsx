@@ -81,7 +81,7 @@ const InfoBlock = (props) => {
     )
 }
 
-const InfoBlockWrapper = tw.div`flex flex-col h-[530px]  md:mt-[112px]`
+const InfoBlockWrapper = tw.div`flex flex-col h-[850px]  md:mt-[112px] lg:h-[530px]`
 const InfoBlockTitle = tw.div`flex w-[470px] h-[115px] text-5xl font-medium`
 const InfoBlockBody = tw.div`flex-col h-[356px] text-5xl font-medium mt-[70px]`
 const InfoBlockRow = tw.div`flex flex-col justify-between w-[400px] text-sm font-medium lg:flex-row lg:w-[800px] `

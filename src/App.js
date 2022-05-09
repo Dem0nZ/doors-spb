@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import classes from './App.module.css'
 import Header from './components/header/Header'
 import Intro from './components/intro/Intro'
 import InfoBlock from './components/infoblock/InfoBlock'
@@ -19,8 +18,8 @@ class App extends Component {
         <Wrapper>
           <Intro />
           <InfoBlock />
-            {/*<Calculator />
-          <Catalogue />
+          <Calculator />
+          {/*<Catalogue />
           <PreFooter /> */}
         </Wrapper>
         {/* <Footer /> */}
