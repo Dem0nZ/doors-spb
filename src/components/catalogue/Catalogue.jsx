@@ -9,6 +9,8 @@ import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
 import Screen_4 from './screnns/Screen_4'
+import tw from 'twin.macro';
+
 
 
 const Catalogue = () => {
@@ -33,13 +35,14 @@ const Catalogue = () => {
   }
 
   return (
-    <div className={classes.catalogue__wrapper}>
-      <div className={classes.catalogue__title}>
+    <CatalogueWrapper>
+      <CatalogueUpperBlock>
+      <CatalogueTitle>
         КАТАЛОГ
-      </div>
-      <div className={classes.catalogue__body}>
-        <nav>
-          <div className={classes.catalogue__body__row}>
+      </CatalogueTitle>
+      <CatalogueBody>
+        <CatalogyeNav>
+          <CatalogueBodyRowUp>
             <NavLink to='/' end>
               ДВЕРИ ТАКИЕ
             </NavLink>
@@ -55,10 +58,10 @@ const Catalogue = () => {
             <NavLink to='/screen_1'>
               ПЕРЕГОРОДКИ СЯКИЕ
             </NavLink>
-          </div>
-          <div className={classes.catalogue__body__row}>
+          </CatalogueBodyRowUp>
+          <CatalogueBodyRowDown>
             <NavLink to='/' end>
-              ДВЕРИ ТАКИЕs
+              ДВЕРИ ТАКИЕ
             </NavLink>
             <NavLink to='/screen_2'>
               ДВЕРИ СЯКИЕ
@@ -69,13 +72,15 @@ const Catalogue = () => {
             <NavLink to='/screen_4'>
               ПЕРЕГОРОДКИ СЯКИЕ
             </NavLink>
-          </div>
-        </nav>
-      </div>
-      <button className={classes.catalogue__btnCalc}>
+          </CatalogueBodyRowDown>
+        </CatalogyeNav>
+      </CatalogueBody>
+      <CatalogueBtn>
         РАСЧИТАТЬ СТОИМОСТЬ
-      </button>
-      <div className={classes.slider__wrapper}>
+      </CatalogueBtn>
+      </CatalogueUpperBlock>
+    
+      {/* <div className={classes.slider__wrapper}>
 
         <div className={classes.slider__body}>
           <div className={classes.slider__separator}></div>
@@ -110,12 +115,21 @@ const Catalogue = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
-    </div>
+    </CatalogueWrapper>
 
 
   )
 }
+
+const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[25px]`
+const CatalogueUpperBlock = tw.div`flex flex-col`
+const CatalogueTitle = tw.div`flex text-6xl font-medium`
+const CatalogueBody = tw.div`flex flex-col  mt-[70px]  text-base `
+const CatalogueBodyRowUp = tw.div`flex flex-row justify-between  max-w-[800px] mb-[26px]`
+const CatalogueBodyRowDown = tw.div`flex flex-row justify-between  max-w-[613px] mb-[26px]`
+const CatalogueBtn = tw.button`w-[400px] h-[60px] border`
+const CatalogyeNav = tw.nav`flex flex-col`
 
 export default Catalogue

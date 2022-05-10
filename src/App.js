@@ -13,21 +13,21 @@ class App extends Component {
   render() {
     return (
       <AppContainer>
-         <Header />
+         {/* <Header /> */}
 
         <Wrapper>
-          <Intro />
+          {/* <Intro />
           <InfoBlock />
-          <Calculator />
-          {/* <Catalogue/> */}
-         <PreFooter />
+          <Calculator /> */}
+          <Catalogue/>
+         {/* <PreFooter /> */}
         </Wrapper> 
-        <Footer />
+        {/* <Footer /> */}
       </AppContainer>
     );
   }
 }
 const Wrapper = tw.div`flex flex-col justify-center max-w-[1000px]`
-const AppContainer = tw.div`flex flex-col items-center w-screen h-full`
+const AppContainer = tw.div`flex flex-col items-center w-full h-full`
 
 export default App;

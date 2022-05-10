@@ -1,5 +1,4 @@
 import React from 'react'
-import classes from './Footer.module.css'
 import logo from '../../assets/logo_white.svg'
 import tw from 'twin.macro';
 
