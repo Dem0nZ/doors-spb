@@ -42,7 +42,7 @@ const Intro = (props) => {
     )
 }
 
-const IntroWrapper = tw.div`flex flex-col justify-center  h-[1120px] mt-[7vw]`
+const IntroWrapper = tw.div`flex flex-col justify-center  h-[1120px] mt-[170px]`
 const IntroHeader = tw.div`flex justify-between  h-[125px]`
 const IntroTitleWrapper = tw.div`flex flex-col`
 const IntroTitleUp = tw.div`flex text-sm font-semibold`

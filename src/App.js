@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import classes from './App.module.css'
 import Header from './components/header/Header'
 import Intro from './components/intro/Intro'
 import InfoBlock from './components/infoblock/InfoBlock'
@@ -14,21 +13,23 @@ class App extends Component {
   render() {
     return (
       <AppContainer>
-        <Header />
+         {/* <Header /> */}
 
         <Wrapper>
-          <Intro />
+          {/* <Intro />
           <InfoBlock />
             <Calculator />
           {/*<Catalogue />*/}
           <PreFooter /> 
         </Wrapper>
         <Footer />
+
+
       </AppContainer>
     );
   }
 }
 const Wrapper = tw.div`flex flex-col justify-center max-w-[1000px]`
-const AppContainer = tw.div`flex flex-col items-center w-screen `
+const AppContainer = tw.div`flex flex-col items-center w-full h-full`
 
 export default App;

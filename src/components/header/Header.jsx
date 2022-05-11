@@ -41,10 +41,12 @@ const Header = (props) => {
             </HeaderBodyContainer>
             <HeaderLinkContainer>
                 <Headerlinkwrapper>
+                    <Headerlinkwrapper_2>
                     <Headerlinks>
                         <LinkImg src={inst_1} alt="img" />
                         <LinkImg src={fcb_1} alt="img" />
                     </Headerlinks>
+                    </Headerlinkwrapper_2>                    
                 </Headerlinkwrapper>
             </HeaderLinkContainer>
 
@@ -68,7 +70,8 @@ const HeaderMenuCalculator = tw.div`text-center `
 const HeaderMenuLink = tw.img`inline-block h-[17px] w-[17px]`
 const HeaderMenuShare = tw.div`inline-block pl-2 text-right`
 const HeaderLinkContainer = tw.div`flex justify-center w-full`
-const Headerlinkwrapper = tw.div`flex justify-end  w-3/5 `
+const Headerlinkwrapper = tw.div`flex justify-center  w-screen `
+const Headerlinkwrapper_2 = tw.div`flex justify-end  w-[1200px] pr-[60px]`
 const Headerlinks = tw.div`flex justify-between w-[94px] h-[64px]  shadow-md`
 const LinkImg = tw.img`w-[24px] h-[24px] left-[5px] mx-[11px] my-[20px]`
 
