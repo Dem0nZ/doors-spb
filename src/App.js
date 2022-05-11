@@ -19,11 +19,11 @@ class App extends Component {
         <Wrapper>
           <Intro />
           <InfoBlock />
-            {/*<Calculator />
-          <Catalogue />
-          <PreFooter /> */}
+            <Calculator />
+          {/*<Catalogue />*/}
+          <PreFooter /> 
         </Wrapper>
-        {/* <Footer /> */}
+        <Footer />
       </AppContainer>
     );
   }
