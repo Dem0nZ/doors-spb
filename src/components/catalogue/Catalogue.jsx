@@ -4,6 +4,7 @@ import arrows_left from '../../assets/slider/arrow_left.png'
 import arrows_right from '../../assets/slider/arrow_right.png'
 import SlideRoutes from 'react-slide-routes'
 import { Route, NavLink } from 'react-router-dom'
+import SliderCatalogue from './Slider/Slider'
 import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
@@ -82,6 +83,7 @@ const Catalogue = () => {
 
         <SliderBody>
           <SliderSeparator />
+          <SliderCatalogue/>
           {/* <div className={classes.slider__sliderrouter}>
 
             <SlideRoutes>
@@ -94,10 +96,10 @@ const Catalogue = () => {
           </div> */}
 
           <SliderSeparator />
-          <SliderButtons>
+          {/* <SliderButtons>
 
             <SliderNawDown>
-              {/* <NavLink to={screens[number]} onClick={() => counter(false)}>
+              <NavLink to={screens[number]} onClick={() => counter(false)}>
 
                 <div className={classes.slider__buttons_left}>
                   <img src={arrows_left} alt='img' />
@@ -110,10 +112,10 @@ const Catalogue = () => {
                   <img src={arrows_right} alt='img' />
 
                 </div>
-              </NavLink> */}
+              </NavLink>
             </SliderNawDown>
 
-          </SliderButtons>
+          </SliderButtons> */}
         </SliderBody>
       </SliderWrapper>
 
