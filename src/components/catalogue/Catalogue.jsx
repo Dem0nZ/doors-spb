@@ -1,128 +1,104 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { Component } from 'react'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import arrows_left from '../../assets/slider/arrow_left.png'
 import arrows_right from '../../assets/slider/arrow_right.png'
-import SlideRoutes from 'react-slide-routes'
-import { Route, NavLink } from 'react-router-dom'
-import SliderCatalogue from './Slider/Slider'
 import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
 import Screen_4 from './screnns/Screen_4'
-import tw from 'twin.macro';
+import tw from 'twin.macro'
 
 
-
-const Catalogue = () => {
-  const [number, setNumber] = useState(0)
-
-  const screens = ['/screen_1', '/screen_2', '/screen_3', '/screen_4']
-
-  function counter(value) {
-    if (value) {
-      if (number === screens.length - 1) {
-        setNumber(0)
-      } else {
-        setNumber(number + 1)
-      }
-    } else {
-      if (number === 0) {
-        setNumber(screens.length - 1)
-      } else {
-        setNumber(number - 1)
-      }
-    }
+export default class Catalogue extends Component {
+  constructor(props) {
+    super(props)
+    this.next = this.next.bind(this)
+    this.previous = this.previous.bind(this)
   }
 
-  return (
-    <CatalogueWrapper>
-      <CatalogueUpperBlock>
-        <CatalogueTitle>
-          КАТАЛОГ
-        </CatalogueTitle>
-        <CatalogueBody>
-          <CatalogueNav>
-            <CatalogueBodyRow>
-              <NavLink to='/' end>
-                ДВЕРИ ТАКИЕ
-              </NavLink>
-              <NavLink to='/screen_2'>
-                ДВЕРИ СЯКИЕ
-              </NavLink>
-              <NavLink to='/screen_3'>
-                ПЕРЕГОРОДКИ ТАКИЕ
-              </NavLink>
-              <NavLink to='/screen_4'>
-                ПЕРЕГОРОДКИ СЯКИЕ
-              </NavLink>
-              <NavLink to='/screen_1'>
-                ПЕРЕГОРОДКИ СЯКИЕ
-              </NavLink>
+  next() {
+    this.slider.slickNext();
+  }
+  previous() {
+    this.slider.slickPrev();
+  }
 
-              <NavLink to='/' end>
-                ДВЕРИ ТАКИЕ
-              </NavLink>
-              <NavLink to='/screen_2'>
-                ДВЕРИ СЯКИЕ
-              </NavLink>
-              <NavLink to='/screen_3'>
-                ПЕРЕГОРОДКИ ТАКИЕ
-              </NavLink>
-              <NavLink to='/screen_4'>
-                ПЕРЕГОРОДКИ СЯКИЕ
-              </NavLink>
-            </CatalogueBodyRow>
-          </CatalogueNav  >
-        </CatalogueBody>
-        <CatalogueBtn>
-          РАСЧИТАТЬ СТОИМОСТЬ
-        </CatalogueBtn>
-      </CatalogueUpperBlock>
 
-      <SliderWrapper>
+  render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      arrows:false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
 
-        <SliderBody>
-          <SliderSeparator />
-          <SliderCatalogue/>
-          {/* <div className={classes.slider__sliderrouter}>
+    return (
+      <CatalogueWrapper>
+        <CatalogueUpperBlock>
+          <CatalogueTitle>
+            КАТАЛОГ
+          </CatalogueTitle>
+          <CatalogueBody>
+            <CatalogueNav>
+              <CatalogueBodyRow>
+                <button onClick={() => this.slider.slickGoTo(1)}>ДВЕРИ ТАКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ СЯКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(3)}>ПЕРЕГОРОДКИ ТАКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(4)}>ПЕРЕГОРОДКИ СЯКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ СЯКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ ТАКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(3)}>ДВЕРИ СЯКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(4)}>ПЕРЕГОРОДКИ ТАКИЕ</button>
+                <button onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ СЯКИЕ</button>
+              </CatalogueBodyRow>
+            </CatalogueNav  >
+          </CatalogueBody>
+          <CatalogueBtn>
+            РАСЧИТАТЬ СТОИМОСТЬ
+          </CatalogueBtn>
+        </CatalogueUpperBlock>
 
-            <SlideRoutes>
-              <Route path='/' element={<Screen_1 />} />
-              <Route path='/screen_1' element={<Screen_1 />} />
-              <Route path='/screen_2' element={<Screen_2 />} />
-              <Route path='/screen_3' element={<Screen_3 />} />
-              <Route path='/screen_4' element={<Screen_4 />} />
-            </SlideRoutes>
-          </div> */}
+        <SliderWrapper>
 
-          <SliderSeparator />
-          {/* <SliderButtons>
+          <SliderBody>
 
-            <SliderNawDown>
-              <NavLink to={screens[number]} onClick={() => counter(false)}>
+            <SliderSeparator />
 
-                <div className={classes.slider__buttons_left}>
+            <Slider ref={c => (this.slider = c)} {...settings}>
+              <Screen_1 key={1} />
+              <Screen_2 key={2} />
+              <Screen_3 key={3} />
+              <Screen_4 key={4} />
+            </Slider>
+
+            <SliderSeparator />
+
+            <SliderButtons>
+
+              <SliderNawDown>
+
+                <button  onClick={this.previous}>
                   <img src={arrows_left} alt='img' />
 
-                </div>
-              </NavLink>
-              <NavLink to={screens[number]} onClick={() => counter(true)}>
+                </button>
 
-                <div className={classes.slider__buttons_right}>
+                <button onClick={this.next}>
                   <img src={arrows_right} alt='img' />
 
-                </div>
-              </NavLink>
-            </SliderNawDown>
+                </button>
+              </SliderNawDown>
 
-          </SliderButtons> */}
-        </SliderBody>
-      </SliderWrapper>
+            </SliderButtons>
+          </SliderBody>
+        </SliderWrapper>
 
-    </CatalogueWrapper>
-  
-
-  )
+      </CatalogueWrapper>
+    )
+  }
 }
 
 const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[25px]`
@@ -135,9 +111,7 @@ const CatalogueNav = tw.nav`flex flex-col`
 const SliderBody = tw.div`flex flex-col w-full`
 const SliderSeparator = tw.div`flex w-full h-px bg-black`
 const SliderButtons = tw.div`flex justify-center w-full mt-16`
-const SliderNawDown = tw.nav`flex w-44`
+const SliderNawDown = tw.nav`flex justify-between w-44`
 
 
 const SliderWrapper = tw.div`flex w-full mt-36`
-
-export default Catalogue
