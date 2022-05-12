@@ -13,18 +13,16 @@ class App extends Component {
   render() {
     return (
       <AppContainer>
-         {/* <Header /> */}
+         <Header />
 
         <Wrapper>
-          {/* <Intro />
+          <Intro />
           <InfoBlock />
             <Calculator />
-          {/*<Catalogue />*/}
+          <Catalogue />
           <PreFooter /> 
         </Wrapper>
         <Footer />
-
-
       </AppContainer>
     );
   }
