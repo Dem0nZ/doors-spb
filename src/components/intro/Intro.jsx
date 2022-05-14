@@ -1,44 +1,56 @@
 import React from 'react'
-import classes from './Intro.module.css'
+import tw from 'twin.macro';
 import intro from '../../assets/intro.png'
+
 
 const Intro = (props) => {
     return (
-        <div className={classes.intro__wrapper}>
-            <div className={classes.intro__body}>
-                <div className={classes.intro__header}>
-                    <div className={classes.intro__title}>
-                        <div className={classes.intro__title__up}>
+        <IntroWrapper>
+                <IntroHeader>
+                    <IntroTitleWrapper>
+                        <IntroTitleUp>
                             КТО МЫ ТАКИЕ?
-                        </div>
-                        <div className={classes.intro__title__down}>
+                        </IntroTitleUp>
+                        <IntroTitleDown>
                             YOUR DOORS
-                        </div>
-                    </div>
-                    <div className={classes.intro__title__note}>
+                        </IntroTitleDown>
+                    </IntroTitleWrapper>
+                    <IntroTitleNote>
                         Мы создаем в вашем доме комфорт, помогая разделить
                         на функциональные зоны пространства. Любые перегор
                         и самые разные двери от и до бескрайних полей. Все что
                         вам необходимо это позвонить нашему менеджеру илиы
                         сделать тот набор правил и техник что так или иначе...
-                    </div>
-                </div>
-                <div className={classes.intro__image}>
-                <img src={intro} alt="img" />
+                    </IntroTitleNote>
+                </IntroHeader>
+                <IntriImageWrapper>
+                <IntroImage src={intro} alt="img" />
 
-                </div>
-                <div className={classes.intro__footer}>
-                    В последнее время мир меняется
-                    и совсем не понятно, что будет
-                    дальше, поэтому мы объединяем
-                    людей, которые хотят жить и
-                    вести бизнес по своим правилам.
-                </div>
+                </IntriImageWrapper>
+                <IntroFooter>
+                    <IntroFooterText>
+                        В последнее время мир меняется
+                        и совсем не понятно, что будет
+                        дальше, поэтому мы объединяем
+                        людей, которые хотят жить и
+                        вести бизнес по своим правилам.
+                    </IntroFooterText>
 
-            </div>
-        </div>
+                </IntroFooter>
+        </IntroWrapper>
 
     )
 }
+
+const IntroWrapper = tw.div`flex flex-col justify-center  h-[1120px] mt-[170px]`
+const IntroHeader = tw.div`flex justify-between  h-[125px]`
+const IntroTitleWrapper = tw.div`flex flex-col`
+const IntroTitleUp = tw.div`flex text-sm font-semibold`
+const IntroTitleDown = tw.div`flex text-6xl font-medium`
+const IntroTitleNote = tw.div`flex w-1/2 `
+const IntriImageWrapper = tw.div`flex mt-[144px]`
+const IntroImage = tw.img`flex  w-full`
+const IntroFooter = tw.div`flex justify-end mt-[150px] h-[70px]`
+const IntroFooterText = tw.div` flex w-[450px]`
 
 export default Intro
