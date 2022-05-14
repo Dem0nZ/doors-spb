@@ -4,27 +4,35 @@ import linc from '../../assets/linc.png'
 import fcb_1 from '../../assets/fcb_1.png'
 import inst_1 from '../../assets/inst_1.png'
 import tw from 'twin.macro';
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
     <Wrapper>
       <BodyContainer>
         <Body>
-          <Logo>
-            <LogoImage src={logo}/>
-            <LogoName>
-              your<br/>
-              door
-            </LogoName>
-          </Logo>
+          <NavLink to='/'>
+            <Logo>
+              <LogoImage src={logo} />
+              <LogoName>
+                your<br />
+                door
+              </LogoName>
+            </Logo>
+
+          </NavLink>
           <Menu>
             <div className='bg-red-700'>КАТАЛОГ</div>
-            <div>КОНТАКТЫ</div>
+            <div>
+              <NavLink to='/contacts'>
+                КОНТАКТЫ
+              </NavLink>
+            </div>
             <div>РАСЧИТАТЬ СТОИМОСТЬ</div>
-            <Share><ShareIcon src={linc}/>ПОДЕЛИТЬСЯ</Share>
+            <Share><ShareIcon src={linc} />ПОДЕЛИТЬСЯ</Share>
             <ShareLinks>
-              <LinkImg src={inst_1} alt='img'/>
-              <LinkImg src={fcb_1} alt='img'/>
+              <LinkImg src={inst_1} alt='img' />
+              <LinkImg src={fcb_1} alt='img' />
             </ShareLinks>
           </Menu>
         </Body>
@@ -37,11 +45,11 @@ const Wrapper = tw.div`flex flex-col justify-center`
 const BodyContainer = tw.div`flex justify-center w-screen border-b border-black`
 const Body = tw.div`flex justify-between items-center w-[1200px] h-14`
 const Logo = tw.div`flex justify-between max-w-[100px] min-w-[70px]`
-const LogoImage = tw.img`h-6 w-6`
+const LogoImage = tw.img`h-6 w-6 mt-1`
 const LogoName = tw.div`border-l-2 border-current pl-2 text-right text-xs`
 const Menu = tw.div`relative pl-4 flex justify-start gap-4 w-full text-xs  md:text-base`
 const Share = tw.div`flex flex-grow justify-end`
-const ShareIcon = tw.img`h-4 w-4`
+const ShareIcon = tw.img`h-4 w-4 mt-[3px  ] mr-1`
 const ShareLinks = tw.div`absolute top-11 right-20 bg-white p-4 flex gap-2 shadow-md`
 const LinkImg = tw.img`w-[24px] h-[24px] mx-[11px]`
 

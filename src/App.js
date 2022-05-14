@@ -1,31 +1,46 @@
-import React from 'react'
-import Header from './components/header/Header'
-import Intro from './components/intro/Intro'
-import InfoBlock from './components/infoblock/InfoBlock'
-import Catalogue from './components/catalogue/Catalogue'
-import Footer from './components/footer/Footer'
-import Calculator from './components/calculator/Calculator'
-import PreFooter from './components/prefooter/PreFooter'
+import React, { Component } from 'react'
+import Header from './components/Header/Header'
+import Intro from './components/Intro/Intro'
+import InfoBlock from './components/Infoblock/InfoBlock'
+import Catalogue from './components/Catalogue/Catalogue'
+import Footer from './components/Footer/Footer'
+import Calculator from './components/Calculator/Calculator'
+import PreFooter from './components/Prefooter/PreFooter'
 import tw from 'twin.macro';
+import Contacts from './components/Contacts/Contacts'
+import { Routes, Route } from 'react-router-dom'
 
 
-const App = () => {
+class App extends Component {
+  render() {
+    return (
+      <AppContainer>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Body />} />
+          <Route path='contacts' element={<Contacts />} />
+        </Routes>
+        <Footer />
+
+
+      </AppContainer>
+    );
+  }
+}
+
+const Body = () => {
   return (
-    <AppContainer>
-      <Header/>
-      <Wrapper>
-        <Intro/>
-        <InfoBlock/>
-        <Calculator/>
-        <Catalogue/>
-        <PreFooter/>
-      </Wrapper>
-      <Footer/>
-    </AppContainer>
+    <Wrapper>
+      <Intro />
+      <InfoBlock />
+      <Calculator />
+      <Catalogue />
+      <PreFooter />
+    </Wrapper>
   )
-};
+}
 
 const Wrapper = tw.div`flex flex-col justify-center max-w-[1000px]`
-const AppContainer = tw.div`flex flex-col items-center w-full h-full`
+const AppContainer = tw.div`flex flex-col justify-between items-center w-full h-screen`
 
 export default App;
