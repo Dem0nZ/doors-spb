@@ -4,9 +4,10 @@ import linc from '../../assets/linc.png'
 import fcb_1 from '../../assets/fcb_1.png'
 import inst_1 from '../../assets/inst_1.png'
 import tw from 'twin.macro';
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+
   return (
     <Wrapper>
       <BodyContainer>
@@ -22,11 +23,20 @@ const Header = () => {
 
           </NavLink>
           <Menu>
-            <div className='bg-red-700'>КАТАЛОГ</div>
             <div>
-              <NavLink to='/contacts'>
-                КОНТАКТЫ
+              <a href="#catalogue">
+                КАТАЛОГ
+              </a>
+            </div>
+            <div>
+              <NavLink to='/gallery'>
+                НАШИ РАБОТЫ
               </NavLink>
+            </div>
+            <div>
+              <a href='#contacts'>
+                КОНТАКТЫ
+              </a>
             </div>
             <div>РАСЧИТАТЬ СТОИМОСТЬ</div>
             <Share><ShareIcon src={linc} />ПОДЕЛИТЬСЯ</Share>
@@ -49,7 +59,7 @@ const LogoImage = tw.img`h-6 w-6 mt-1`
 const LogoName = tw.div`border-l-2 border-current pl-2 text-right text-xs`
 const Menu = tw.div`relative pl-4 flex justify-start gap-4 w-full text-xs  md:text-base`
 const Share = tw.div`flex flex-grow justify-end`
-const ShareIcon = tw.img`h-4 w-4 mt-[3px  ] mr-1`
+const ShareIcon = tw.img`h-4 w-4 mt-[3px ] mr-1`
 const ShareLinks = tw.div`absolute top-11 right-20 bg-white p-4 flex gap-2 shadow-md`
 const LinkImg = tw.img`w-[24px] h-[24px] mx-[11px]`
 

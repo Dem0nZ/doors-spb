@@ -4,7 +4,7 @@ import tw from 'twin.macro';
 
 const Footer = (props) => {
     return (
-        <FooterWrapper>
+        <FooterWrapper id='contacts'>
 
             <FooterBody>
 

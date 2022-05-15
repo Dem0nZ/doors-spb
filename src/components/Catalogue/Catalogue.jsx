@@ -37,7 +37,7 @@ export default class Catalogue extends Component {
     }
 
     return (
-      <CatalogueWrapper>
+      <CatalogueWrapper  id='catalogue' >
         <CatalogueUpperBlock>
           <CatalogueTitle>
             КАТАЛОГ
