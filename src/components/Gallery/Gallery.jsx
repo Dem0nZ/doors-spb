@@ -1,11 +1,11 @@
 import PhotoAlbum from "react-photo-album";
-import data from "./photos";
+import photos from "./photos";
 import tw from "twin.macro";
 
 const Gallery = () => {
     return (
         <Wrapper>
-            <PhotoAlbum photos={data} layout="rows" />
+            <PhotoAlbum photos={photos} layout="rows" />
         </Wrapper>
 
 
