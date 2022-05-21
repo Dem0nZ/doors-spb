@@ -2,24 +2,24 @@
 
 export const data = [
     {
-        original: "https://atlas-lux.ru/sites/default/files/styles/card_product/public/2021-03/4_35.jpg?itok=mjlesUDo",
+        original: "https://idei.club/uploads/posts/2021-11/thumbs/1637583654_1-idei-club-p-razdvizhnie-dveri-dlya-garderobnoi-interer-1.jpg",
         tumb: "http://",
         width: 740,
         height: 510,
         description: "ОписаниеОписаниеОписаниеОписаниеОписаниеОписание"
     },
     {
-        original: "https://portaitaliana.ru/images/085d6ac84d3d752c9fdaf177ba51b5f9.jpg",
+        original: "https://idei.club/uploads/posts/2021-11/thumbs/1637583608_12-idei-club-p-razdvizhnie-dveri-dlya-garderobnoi-interer-13.jpg",
         tumb: "http://",
         width: 737,
         height: 583,
         description: "ОписаниеОписаниеОписаниеОписаниеОписаниеОписание"
     },
     {
-        original: "https://www.vinchelli.ru/upload/iblock/ffd/dverinazakaz22.jpg",
+        original: "https://idei.club/uploads/posts/2021-11/thumbs/1637583629_15-idei-club-p-razdvizhnie-dveri-dlya-garderobnoi-interer-16.jpg",
         tumb: "http://",
-        width: 492,
-        height: 726,
+        width: 780,
+        height: 614,
         description: "ОписаниеОписаниеОписаниеОписаниеОписаниеОписание"
     },
     {

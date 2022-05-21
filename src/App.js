@@ -16,7 +16,7 @@ class App extends Component {
           <Route path='/' element={<Body />} />
           <Route path='gallery' element={<Gallery />} />
         </Routes>
-        <Footer />
+          <Footer />
       </AppContainer>
     );
   }

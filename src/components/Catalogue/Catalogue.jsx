@@ -7,7 +7,7 @@ import arrows_right from '../../assets/slider/arrow_right.png'
 import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
-import Screen_4 from './screnns/Screen_4'
+
 import tw from 'twin.macro'
 
 
@@ -37,6 +37,7 @@ export default class Catalogue extends Component {
     }
 
     return (
+    
       <CatalogueWrapper  id='catalogue' >
         <CatalogueUpperBlock>
           <CatalogueTitle>
@@ -45,15 +46,18 @@ export default class Catalogue extends Component {
           <CatalogueBody>
             <CatalogueNav>
               <CatalogueBodyRow>
-                <button onClick={() => this.slider.slickGoTo(1)}>ДВЕРИ ТАКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ СЯКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(3)}>ПЕРЕГОРОДКИ ТАКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(4)}>ПЕРЕГОРОДКИ СЯКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ СЯКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ ТАКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(3)}>ДВЕРИ СЯКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(4)}>ПЕРЕГОРОДКИ ТАКИЕ</button>
-                <button onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ СЯКИЕ</button>
+                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ ДЛЯ НИШИ В СТЕНЕ</CatalogueSliderBtn>
+                {/*<CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ ДЛЯ ШКАФА</CatalogueSliderBtn> */}
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
+                {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ РАЗДВИЖНЫЕ ПОДВЕСНЫЕ</CatalogueSliderBtn> */}
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
+                {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ПЕРЕГОРОДКИ СТАЦИОНАРНЫЕ</CatalogueSliderBtn> */}
+                {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ - ГАРДЕРОБНЫЕ СИСТЕМЫ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ СТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn> */}
+
               </CatalogueBodyRow>
             </CatalogueNav  >
           </CatalogueBody>
@@ -72,7 +76,6 @@ export default class Catalogue extends Component {
               <Screen_1 key={1} />
               <Screen_2 key={2} />
               <Screen_3 key={3} />
-              <Screen_4 key={4} />
             </Slider>
 
             <SliderSeparator />
@@ -101,12 +104,13 @@ export default class Catalogue extends Component {
   }
 }
 
-const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[25px]`
+const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[40px]`
 const CatalogueUpperBlock = tw.div`flex flex-col`
 const CatalogueTitle = tw.div`flex text-6xl font-medium`
 const CatalogueBody = tw.div`flex flex-col  mt-[70px]  text-base `
-const CatalogueBodyRow = tw.div`flex flex-row flex-wrap gap-4 pr-36 mb-[26px]`
+const CatalogueBodyRow = tw.div`flex flex-row flex-wrap gap-4 pr-2 mb-[26px]`
 const CatalogueBtn = tw.button`w-[400px] h-[60px] border`
+const CatalogueSliderBtn = tw.div`w-[300px] h-[60px] cursor-pointer`
 const CatalogueNav = tw.nav`flex flex-col`
 const SliderBody = tw.div`flex flex-col w-full`
 const SliderSeparator = tw.div`flex w-full h-px bg-black`

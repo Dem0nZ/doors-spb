@@ -5,6 +5,7 @@ import fcb_1 from '../../assets/fcb_1.png'
 import inst_1 from '../../assets/inst_1.png'
 import tw from 'twin.macro';
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Header = () => {
 
@@ -24,9 +25,9 @@ const Header = () => {
           </NavLink>
           <Menu>
             <div>
-              <a href="#catalogue">
+              <Link activeClass='active' to='catalogue' spy={true} smooth={true} duration={500}>
                 КАТАЛОГ
-              </a>
+              </Link>
             </div>
             <div>
               <NavLink to='/gallery'>
@@ -34,9 +35,9 @@ const Header = () => {
               </NavLink>
             </div>
             <div>
-              <a href='#contacts'>
+              <Link Link activeClass='active' to='contacts' spy={true} smooth={true} duration={500}>
                 КОНТАКТЫ
-              </a>
+              </Link>
             </div>
             <div>РАСЧИТАТЬ СТОИМОСТЬ</div>
             <Share><ShareIcon src={linc} />ПОДЕЛИТЬСЯ</Share>

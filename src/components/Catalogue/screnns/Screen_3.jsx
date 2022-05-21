@@ -1,117 +1,94 @@
 import React from 'react'
 import tw from 'twin.macro'
-import img1 from '../../../assets/slider/img1.svg'
-import img2 from '../../../assets/slider/img2.svg'
-import img3 from '../../../assets/slider/img3.svg'
-import img4 from '../../../assets/slider/img4.svg'
-import img5 from '../../../assets/slider/img5.svg'
-import img6 from '../../../assets/slider/img6.svg'
-import img7 from '../../../assets/slider/img7.svg'
+import img1 from '../../../assets/slider/doors/doors_1.jpg'
+import img2 from '../../../assets/slider/doors/doors_2.jpg'
+import img3 from '../../../assets/slider/doors/doors_3.jpg'
+import img4 from '../../../assets/slider/doors/doors_4.jpg'
+import img5 from '../../../assets/slider/doors/doors_9.jpg'
+import img6 from '../../../assets/slider/doors/doors_6.jpg'
+import img7 from '../../../assets/slider/doors/doors_8.jpg'
 
 const Screen_3 = (props) => {
     return (
-        <ScreenWrapper_3>
+        <ScreenWrapper>
 
-            <ScreenTitle_3>
-                ДВЕРИ ТАКИЕ
-            </ScreenTitle_3>
-            <ScreenImgBlock_3>
+            <ScreenTitle>
+                ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ
+            </ScreenTitle>
+            <ScreenImgBlock>
 
-                <ScreenRow1_3>
-                    <ScreenImg1_3 src={img1} alt="img" />
-                </ScreenRow1_3>
+                <Block_1>
+                    <ScreenImg1 src={img1} alt="img" />
+                </Block_1>
 
-                <ScreenRow2_3>
-                    <ScreenRow2ImgContainer_3>
-                        <ScreenImgWrapper2_3>
-                            <ScreenImg2_3 src={img2} alt="img" />
-                        </ScreenImgWrapper2_3>
-                        <ScreenImgWrapper3_3>
-                            <ScreenImg3_3 src={img3} alt="img" />
-                        </ScreenImgWrapper3_3>
-
-                    </ScreenRow2ImgContainer_3>
+                <Block_4>
                     <div>
-                        <ScreenImg4_3 src={img4} alt="img" />
+                        <ScreenImg5 src={img5} alt="img" />
                     </div>
-                </ScreenRow2_3>
+                    <ScreenRow3Text>
+                        Идеальный вариант для жизни.
+                        Идеальный вариант для жизни.
+                        Идеальный вариант для жизни.
+                        Идеальный вариант для жизни.
+                        Идеальный вариант для жизни.
+                        Идеальный вариант для жизни.
+                        Идеальный вариант для жизни.
+                    </ScreenRow3Text>
+                </Block_4>
 
-                <ScreenRow3_3>
-                    <ScreenImg5_3 src={img5} alt="img" />
-                    <ScreenRow3Block2_3>
-                        <ScreenRow3Text_3>
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                        </ScreenRow3Text_3>
-                        <div>
-                            <ScreenImg6_3  src={img6} alt="img" />
-                        </div>
-                    </ScreenRow3Block2_3>
-                </ScreenRow3_3>
+                <Block_5>
+                    <ScreenImg6 src={img6} alt="img" />
+                </Block_5>               
 
-                <ScreenRow4_3>
-                    <ScreenRow4LeftBlock_3>
-                        <ul>
-                            <ScreenRow4Li_3>Изготовлен из одного  20Ft контейнера площадью 15 кв.м;</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>Сделаны на супер производстве</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>Куча крутых технологий</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>Есть все и немного больше</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>и еще</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>И много фактов об этих перегородках</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>Куча крутых технологий</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>Есть все и немного больше</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>и еще</ScreenRow4Li_3>
-                            <ScreenRow4Li_3>И много фактов об этих перегородках</ScreenRow4Li_3>
-                        </ul>
-                        
-                        <div>
-                            <ScreenBtnCalc>
-                                РАСЧИТАТЬ СТОИМОСТЬ
-                            </ScreenBtnCalc>
-                        </div>
-                    </ScreenRow4LeftBlock_3>
-                    <div>
-                        <ScreenImg7_3 src={img7} alt="img" />
-                    </div>
-                </ScreenRow4_3>
-            </ScreenImgBlock_3>
-        </ScreenWrapper_3>
+                <Block_7>
+                    <ScreenImg7 src={img7} alt="img" />
+                </Block_7>
+
+                <Block_2>
+                    <ScreenImgWrapper2>
+                        <ScreenImg2 src={img2} alt="img" />
+                    </ScreenImgWrapper2>
+                    <ScreenImgWrapper3>
+                        <ScreenImg3 src={img3} alt="img" />
+                    </ScreenImgWrapper3>
+                </Block_2>
+
+                <Block_3>
+                    <ScreenImg4 src={img4} alt="img" />
+                </Block_3>
+
+            </ScreenImgBlock>
+        </ScreenWrapper>
 
     )
 }
 
-const ScreenWrapper_3 =tw.div`flex flex-col`
-const ScreenTitle_3 =tw.div`flex mt-10 text-6xl font-medium`
-const ScreenImgBlock_3 =tw.div`flex flex-col mt-10`
+const ScreenWrapper = tw.div`flex flex-col mb-16 `
+const ScreenTitle = tw.div`flex mt-10 text-6xl font-medium`
+const ScreenImgBlock = tw.div`grid grid-cols-[42% 60fr] mt-10`
 
-const ScreenRow1_3 =tw.div`flex `
-const ScreenImg1_3 =tw.img`w-full h-full `
+const Block_1 = tw.div`col-span-2 `
+const ScreenImg1 = tw.img`w-full h-full `
 
-const ScreenRow2_3 =tw.div`flex justify-between mt-36 h-[600px]`
-const ScreenRow2ImgContainer_3 =tw.div`flex flex-col justify-between`
-const ScreenImgWrapper2_3 =tw.div`flex w-72 h-72`
-const ScreenImg2_3 =tw.img``
-const ScreenImgWrapper3_3 =tw.div`flex w-72 h-72`
-const ScreenImg3_3 =tw.img``
-const ScreenImg4_3 =tw.img``
+const Block_2 = tw.div`flex flex-col justify-between mt-36`
 
-const ScreenRow3_3 =tw.div`flex justify-between w-full mt-36 h-[750px]`
-const ScreenImg5_3 =tw.img``
-const ScreenRow3Block2_3 =tw.div`flex flex-col justify-between w-96`
-const ScreenRow3Text_3 =tw.div``
-const ScreenImg6_3 =tw.img``
+const Block_3 = tw.div` mt-36`
 
-const ScreenRow4_3 = tw.div`flex justify-between my-8 pl-10`
-const ScreenImg7_3 = tw.img` w-[385px]`
-const ScreenRow4LeftBlock_3 = tw.div`flex flex-col w-[535px] justify-end`
-const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border`
-const ScreenRow4Li_3 = tw.li` mt-2 list-disc`
+const ScreenImg4 = tw.img`w-[600px] h-[583px] ml-auto`
+const Block_4 = tw.div`flex flex-col justify-between mt-36`
+const ScreenImgWrapper2 = tw.div``
+const ScreenImg2 = tw.img`w-[17rem] h-[17rem]`
+const ScreenImgWrapper3 = tw.div``
+const ScreenImg3 = tw.img`w-[17rem] h-[17rem]`
 
- 
+const ScreenImg5 = tw.img` `
+const Block_5 = tw.div`  justify-between mt-36`
+const ScreenRow3Text = tw.div` w-96 ml-auto`
+const ScreenImg6 = tw.img` w-[400px] h-[500px] ml-auto`
+
+const ScreenImg7 = tw.img``
+const Block_7 = tw.div`col-span-2   mt-36`
+
+
 
 export default Screen_3
