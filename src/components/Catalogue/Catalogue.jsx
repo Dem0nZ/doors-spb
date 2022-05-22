@@ -7,6 +7,7 @@ import arrows_right from '../../assets/slider/arrow_right.png'
 import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
+import Screen_4 from './screnns/Screen_4'
 
 import tw from 'twin.macro'
 
@@ -30,15 +31,15 @@ export default class Catalogue extends Component {
     const settings = {
       dots: false,
       infinite: true,
-      arrows:false,
+      arrows: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
     }
 
     return (
-    
-      <CatalogueWrapper  id='catalogue' >
+
+      <CatalogueWrapper id='catalogue' >
         <CatalogueUpperBlock>
           <CatalogueTitle>
             КАТАЛОГ
@@ -46,17 +47,17 @@ export default class Catalogue extends Component {
           <CatalogueBody>
             <CatalogueNav>
               <CatalogueBodyRow>
-                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ ДЛЯ НИШИ В СТЕНЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(4)}>ДВЕРИ-КУПЕ ДЛЯ НИШИ В СТЕНЕ</CatalogueSliderBtn>
                 {/*<CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ ДЛЯ ШКАФА</CatalogueSliderBtn> */}
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
                 {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ РАЗДВИЖНЫЕ ПОДВЕСНЫЕ</CatalogueSliderBtn> */}
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
                 {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ПЕРЕГОРОДКИ СТАЦИОНАРНЫЕ</CatalogueSliderBtn> */}
                 {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</CatalogueSliderBtn>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ - ГАРДЕРОБНЫЕ СИСТЕМЫ</CatalogueSliderBtn>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ СТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn> */}
+    <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ СТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>*/}
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>
 
               </CatalogueBodyRow>
             </CatalogueNav  >
@@ -76,6 +77,7 @@ export default class Catalogue extends Component {
               <Screen_1 key={1} />
               <Screen_2 key={2} />
               <Screen_3 key={3} />
+              <Screen_4 key={4} />
             </Slider>
 
             <SliderSeparator />
@@ -84,7 +86,7 @@ export default class Catalogue extends Component {
 
               <SliderNawDown>
 
-                <button  onClick={this.previous}>
+                <button onClick={this.previous}>
                   <img src={arrows_left} alt='img' />
 
                 </button>

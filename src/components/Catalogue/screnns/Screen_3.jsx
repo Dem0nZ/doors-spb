@@ -5,7 +5,7 @@ import img2 from '../../../assets/slider/doors/doors_2.jpg'
 import img3 from '../../../assets/slider/doors/doors_3.jpg'
 import img4 from '../../../assets/slider/doors/doors_4.jpg'
 import img5 from '../../../assets/slider/doors/doors_9.jpg'
-import img6 from '../../../assets/slider/doors/doors_6.jpg'
+import img6 from '../../../assets/slider/doors/doors_6-01.jpg'
 import img7 from '../../../assets/slider/doors/doors_8.jpg'
 
 const Screen_3 = (props) => {
@@ -45,12 +45,8 @@ const Screen_3 = (props) => {
                 </Block_7>
 
                 <Block_2>
-                    <ScreenImgWrapper2>
                         <ScreenImg2 src={img2} alt="img" />
-                    </ScreenImgWrapper2>
-                    <ScreenImgWrapper3>
                         <ScreenImg3 src={img3} alt="img" />
-                    </ScreenImgWrapper3>
                 </Block_2>
 
                 <Block_3>
@@ -76,10 +72,8 @@ const Block_3 = tw.div` mt-36`
 
 const ScreenImg4 = tw.img`w-[600px] h-[583px] ml-auto`
 const Block_4 = tw.div`flex flex-col justify-between mt-36`
-const ScreenImgWrapper2 = tw.div``
-const ScreenImg2 = tw.img`w-[17rem] h-[17rem]`
-const ScreenImgWrapper3 = tw.div``
-const ScreenImg3 = tw.img`w-[17rem] h-[17rem]`
+const ScreenImg2 = tw.img`w-96 h-[17rem]`
+const ScreenImg3 = tw.img`w-96 h-[17rem]`
 
 const ScreenImg5 = tw.img` `
 const Block_5 = tw.div`  justify-between mt-36`

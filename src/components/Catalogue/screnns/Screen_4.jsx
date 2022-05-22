@@ -1,19 +1,18 @@
 import React from 'react'
 import tw from 'twin.macro'
-import img1 from '../../../assets/slider/partition/p01.jpg'
-import img2 from '../../../assets/slider/partition/p02.jpg'
-import img3 from '../../../assets/slider/partition/p03-01.jpg'
-import img4 from '../../../assets/slider/partition/p04.jpg'
-import img5 from '../../../assets/slider/partition/p05.jpg'
-import img6 from '../../../assets/slider/partition/p06.jpg'
-import img7 from '../../../assets/slider/partition/p07.jpg'
+import img1 from '../../../assets/slider/closet/non_standart/closetNonStd_1.jpg'
+import img2 from '../../../assets/slider/closet/non_standart/closetNonStd_2.jpg'
+import img3 from '../../../assets/slider/closet/non_standart/closetNonStd_3.jpg'
+import img4 from '../../../assets/slider/closet/non_standart/closetNonStd_4.jpg'
+import img5 from '../../../assets/slider/closet/non_standart/closetNonStd_5.jpg'
 
-const Screen_2 = (props) => {
+
+const Screen_4 = (props) => {
     return (
         <ScreenWrapper>
 
             <ScreenTitle>
-                ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ
+                ШКАФЫ-КУПЕ НЕСТАНДАРТНЫЕ
             </ScreenTitle>
             <ScreenImgBlock>
 
@@ -21,7 +20,11 @@ const Screen_2 = (props) => {
                     <ScreenImg1 src={img1} alt="img" />
                 </Block_1>
 
-
+                <Block_2>
+                    <ScreenImg2 src={img2} alt="img" />
+                    <ScreenImg3 src={img3} alt="img" />
+                </Block_2>
+                
 
                 <Block_6>
                     <ul>
@@ -42,24 +45,13 @@ const Screen_2 = (props) => {
                     </div>
                 </Block_6>
 
-                <Block_7>
-                    <ScreenImg7 src={img7} alt="img" />
-                </Block_7>
-
-
-
-                <Block_3>
-                    <ScreenImg3 src={img3} alt="img" />
-                    <ScreenImg5 src={img5} alt="img" />
-                    <ScreenImg6 src={img6} alt="img" />
-                    <ScreenImg2 src={img2} alt="img" />
-
-                </Block_3>
-
                 <Block_8>
                     <ScreenImg4 src={img4} alt="img" />
-
                 </Block_8>
+
+                <Block_3>
+                    <ScreenImg5 src={img5} alt="img" />
+                </Block_3>
 
             </ScreenImgBlock>
         </ScreenWrapper>
@@ -69,28 +61,26 @@ const Screen_2 = (props) => {
 
 const ScreenWrapper = tw.div`flex flex-col mb-16 `
 const ScreenTitle = tw.div`flex mt-10 text-6xl font-medium`
-const ScreenImgBlock = tw.div`grid grid-cols-[42% 60fr] mt-10`
+const ScreenImgBlock = tw.div`grid grid-cols-2 mt-10`
 
-const Block_1 = tw.div`col-span-2 `
+const Block_1 = tw.div`col-span-2`
 const ScreenImg1 = tw.img`w-full h-full`
 
+const Block_2 = tw.div`col-span-2 flex justify-between mt-40`
 
-const Block_3 = tw.div`col-span-2 grid grid-cols-2 gap-28 mt-36`
+const Block_3 = tw.div`col-span-2 mt-36`
 
+const ScreenImg2 = tw.img`w-[470px] h-[320px]`
+const ScreenImg3 = tw.img`w-[470px] h-[320px]`
 const ScreenImg4 = tw.img``
-const ScreenImg2 = tw.img``
-const ScreenImg3 = tw.img`h-full  ml-auto`
 
-const ScreenImg5 = tw.img` `
-const ScreenImg6 = tw.img` ml-auto`
+const ScreenImg5 = tw.img`w-full `
 
-const ScreenImg7 = tw.img`w-[564px] h-[500px]`
-const Block_6 = tw.div` mt-24 flex flex-col justify-between mt-36  pl-5`
-const Block_7 = tw.div`mt-36 ml-auto`
-const Block_8 = tw.div` col-span-2 mt-36 ml-auto`
+const Block_6 = tw.div`mt-24 flex flex-col justify-between mt-40  pl-5`
+const Block_8 = tw.div`mt-40`
 const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border`
 const ScreenRow4Li = tw.li` mt-2 list-disc`
 
 
 
-export default Screen_2
+export default Screen_4
