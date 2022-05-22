@@ -55,8 +55,8 @@ export default class Catalogue extends Component {
                 {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ПЕРЕГОРОДКИ СТАЦИОНАРНЫЕ</CatalogueSliderBtn> */}
                 {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</CatalogueSliderBtn>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ - ГАРДЕРОБНЫЕ СИСТЕМЫ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
-    <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ СТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>*/}
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ СТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>*/}
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>
 
               </CatalogueBodyRow>

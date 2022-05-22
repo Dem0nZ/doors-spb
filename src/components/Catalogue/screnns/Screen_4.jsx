@@ -26,7 +26,7 @@ const Screen_4 = (props) => {
                 </Block_2>
                 
 
-                <Block_6>
+                <Block_3>
                     <ul>
                         <ScreenRow4Li>Собственное производство.</ScreenRow4Li>
                         <ScreenRow4Li>Работаем с _____ года</ScreenRow4Li>
@@ -43,15 +43,15 @@ const Screen_4 = (props) => {
                             РАСЧИТАТЬ СТОИМОСТЬ
                         </ScreenBtnCalc>
                     </div>
-                </Block_6>
-
-                <Block_8>
-                    <ScreenImg4 src={img4} alt="img" />
-                </Block_8>
-
-                <Block_3>
-                    <ScreenImg5 src={img5} alt="img" />
                 </Block_3>
+
+                <Block_4>
+                    <ScreenImg4 src={img4} alt="img" />
+                </Block_4>
+
+                <Block_5>
+                    <ScreenImg5 src={img5} alt="img" />
+                </Block_5>
 
             </ScreenImgBlock>
         </ScreenWrapper>
@@ -68,16 +68,16 @@ const ScreenImg1 = tw.img`w-full h-full`
 
 const Block_2 = tw.div`col-span-2 flex justify-between mt-40`
 
-const Block_3 = tw.div`col-span-2 mt-36`
-
+const Block_3 = tw.div`mt-24 flex flex-col justify-between mt-40  pl-5`
 const ScreenImg2 = tw.img`w-[470px] h-[320px]`
 const ScreenImg3 = tw.img`w-[470px] h-[320px]`
 const ScreenImg4 = tw.img``
 
-const ScreenImg5 = tw.img`w-full `
+const Block_4 = tw.div`mt-40`
 
-const Block_6 = tw.div`mt-24 flex flex-col justify-between mt-40  pl-5`
-const Block_8 = tw.div`mt-40`
+const Block_5 = tw.div`col-span-2 mt-36`
+const ScreenImg5 = tw.img`h-[720px] `
+
 const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border`
 const ScreenRow4Li = tw.li` mt-2 list-disc`
 
