@@ -113,17 +113,15 @@ const FooterLogo = tw.div`flex h-[55.6px] font-bold`
 const FooterLogoImg = tw.img` mt-[15px] w-[45px] h-[45px]`
 const FooterLogoSeparator = tw.div` mt-[11px] w-[2px] h-[60px] bg-white ml-[15px]`
 const FooterLogoName = tw.div` mt-[9px] pl-[15px] leading-6`
-const FooterTitleText = tw.div`flex mt-[38px] w-[450px] pl-[50px]`
+const FooterTitleText = tw.div`flex mt-[38px] max-w-[450px] pl-[50px]`
 
-const FooterBodyCol = tw.div`flex flex-col mt-[30px] w-[200px]`
-const FooterBodyColLast = tw.div`flex flex-col mt-[30px] w-[200px]`
+const FooterBodyCol = tw.div`flex flex-col mt-[30px] max-w-[200px]`
+const FooterBodyColLast = tw.div`flex flex-col mt-[30px] max-w-[200px]`
 const FooterColumnTitle = tw.div`flex`
 const FooterColumnLine = tw.div`w-[32px] h-[1px] mt-[7px] mr-[14px] bg-white`
 const FooterColumnText = tw.div`mt-[40px] leading-6`
 
 const FooterBottomWrapper = tw.div`flex flex-row justify-center w-full`
-
-// const FooterSeparator = tw.div`flex flex-row w-full h-[1px] bg-white  mt-[50px] ml-[53px]`
 
 const FooterBottom = tw.div`flex flex-col w-[1200px] h-[50px] mt-[48px] `
 const FooterCopirateBlock = tw.div`flex justify-between ml-[53px] pt-3 border-t-2 `
