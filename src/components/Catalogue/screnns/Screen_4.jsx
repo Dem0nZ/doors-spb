@@ -61,7 +61,7 @@ const Screen_4 = (props) => {
 
 const ScreenWrapper = tw.div`flex flex-col mb-16 `
 const ScreenTitle = tw.div`flex mt-10 text-6xl font-medium`
-const ScreenImgBlock = tw.div`grid grid-cols-2 mt-10`
+const ScreenImgBlock = tw.div`grid grid-cols-[45% 1fr] mt-10`
 
 const Block_1 = tw.div`col-span-2`
 const ScreenImg1 = tw.img`w-full h-full`

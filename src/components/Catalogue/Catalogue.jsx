@@ -8,6 +8,8 @@ import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
 import Screen_4 from './screnns/Screen_4'
+import Screen_5 from './screnns/Screen_5'
+import Screen_6 from './screnns/Screen_6'
 
 import tw from 'twin.macro'
 
@@ -47,16 +49,11 @@ export default class Catalogue extends Component {
           <CatalogueBody>
             <CatalogueNav>
               <CatalogueBodyRow>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(4)}>ДВЕРИ-КУПЕ ДЛЯ НИШИ В СТЕНЕ</CatalogueSliderBtn>
-                {/*<CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ ДЛЯ ШКАФА</CatalogueSliderBtn> */}
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(6)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(5)}>ДВЕРИ-КУПЕ ДЛЯ ГАРДЕРОБНОЙ</CatalogueSliderBtn>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
-                {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ РАЗДВИЖНЫЕ ПОДВЕСНЫЕ</CatalogueSliderBtn> */}
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
-                {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ПЕРЕГОРОДКИ СТАЦИОНАРНЫЕ</CatalogueSliderBtn> */}
-                {/* <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ - ГАРДЕРОБНЫЕ СИСТЕМЫ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ СТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>*/}
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(4)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>
 
               </CatalogueBodyRow>
@@ -78,6 +75,8 @@ export default class Catalogue extends Component {
               <Screen_2 key={2} />
               <Screen_3 key={3} />
               <Screen_4 key={4} />
+              <Screen_5 key={5} />
+              <Screen_6 key={6} />
             </Slider>
 
             <SliderSeparator />
