@@ -1,7 +1,13 @@
 import React from 'react'
 import tw from 'twin.macro';
 
+import { useNavigate } from "react-router-dom";
+
+
 const Calculator = () => {
+
+  const navigate = useNavigate();
+
   return (
     <Wrapper>
       <Content>
@@ -9,13 +15,8 @@ const Calculator = () => {
           РАСЧИТАТЬ СТОИМОСТЬ
         </Title>
         <Description>
-          Тут разный текст Тут разный текст Тут
-          разный текст Тут разный текст Тут
-          разный текст Тут разный текст Тут
-          разный текст Тут разный текст Тут
-          разный текст Тут разный текст Тут ра
         </Description>
-        <Button>
+        <Button onClick={() => navigate("/calculate", { replace: true })}>
           РАСЧИТАТЬ СТОИМОСТЬ
         </Button>
       </Content>

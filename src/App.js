@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Gallery from './components/Gallery/Gallery'
 import Body from './components/Calculator/Body'
+import Calculate from './components/Calculator/Calculate';
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <Routes>
           <Route path='/' element={<Body />} />
           <Route path='gallery' element={<Gallery />} />
+          <Route path='calculate' element={<Calculate />} />
         </Routes>
           <Footer />
       </AppContainer>
