@@ -13,55 +13,45 @@ const InfoBlock = (props) => {
     return (
         <InfoBlockWrapper>
             <InfoBlockTitle>
-                КАК ВЫ МОЖЕТЕ <br/>
-                ИХ ИСПОЛЬЗОВАТЬ
+                КАК ВЫ МОЖЕТЕ ИХ ИСПОЛЬЗОВАТЬ
             </InfoBlockTitle>
             <InfoBlockBody>
-                <InfoBlockRow>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={arrowdown} alt="img" />
                         <InfoBlockRowText>
-                        Дополнительное место для дополнительных опций
+                            Собственное производство. Работаем с …….года
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={arrowdown} alt="img" />
                         <InfoBlockRowText>
-                        Доход от аренды для мгновенного возврата вложений
+                            Огромный выбор материалов
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
-                </InfoBlockRow>
-                <InfoBlockRow>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={bed} alt="img" />
                         <InfoBlockRowText>
-                        Приглашайте друзей без лишних хлопот
+                            Выезд замерщика с образцами
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={home} alt="img" />
                         <InfoBlockRowText>
-                        Сдавайте в аренду помещения для бизнеса
+                            Минимальные сроки производства
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
-
-                </InfoBlockRow>
-                <InfoBlockRow>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={pc} alt="img" />
                         <InfoBlockRowText>
-                        Работайте, творите или тренируйтесь дома
+                            Установка в день доставки
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={fabric} alt="img" />
                         <InfoBlockRowText>
-                        Создайте свое пространство в вашем доме.
+                            Гарантия ….. года
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
-
-                </InfoBlockRow>
-                <InfoBlockRow>
                     <InfoBlockRowItem>
                         <InfoBlockRowImg src={hoot} alt="img" />
                         <InfoBlockRowText>
@@ -74,8 +64,6 @@ const InfoBlock = (props) => {
                         Свяжитесь с нами, чтобы получить индивидуальную смету аренды для вашего региона
                         </InfoBlockRowText>
                     </InfoBlockRowItem>
-
-                </InfoBlockRow>
             </InfoBlockBody>
         </InfoBlockWrapper>
     )
@@ -83,8 +71,7 @@ const InfoBlock = (props) => {
 
 const InfoBlockWrapper = tw.div`flex flex-col h-[850px]  md:mt-[112px] lg:h-[530px]`
 const InfoBlockTitle = tw.div`flex w-[470px] h-[115px] text-5xl font-medium`
-const InfoBlockBody = tw.div`flex-col h-[356px] text-5xl font-medium mt-[70px]`
-const InfoBlockRow = tw.div`flex flex-col justify-between w-[400px] text-sm font-medium lg:flex-row lg:w-[800px] `
+const InfoBlockBody = tw.div`flex flex-wrap text-5xl font-medium mt-[70px] text-sm font-medium`
 const InfoBlockRowImg = tw.img`w-[60px] h-[60px] p-[10px] border-black border-2`
 const InfoBlockRowItem = tw.div`flex w-[400px] h-[60px] mb-[35px]`
 const InfoBlockRowText = tw.div`flex pl-5`
