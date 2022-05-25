@@ -961,4 +961,7 @@ module.exports = {
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
   plugins: [],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
 }
