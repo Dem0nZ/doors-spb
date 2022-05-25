@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../../assets/logo.png'
-import linc from '../../assets/linc.png'
-import fcb_1 from '../../assets/fcb_1.png'
-import inst_1 from '../../assets/inst_1.png'
+import logo from '../../assets/logo.svg'
+import linc from '../../assets/linc.svg'
+import fcb_1 from '../../assets/fcb_1.svg'
+import inst_1 from '../../assets/inst_1.svg'
 import tw from 'twin.macro';
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
@@ -39,11 +39,20 @@ const Header = () => {
                 КОНТАКТЫ
               </Link>
             </div>
-            <div>РАСЧИТАТЬ СТОИМОСТЬ</div>
-            <Share><ShareIcon src={linc} />ПОДЕЛИТЬСЯ</Share>
+            <div >РАСЧИТАТЬ СТОИМОСТЬ</div>
+            <Link href='#' className='flex flex-grow'>
+              <Share>
+                <ShareIcon src={linc} />
+                ПОДЕЛИТЬСЯ
+              </Share>
+            </Link>
             <ShareLinks>
-              <LinkImg src={inst_1} alt='img' />
-              <LinkImg src={fcb_1} alt='img' />
+              <Link href='#'>
+                <LinkImg src={inst_1} alt='img' />
+              </Link>
+              <Link href='#'>
+                <LinkImg src={fcb_1} alt='img' />
+              </Link >
             </ShareLinks>
           </Menu>
         </Body>

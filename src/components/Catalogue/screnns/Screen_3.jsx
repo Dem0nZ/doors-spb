@@ -6,7 +6,8 @@ import img3 from '../../../assets/slider/doors/doors_3.jpg'
 import img4 from '../../../assets/slider/doors/doors_4.jpg'
 import img5 from '../../../assets/slider/doors/doors_9.jpg'
 import img6 from '../../../assets/slider/doors/doors_6-01.jpg'
-import img7 from '../../../assets/slider/doors/doors_8.jpg'
+import img8 from '../../../assets/slider/doors/doors_8.jpg'
+import img7 from '../../../assets/slider/doors/doors_7.jpg'
 
 const Screen_3 = (props) => {
     return (
@@ -22,18 +23,8 @@ const Screen_3 = (props) => {
                 </Block_1>
 
                 <Block_2>
-                    <div>
-                        <ScreenImg5 src={img5} alt="img" />
-                    </div>
-                    <ScreenRow3Text>
-                        Идеальный вариант для жизни.
-                        Идеальный вариант для жизни.
-                        Идеальный вариант для жизни.
-                        Идеальный вариант для жизни.
-                        Идеальный вариант для жизни.
-                        Идеальный вариант для жизни.
-                        Идеальный вариант для жизни.
-                    </ScreenRow3Text>
+                        <ScreenImg7 src={img7} alt="img" />
+                  
                 </Block_2>
 
                 <Block_3>
@@ -41,7 +32,7 @@ const Screen_3 = (props) => {
                 </Block_3>               
 
                 <Block_4>
-                    <ScreenImg7 src={img7} alt="img" />
+                    <ScreenImg8 src={img8} alt="img" />
                 </Block_4>
 
                 <Block_5>
@@ -75,12 +66,11 @@ const Block_2 = tw.div`flex flex-col justify-between mt-36`
 const ScreenImg2 = tw.img`w-96 h-[17rem]`
 const ScreenImg3 = tw.img`w-96 h-[17rem]`
 
-const ScreenImg5 = tw.img` `
 const Block_3 = tw.div`  justify-between mt-36`
-const ScreenRow3Text = tw.div` w-96 ml-auto`
 const ScreenImg6 = tw.img` w-[400px] h-[500px] ml-auto`
 
-const ScreenImg7 = tw.img``
+const ScreenImg7 = tw.img`w-[400px] h-[500px] ml-auto`
+const ScreenImg8 = tw.img``
 const Block_4 = tw.div`col-span-2   mt-36`
 
 

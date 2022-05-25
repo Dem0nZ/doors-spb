@@ -1,6 +1,6 @@
 import React from 'react'
 import tw from 'twin.macro';
-import intro from '../../assets/intro.png'
+import intro from '../../assets/intro.jpg'
 
 
 const Intro = (props) => {

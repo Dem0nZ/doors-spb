@@ -10,8 +10,7 @@ const Footer = (props) => {
 
                 <FooterTitle>
 
-                    <FooterLogo>
-
+                    <FooterLogo>    
                         <FooterLogoImg src={logo} alt="img" />
                         <FooterLogoSeparator></FooterLogoSeparator>
                         <FooterLogoName>
@@ -50,7 +49,7 @@ const Footer = (props) => {
                         </div>
                     </FooterColumnTitle>
                     <FooterColumnText>
-                        <a href="#">info@wowowow.com</a>
+                        <a href="mailto:test@gmail.com">test@gmail.com</a>
                     </FooterColumnText>
                 </FooterBodyCol>
 
@@ -80,19 +79,7 @@ const Footer = (props) => {
 
 
                     <FooterCopirateBlock>
-                        <FooterCopyright>
-                            © your doors. all rights reserved
-                        </FooterCopyright>
-                        <FooterRules>
-                            ПРАВИЛА ИСПОЛЬЗОВАНИЯ
-                        </FooterRules>
-                        <FooterRules>
-                            ПРАВИЛА ИСПОЛЬЗОВАНИЯ
-                        </FooterRules>
-                        <FooterRules>
-                            ПРАВИЛА ИСПОЛЬЗОВАНИЯ
-                        </FooterRules>
-
+                            © your doors. all rights reserved          
                     </FooterCopirateBlock>
 
 
@@ -115,17 +102,15 @@ const FooterLogoSeparator = tw.div` mt-[11px] w-[2px] h-[60px] bg-white ml-[15px
 const FooterLogoName = tw.div` mt-[9px] pl-[15px] leading-6`
 const FooterTitleText = tw.div`flex mt-[38px] max-w-[450px] pl-[50px]`
 
-const FooterBodyCol = tw.div`flex flex-col mt-[30px] max-w-[200px]`
+const FooterBodyCol = tw.div`flex flex-col mt-[30px] pr-5`
 const FooterBodyColLast = tw.div`flex flex-col mt-[30px] max-w-[200px]`
 const FooterColumnTitle = tw.div`flex`
 const FooterColumnLine = tw.div`w-[32px] h-[1px] mt-[7px] mr-[14px] bg-white`
-const FooterColumnText = tw.div`mt-[40px] leading-6`
+const FooterColumnText = tw.div`flex flex-col mt-[40px] leading-6`
 
 const FooterBottomWrapper = tw.div`flex flex-row justify-center w-full`
 
 const FooterBottom = tw.div`flex flex-col w-[1200px] h-[50px] mt-[48px] `
-const FooterCopirateBlock = tw.div`flex justify-between ml-[53px] pt-3 border-t-2 `
-const FooterCopyright = tw.div`flex `
-const FooterRules = tw.div`flex `
+const FooterCopirateBlock = tw.div`flex justify-between ml-[53px] pt-3 pl-10 border-t-2 `
 
 export default Footer
