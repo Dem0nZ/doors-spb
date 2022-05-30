@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/styled": "^11.8.1",
     "react": "17.0.2",
+    "react-accessible-accordion": "4.0.0",
     "react-dom": "17.0.2",
     "react-photo-album": "^1.13.3",
     "react-router-dom": "^6.3.0",
@@ -18,8 +19,8 @@
   "scripts": {
     "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
-    "start": "npm run watch:css & react-scripts start",
-    "build": "npm run build:css react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
