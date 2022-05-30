@@ -17,8 +17,6 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
