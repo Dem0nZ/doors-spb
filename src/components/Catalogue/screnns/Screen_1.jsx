@@ -1,12 +1,12 @@
 import React from 'react'
 import tw from 'twin.macro'
-import img1 from '../../../assets/slider/closet/build/closet_build_01.jpg'
-import img2 from '../../../assets/slider/closet/build/closet_build_02.jpg'
-import img3 from '../../../assets/slider/closet/build/closet_build_03.jpg'
-import img4 from '../../../assets/slider/closet/build/closet_build_04.jpg'
-import img5 from '../../../assets/slider/closet/build/closet_build_05.jpg'
-import img6 from '../../../assets/slider/closet/build/closet_build_06.jpg'
-import img7 from '../../../assets/slider/closet/build/closet_build_07.jpg'
+import img1 from '../../../assets/slider/closet/build/closed_build_01.jpg'
+import img2 from '../../../assets/slider/closet/build/closed_build_02.jpg'
+import img3 from '../../../assets/slider/closet/build/closed_build_03.jpg'
+import img4 from '../../../assets/slider/closet/build/closed_build_04.jpg'
+import img5 from '../../../assets/slider/closet/build/closed_build_05.jpg'
+import img6 from '../../../assets/slider/closet/build/closed_build_06.jpg'
+import img7 from '../../../assets/slider/closet/build/closed_build_07.jpg'
 
 const Screen_1 = (props) => {
     return (

@@ -7,50 +7,42 @@ import img4 from '../../../assets/slider/doors/checkroom/checkroom_04.jpg'
 import img5 from '../../../assets/slider/doors/checkroom/checkroom_05.jpg'            
 import img6 from '../../../assets/slider/doors/checkroom/checkroom_007.jpg'
 import img7 from '../../../assets/slider/doors/checkroom/checkroom_07.jpg'
+import img9 from '../../../assets/slider/doors/checkroom/checkroom_09.jpg'
 
 const Screen_6 = (props) => {
     return (
             <ScreenWrapper>
     
                 <ScreenTitle>
-                    ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ
+                    ДВЕРИ-КУПЕ ДЛЯ ГАРДЕРОБНОЙ
                 </ScreenTitle>
                 <ScreenImgBlock>
     
                     <Block_1>
-                        <ScreenImg1 src={img1} alt="img" />
+                        <ScreenImg1 src={img1} alt='img' />
                     </Block_1>
     
                     <Block_2>
-                        <div>
-                            <ScreenImg5 src={img5} alt="img" />
-                        </div>
-                        <ScreenRow3Text>
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                            Идеальный вариант для жизни.
-                        </ScreenRow3Text>
+                            <ScreenImg5 src={img5} alt='img' />
+                        <ScreenImg9 src={img9} alt='img' />
+    
                     </Block_2>
     
                     <Block_3>
-                        <ScreenImg6 src={img6} alt="img" />
+                        <ScreenImg6 src={img6} alt='img' />
                     </Block_3>               
     
                     <Block_4>
-                        <ScreenImg7 src={img7} alt="img" />
+                        <img src={img7} alt='img' />
                     </Block_4>
     
                     <Block_5>
-                            <ScreenImg2 src={img2} alt="img" />
-                            <ScreenImg3 src={img3} alt="img" />
+                            <ScreenImg2 src={img2} alt='img' />
+                            <ScreenImg3 src={img3} alt='img' />
                     </Block_5>
     
                     <Block_6>
-                        <ScreenImg4 src={img4} alt="img" />
+                        <ScreenImg4 src={img4} alt='img' />
                     </Block_6>
     
                 </ScreenImgBlock>
@@ -66,22 +58,21 @@ const Screen_6 = (props) => {
     const Block_1 = tw.div`col-span-2 `
     const ScreenImg1 = tw.img`w-full h-full `
     
-    const Block_5 = tw.div`flex flex-col justify-between mt-36`
+    const Block_5 = tw.div`flex flex-col justify-between mt-28`
     
-    const Block_6 = tw.div` mt-36`
+    const Block_6 = tw.div` mt-28`
     
     const ScreenImg4 = tw.img`w-[600px] h-[583px] ml-auto`
-    const Block_2 = tw.div`flex flex-col justify-between mt-36`
+    const Block_2 = tw.div`flex flex-col justify-between mt-28`
     const ScreenImg2 = tw.img`w-96 h-[17rem]`
     const ScreenImg3 = tw.img`w-96 h-[17rem]`
     
     const ScreenImg5 = tw.img` `
-    const Block_3 = tw.div`  justify-between mt-36`
-    const ScreenRow3Text = tw.div` w-96 ml-auto`
-    const ScreenImg6 = tw.img` w-[400px] h-[500px] ml-auto`
+    const Block_3 = tw.div`  justify-between mt-28`
+    const ScreenImg6 = tw.img` w-[600px] h-[600px] ml-auto`
     
-    const ScreenImg7 = tw.img``
-    const Block_4 = tw.div`col-span-2   mt-36`
+    const ScreenImg9 = tw.img``
+    const Block_4 = tw.div`col-span-2   mt-28`
     
 
 export default Screen_6
