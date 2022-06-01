@@ -16,7 +16,7 @@ const Calculator = () => {
         </Title>
         <Description>
         </Description>
-        <Button onClick={() => navigate("/calculate", { replace: true })}>
+        <Button className={hoverLinkColor} onClick={() => navigate("/calculate", { replace: true })}>
           РАСЧИТАТЬ СТОИМОСТЬ
         </Button>
       </Content>
@@ -24,6 +24,8 @@ const Calculator = () => {
     </Wrapper>
   )
 }
+const hoverLinkColor = `hover:shadow-md `
+
 
 const Wrapper = tw.div`flex justify-center mt-[110px] w-full`
 const Content = tw.article`flex-col`

@@ -90,7 +90,7 @@ const ScreenImg5 = tw.img` `
 const ScreenImg6 = tw.img` ml-auto`
 
 const ScreenImg7 = tw.img`w-[564px] h-[500px]`
-const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border`
+const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border hover:shadow-md active:bg-red-50`
 const ScreenRow4Li = tw.li` mt-2 list-disc`
 
 

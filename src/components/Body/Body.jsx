@@ -4,7 +4,7 @@ import Catalogue from '../Catalogue/Catalogue'
 import InfoBlock from '../Infoblock/InfoBlock'
 import Intro from '../Intro/Intro'
 import PreFooter from '../Prefooter/PreFooter'
-import Calculator from './Calculator'
+import Calculator from '../Calculator/Calculator'
 
 const Body = () => {
     return (

@@ -78,7 +78,7 @@ const Block_4 = tw.div`mt-40`
 const Block_5 = tw.div`col-span-2 mt-36`
 const ScreenImg5 = tw.img`h-[720px] `
 
-const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border`
+const ScreenBtnCalc = tw.button` mt-[30px] w-[400px] h-[60px] text-sm border hover:shadow-md active:bg-red-50`
 const ScreenRow4Li = tw.li` mt-2 list-disc`
 
 
