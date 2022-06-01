@@ -4,7 +4,7 @@ import fcb from '../../assets/fcb_1.svg'
 import tw from 'twin.macro'
 import { Link } from 'react-router-dom'
 
-const PreFooter = (props) => {
+const PreFooter = () => {
     return (
         <PrefooterWrapper>
             <div>
@@ -12,8 +12,8 @@ const PreFooter = (props) => {
                     КАК ЕЩЕ МОЖНО РАЗГРАНИЧИТ МОЕ ПРОСТРАНСТВО?
                 </PrefooterText>
                 <PrefooterIcons>
-                    <Link to='#'><PrefooterImg src={inst} alt="img" /></Link>
-                    <Link to='#'><PrefooterImg src={fcb} alt="img" /></Link>
+                    <Link to='#'><PrefooterImg className='hover:pb-[2px]' src={inst} alt="img" /></Link>
+                    <Link to='#'><PrefooterImg className='hover:pb-[2px]' src={fcb} alt="img" /></Link>
                 </PrefooterIcons>
             </div>
         </PrefooterWrapper>

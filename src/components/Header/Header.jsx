@@ -24,34 +24,39 @@ const Header = () => {
 
           </NavLink>
           <Menu>
-            <div>
-              <Link activeClass='active' to='catalogue' spy={true} smooth={true} duration={500}>
+            <div className={hoverLinkColor} >
+              <Link className='cursor-pointer' to='catalogue' spy={true} smooth={true} duration={500}>
                 КАТАЛОГ
               </Link>
             </div>
-            <div>
-              <NavLink to='/gallery'>
+            <div className={hoverLinkColor}>
+              <NavLink className={navlinkDecoration()} to='/gallery'>
                 НАШИ РАБОТЫ
               </NavLink>
             </div>
-            <div>
-              <Link Link activeClass='active' to='contacts' spy={true} smooth={true} duration={500}>
+            <div className={hoverLinkColor}>
+              <NavLink className={navlinkDecoration()} to='/contacts'>
                 КОНТАКТЫ
-              </Link>
+              </NavLink>
             </div>
-            <div >РАСЧИТАТЬ СТОИМОСТЬ</div>
-            <Link href='#' className='flex flex-grow'>
-              <Share>
+            <div className={hoverLinkColor}>
+              РАСЧИТАТЬ СТОИМОСТЬ
+            </div>
+            <Link to='#' className='flex flex-grow'>
+              <Share className='cursor-pointer'>
                 <ShareIcon src={linc} />
-                ПОДЕЛИТЬСЯ
+                <div className={hoverLinkColor}>
+                  ПОДЕЛИТЬСЯ
+                </div>
+
               </Share>
             </Link>
             <ShareLinks>
-              <Link href='#'>
-                <LinkImg src={inst_1} alt='img' />
+              <Link to='#'>
+                <LinkImg className='hover:pb-[1px] cursor-pointer' src={inst_1} alt='img' />
               </Link>
-              <Link href='#'>
-                <LinkImg src={fcb_1} alt='img' />
+              <Link to='#'>
+                <LinkImg className='hover:pb-[1px] cursor-pointer' src={fcb_1} alt='img' />
               </Link >
             </ShareLinks>
           </Menu>
@@ -61,6 +66,13 @@ const Header = () => {
   )
 }
 
+function navlinkDecoration() {
+  return ({ isActive }) =>
+    isActive ? 'underline' : undefined
+
+}
+
+const hoverLinkColor = `hover:bg-gray-100 `
 const Wrapper = tw.div`flex flex-col justify-center`
 const BodyContainer = tw.div`flex justify-center w-screen border-b border-black`
 const Body = tw.div`flex justify-between items-center w-[1200px] h-14`

@@ -85,12 +85,12 @@ export default class Catalogue extends Component {
 
               <SliderNawDown>
 
-                <button onClick={this.previous}>
+                <button className={hoverLinkColor} onClick={this.previous}>
                   <img src={arrows_left} alt='img' />
 
                 </button>
 
-                <button onClick={this.next}>
+                <button className={hoverLinkColor} onClick={this.next}>
                   <img src={arrows_right} alt='img' />
 
                 </button>
@@ -105,12 +105,15 @@ export default class Catalogue extends Component {
   }
 }
 
+const hoverLinkColor = `hover:shadow-md `
+
+
 const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[40px]`
 const CatalogueUpperBlock = tw.div`flex flex-col`
 const CatalogueTitle = tw.div`flex text-6xl font-medium`
 const CatalogueBody = tw.div`flex flex-col  mt-[70px]  text-base `
 const CatalogueBodyRow = tw.div`flex flex-row flex-wrap gap-4 pr-2 mb-[26px]`
-const CatalogueBtn = tw.button`w-[400px] h-[60px] border`
+const CatalogueBtn = tw.button`w-[400px] h-[60px] border hover:shadow-md active:bg-red-50`
 const CatalogueSliderBtn = tw.div`w-[300px] h-[60px] cursor-pointer`
 const CatalogueNav = tw.nav`flex flex-col`
 const SliderBody = tw.div`flex flex-col w-full`

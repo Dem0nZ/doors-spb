@@ -1,16 +1,19 @@
 import React from 'react'
 import logo from '../../assets/logo_white.svg'
+import {  useMatch } from 'react-router-dom';
+
 import tw from 'twin.macro';
 
 const Footer = (props) => {
+    const match = useMatch('/contacts')
+
     return (
         <FooterWrapper id='contacts'>
-
-            <FooterBody>
+            {!match ? <FooterBody>
 
                 <FooterTitle>
 
-                    <FooterLogo>    
+                    <FooterLogo>
                         <FooterLogoImg src={logo} alt="img" />
                         <FooterLogoSeparator></FooterLogoSeparator>
                         <FooterLogoName>
@@ -68,7 +71,9 @@ const Footer = (props) => {
                     </FooterColumnText>
 
                 </FooterBodyColLast>
-            </FooterBody>
+            </FooterBody> 
+            : null} 
+
 
 
             <FooterBottomWrapper>
@@ -79,7 +84,7 @@ const Footer = (props) => {
 
 
                     <FooterCopirateBlock>
-                            © your doors. all rights reserved          
+                        © your doors. all rights reserved
                     </FooterCopirateBlock>
 
 
