@@ -4,10 +4,22 @@ import linc from '../../assets/linc.svg'
 import fcb_1 from '../../assets/fcb_1.svg'
 import inst_1 from '../../assets/inst_1.svg'
 import tw from 'twin.macro';
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate, useMatch } from 'react-router-dom'
 import { Link } from 'react-scroll'
+let Scroll = require('react-scroll')
+let scroller = Scroll.scroller
+
+
 
 const Header = () => {
+  const match = useMatch('/')
+
+  const navigate = useNavigate()
+
+  function goTo() {
+    navigate('/', { replace: true })
+    setTimeout(() => scroller.scrollTo('catalogue'), 100)
+  }
 
   return (
     <Wrapper>
@@ -25,9 +37,12 @@ const Header = () => {
           </NavLink>
           <Menu>
             <div className={hoverLinkColor} >
-              <Link className='cursor-pointer' to='catalogue' spy={true} smooth={true} duration={500}>
+              {match ? <Link className='cursor-pointer' to='catalogue' spy={true} smooth={true} duration={500}>
                 КАТАЛОГ
-              </Link>
+              </Link> :
+                <button onClick={() => goTo()}>КАТАЛОГ</button>
+              }
+
             </div>
             <div className={hoverLinkColor}>
               <NavLink className={navlinkDecoration()} to='/gallery'>
@@ -40,15 +55,17 @@ const Header = () => {
               </NavLink>
             </div>
             <div className={hoverLinkColor}>
+            <NavLink className={navlinkDecoration()} to='/calculate'>
               РАСЧИТАТЬ СТОИМОСТЬ
+            </NavLink>
             </div>
+            
             <Link to='#' className='flex flex-grow'>
               <Share className='cursor-pointer'>
                 <ShareIcon src={linc} />
                 <div className={hoverLinkColor}>
                   ПОДЕЛИТЬСЯ
                 </div>
-
               </Share>
             </Link>
             <ShareLinks>
