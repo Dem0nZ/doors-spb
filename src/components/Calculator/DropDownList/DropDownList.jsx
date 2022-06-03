@@ -1,5 +1,5 @@
 import React from 'react';
-import 'antd/dist/antd.css';
+// import 'antd/dist/antd.css';
 import { Dropdown, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import tw from 'twin.macro';

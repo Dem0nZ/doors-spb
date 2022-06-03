@@ -3,7 +3,6 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import arrows_left from '../../assets/slider/arrow_left.png'
-import arrows_right from '../../assets/slider/arrow_right.png'
 import Screen_1 from './screnns/Screen_1'
 import Screen_2 from './screnns/Screen_2'
 import Screen_3 from './screnns/Screen_3'
@@ -85,13 +84,13 @@ export default class Catalogue extends Component {
 
               <SliderNawDown>
 
-                <button className={hoverLinkColor} onClick={this.previous}>
+                <button className='hover:shadow-md' onClick={this.previous}>
                   <img src={arrows_left} alt='img' />
 
                 </button>
 
-                <button className={hoverLinkColor} onClick={this.next}>
-                  <img src={arrows_right} alt='img' />
+                <button className='hover:shadow-md rotate-180' onClick={this.next}>
+                  <img src={arrows_left} alt='img' />
 
                 </button>
               </SliderNawDown>

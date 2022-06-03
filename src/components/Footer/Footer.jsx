@@ -71,8 +71,8 @@ const Footer = (props) => {
                     </FooterColumnText>
 
                 </FooterBodyColLast>
-            </FooterBody> 
-            : null} 
+            </FooterBody>
+            : null}
 
 
 
