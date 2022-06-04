@@ -1,30 +1,25 @@
 import { Input } from 'antd';
 import React from 'react'
-import { useEffect } from 'react/cjs/react.development';
 import tw from 'twin.macro';
+import Map from './Map';
+import facade_view from '../../assets/facade_view.jpg';
 
 const Contacts = () => {
 
-    useEffect(()=>{const script = document.createElement("script")
 
-    script.src = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A053bd947d462cc1a45aeba4070defff75501905071c0eaf68436ac9976ec698c&amp;width=1000&amp;height=400&amp;id=mymap&amp;lang=ru_RU&amp;apikey=<API-ключ>"
-    script.async = true
-
-    document.body.appendChild(script)
-})
 
 
     return (
         <Wrapper>
             <Container>
-                <Title>
-                    <p>
+                <div>
+                    <p className='text-3xl font-normal'>
                         КОНТАКТЫ
                     </p>
-                    <p>
-                        YOUR DOORS
+                    <p className=' text-5xl font-medium'>
+                        МЕБЕЛЬ 178
                     </p>
-                </Title>
+                </div>
 
                 <ContactsInfo>
                     <Column>
@@ -35,9 +30,13 @@ const Contacts = () => {
                             </div>
                         </ColumnTitle>
                         <ColumnText>
-                            Санкт-Петербург<br />
-                            какой-то адрес<br />
-                            какаято улица и дом
+                            <p>
+                                Санкт-Петербург
+                            </p>
+                            <p>
+                                Коттеджный посёлок
+                            </p>
+                            Северные террасы, 22
                         </ColumnText>
                     </Column>
                     <Column>
@@ -48,7 +47,7 @@ const Contacts = () => {
                             </div>
                         </ColumnTitle>
                         <ColumnText>
-                            yourdoors@gmail.com
+                            <a href="mailto:info@info@mebel-178.ru">info@info@mebel-178.ru</a>
                         </ColumnText>
                     </Column>
                     <Column>
@@ -59,16 +58,15 @@ const Contacts = () => {
                             </div>
                         </ColumnTitle>
                         <ColumnText>
-                            <p>RU +7 977 777 7777</p>
-                            <p>RU +7 966 666 6666</p>
+                            <a href="tel:RU79119978257">RU +7 911 997 82 57</a>
                         </ColumnText>
                     </Column>
 
                 </ContactsInfo>
-
-                <Maps>
-                    <div id='mymap'></div>
-                </Maps>
+                <Location>
+                    <img className='' src={facade_view} alt="img" />
+                    <Map />
+                </Location>
 
                 <Feedback>
                     <div>
@@ -89,11 +87,11 @@ const Contacts = () => {
                         </Questions>
                     </div>
                     <InputWrapper>
-                        <div className='border-b-2'><Input placeholder='Имя' bordered={false} /></div>
-                        <div className='border-b-2'><Input placeholder='Фамилия' bordered={false} /></div>
-                        <div className='col-span-2 border-b-2'><Input placeholder='Ваш Email*' bordered={false} /></div>
-                        <div className='col-span-2 border-b-2'><Input placeholder='Ваш телефон*' bordered={false} /></div>
-                        <div className='col-span-2 border-b-2'><Input placeholder='Ваше сообщение' bordered={false} /></div>
+                        <div className='border-b-2'><Input className='outline-none' placeholder='Имя' bordered={false} /></div>
+                        <div className='border-b-2'><Input className='outline-none' placeholder='Фамилия' bordered={false} /></div>
+                        <div className='col-span-2 border-b-2'><Input className='outline-none' placeholder='Ваш Email*' bordered={false} /></div>
+                        <div className='col-span-2 border-b-2'><Input className='outline-none' placeholder='Ваш телефон*' bordered={false} /></div>
+                        <div className='col-span-2 border-b-2'><Input className='outline-none' placeholder='Ваше сообщение' bordered={false} /></div>
                         <div className='col-span-2 mt-10'> <ButtonSend>ОТПРАВИТЬ</ButtonSend></div>
                     </InputWrapper>
 
@@ -107,7 +105,6 @@ const Contacts = () => {
 }
 const Wrapper = tw.div` flex w-screen justify-center`
 const Container = tw.div`flex flex-col w-[1000px] mt-40`
-const Title = tw.div` text-5xl font-medium`
 
 const ContactsInfo = tw.div`grid grid-cols-[1fr 20% 20%] mt-16`
 const Column = tw.div`flex flex-col mt-[30px] pr-5`
@@ -115,7 +112,7 @@ const ColumnTitle = tw.div`flex`
 const ColumnText = tw.div`flex flex-col mt-[40px] leading-6`
 const ColumnLine = tw.div`w-[32px] h-[1px] mt-[10px] mr-[14px] bg-black`
 
-const Maps = tw.div` max-w-full h-96 bg-green-50 mt-16`
+const Location = tw.div`flex justify-between gap-16 mt-10 `
 
 const Feedback = tw.div`flex justify-between mt-32`
 const FeedbackTitle = tw.div`text-4xl font-medium `
