@@ -16,7 +16,7 @@ const Calculator = () => {
         </Title>
         <Description>
         </Description>
-        <Button className={hoverLinkColor} onClick={() => navigate("/calculate", { replace: true })}>
+        <Button className={hoverLinkColor} onClick={() => navigate("/calculate")}>
           РАСЧИТАТЬ СТОИМОСТЬ
         </Button>
       </Content>

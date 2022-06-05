@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.8.1",
+    "@headlessui/react": "^1.6.4",
+    "2gis-maps": "^3.7.1",
     "antd": "^4.20.7",
     "react": "17.0.2",
     "react-accessible-accordion": "4.0.0",

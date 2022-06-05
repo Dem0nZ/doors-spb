@@ -75,16 +75,11 @@ const Header = () => {
   );
 };
 
-const NavLinkDiv = styled.div(({ isActive }) => [
-  tw`py-2 px-1 hover:bg-gray-100`,
-  isActive && tw`underline`,
-]);
-const StyledNav = styled(NavLink)`
-  ${tw`py-2 px-1 hover:bg-gray-100`}
-  &.active {
-    ${tw`underline`}
-  }
-`
+const NavLinkDiv = styled.div(
+  ({ isActive }) => [tw`py-2 px-1 hover:bg-gray-100`,isActive && tw`underline`,]
+  );
+
+const StyledNav = styled(NavLink)`${tw`py-2 px-1 hover:bg-gray-100`}&.active{${tw`underline`}}`
 
 const Wrapper = tw.div`flex flex-col justify-center`;
 const BodyContainer = tw.div`flex justify-center w-screen border-b border-black`;
@@ -94,8 +89,8 @@ const LogoImage = tw.img`h-6 w-6 mt-1`;
 const LogoName = tw.div`border-l-2 border-current pl-2 text-right text-xs`;
 const Menu = tw.div`relative pl-4 flex justify-start gap-4 w-full text-xs  md:text-base`;
 const Share = tw.div`flex flex-grow justify-end`;
-const ShareIcon = tw.img`h-4 w-4 mt-[3px ] mr-1`;
-const ShareLinks = tw.div`absolute top-11 right-20 bg-white p-4 flex gap-2 shadow-md`;
+const ShareIcon = tw.img`h-4 w-4 mt-[11px ] mr-1`;
+const ShareLinks = tw.div`absolute top-14 right-20 bg-white p-4 flex gap-2 shadow-md`;
 const LinkImg = tw.img`w-[24px] h-[24px] mx-[11px]`;
 
 export default Header;

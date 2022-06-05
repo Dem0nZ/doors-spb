@@ -1,32 +1,24 @@
 import React from 'react';
 import DG from '2gis-maps';
 import { useEffect } from 'react';
-import { mainInfo } from '../models';
 
-
-const mapCenterLat = (mainInfo.mapOffice.lat + mainInfo.mapProm.lat) / 2;
-const mapCenterLon = (mainInfo.mapOffice.lon + mainInfo.mapProm.lon) / 2;
 
 const Map = () => {
     useEffect(()=>{
         const map = DG.map('map', {
-            'center': [ mapCenterLat, mapCenterLon ],
+            'center': [ 60.181844, 30.364242],
             'zoom': 15,
             'zoomControl': false,
             'fullscreenControl': false,
         });
-        DG.marker([ mainInfo.mapOffice.lat, mainInfo.mapOffice.lon ])
+        DG.marker([ 60.181844, 30.364242])
             .addTo(map)
             .bindLabel('Офис', {
                 static: true
             });
-        DG.marker([ mainInfo.mapProm.lat, mainInfo.mapProm.lon ])
-            .addTo(map)
-            .bindLabel('Производство', {
-                static: true
-            });
+        
     }, [])
-    return (<div id='map' className='w-1000 h-400 bg-red-400 sm:w-full sm:h-72'></div>);
+    return (<div id='map' className='w-1000 h-450 bg-red-300 sm:w-full sm:h-96'></div>);
 };
 
 export default Map;

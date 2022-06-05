@@ -39,8 +39,7 @@ const Footer = (props) => {
                         </div>
                     </FooterColumnTitle>
                     <FooterColumnText>
-                        <a href="tel:RU74993227009">RU +7 499 3227009</a>
-                        <a href="tel:RU74993227009">RU +7 499 3227009</a>
+                        <a href="tel:RU79119978257">RU +7 911 997 82 57</a>
                     </FooterColumnText>
                 </FooterBodyCol>
 
@@ -52,7 +51,7 @@ const Footer = (props) => {
                         </div>
                     </FooterColumnTitle>
                     <FooterColumnText>
-                        <a href="mailto:test@gmail.com">test@gmail.com</a>
+                        <a href="mailto:info@info@mebel-178.ru">info@info@mebel-178.ru</a>
                     </FooterColumnText>
                 </FooterBodyCol>
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import tw from 'twin.macro'
+import { useNavigate } from "react-router-dom";
+
 import img1 from '../../../assets/slider/closet/build/closed_build_01.jpg'
 import img2 from '../../../assets/slider/closet/build/closed_build_02.jpg'
 import img3 from '../../../assets/slider/closet/build/closed_build_03.jpg'
@@ -9,6 +11,8 @@ import img6 from '../../../assets/slider/closet/build/closed_build_06.jpg'
 import img7 from '../../../assets/slider/closet/build/closed_build_07.jpg'
 
 const Screen_1 = (props) => {
+    const navigate = useNavigate();
+
     return (
         <ScreenWrapper>
 
@@ -34,7 +38,7 @@ const Screen_1 = (props) => {
                     </ul>
 
                     <div>
-                        <ScreenBtnCalc>
+                        <ScreenBtnCalc onClick={() => navigate("/calculate")} >
                             РАСЧИТАТЬ СТОИМОСТЬ
                         </ScreenBtnCalc>
                     </div>
