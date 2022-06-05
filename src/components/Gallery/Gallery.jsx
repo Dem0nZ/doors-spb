@@ -14,6 +14,6 @@ const Gallery = () => {
 
 }
 
-const Wrapper = tw.div`flex w-[1400px] shadow-2xl my-20 p-10`
+const Wrapper = tw.div`flex max-w-[1200px] shadow-2xl my-20 p-10`
 
 export default Gallery;

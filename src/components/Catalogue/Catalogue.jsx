@@ -1,28 +1,29 @@
-import React, { Component } from 'react'
-import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import arrows_left from '../../assets/slider/arrow_left.png'
-import Screen_1 from './screnns/Screen_1'
-import Screen_2 from './screnns/Screen_2'
-import Screen_3 from './screnns/Screen_3'
-import Screen_4 from './screnns/Screen_4'
-import Screen_5 from './screnns/Screen_5'
-import Screen_6 from './screnns/Screen_6'
+import React, { Component } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import arrows_left from '../../assets/slider/arrow_left.png';
+import Screen_1 from './screnns/Screen_1';
+import Screen_2 from './screnns/Screen_2';
+import Screen_3 from './screnns/Screen_3';
+import Screen_4 from './screnns/Screen_4';
+import Screen_5 from './screnns/Screen_5';
+import Screen_6 from './screnns/Screen_6';
 
-import tw from 'twin.macro'
+import tw from 'twin.macro';
 
 
 export default class Catalogue extends Component {
   constructor(props) {
-    super(props)
-    this.next = this.next.bind(this)
-    this.previous = this.previous.bind(this)
+    super(props);
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
   }
 
   next() {
     this.slider.slickNext();
   }
+
   previous() {
     this.slider.slickPrev();
   }
@@ -30,17 +31,12 @@ export default class Catalogue extends Component {
 
   render() {
     const settings = {
-      dots: false,
-      infinite: true,
-      arrows: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    }
+      dots: false, infinite: true, arrows: false, speed: 500, slidesToShow: 1, slidesToScroll: 1,
+    };
 
     return (
 
-      <CatalogueWrapper id='catalogue' >
+      <CatalogueWrapper id='catalogue'>
         <CatalogueUpperBlock>
           <CatalogueTitle>
             КАТАЛОГ
@@ -49,14 +45,19 @@ export default class Catalogue extends Component {
             <CatalogueNav>
               <CatalogueBodyRow>
                 <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(6)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(5)}>ДВЕРИ-КУПЕ ДЛЯ ГАРДЕРОБНОЙ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(4)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</CatalogueSliderBtn>
-                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ РАЗМЕРОВ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(5)}>ДВЕРИ-КУПЕ ДЛЯ
+                  ГАРДЕРОБНОЙ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(2)}>ДВЕРИ-КУПЕ
+                  МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ
+                  МЕЖКОМНАТНЫЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(4)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО
+                  СТОЯЩИЕ</CatalogueSliderBtn>
+                <CatalogueSliderBtn onClick={() => this.slider.slickGoTo(3)}>ШКАФЫ-КУПЕ НЕСТАНДАРТНЫХ
+                  РАЗМЕРОВ</CatalogueSliderBtn>
 
               </CatalogueBodyRow>
-            </CatalogueNav  >
+            </CatalogueNav>
           </CatalogueBody>
         </CatalogueUpperBlock>
 
@@ -85,23 +86,17 @@ export default class Catalogue extends Component {
                   <img src={arrows_left} alt='img' />
 
                 </button>
-
                 <button className='hover:shadow-md rotate-180' onClick={this.next}>
                   <img src={arrows_left} alt='img' />
-
                 </button>
               </SliderNawDown>
-
             </SliderButtons>
           </SliderBody>
         </SliderWrapper>
 
-      </CatalogueWrapper>
-    )
+      </CatalogueWrapper>);
   }
 }
-
-
 
 const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[40px]`
 const CatalogueUpperBlock = tw.div`flex flex-col`
