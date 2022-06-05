@@ -12,7 +12,7 @@ const Intro = (props) => {
                             КТО МЫ ТАКИЕ?
                         </IntroTitleUp>
                         <IntroTitleDown>
-                            YOUR DOORS
+                            МЕБЕЛЬ 178
                         </IntroTitleDown>
                     </IntroTitleWrapper>
                     <IntroTitleNote>

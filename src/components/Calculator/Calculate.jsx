@@ -9,9 +9,7 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import PreviewDoors from './local-components/PreviewDoors';
-import DropDownList from './DropDownList/DropDownList';
-import mirrorMenu from './DropDownList/Lists/Mirror';
-
+import MyRadioGroup from './RadioGroup/RadioGroup'
 const Calculate = () => {
   return (
     <Wrapper>
@@ -69,14 +67,15 @@ const Calculate = () => {
             <AccordionItemPanel>
               <TitleTab>
                 Выберете наполнение
-                <DropDownList name='ЗЕРКАЛО'menu={mirrorMenu}/>
-                <DropDownList name='СТЕКЛО С ПЛЕНКОЙ'/>
+
+                <MyRadioGroup/>
+                {/* <DropDownList name='СТЕКЛО С ПЛЕНКОЙ'/>
                 <DropDownList name='ПАНЕЛИ ЛДСП/МДФ'/>
                 <DropDownList name='ПАНЕЛИ МДФ ГЛЯНЕЦ'/>
                 <DropDownList name='ПЕСКОСТРУЙНЫЙ РИСУНОК'/>
                 <DropDownList name='ФОТОПЕЧАТЬ'/>
                 <DropDownList name='ЛАКОБЕЛЬ'/>
-                <DropDownList name='СТЕКЛО ПРОЗРАЧНОЕ'/>
+                <DropDownList name='СТЕКЛО ПРОЗРАЧНОЕ'/> */}
               </TitleTab>
               <Filling>
 
@@ -125,7 +124,7 @@ const Calculate = () => {
 const Wrapper = tw.div`flex justify-center mt-[110px] max-w-[1200px]`
 const TwoColumns = tw.div`grid grid-cols-2 px-10`
 
-const TitleTab = tw.div`text-4xl font-thin`
+const TitleTab = tw.div`flex flex-col text-4xl font-thin`
 const WidowInputSize = tw.div`grid grid-cols-8 mt-10`
 const ValueName = tw.div`col-start-3 col-end-6 border text-xl font-light py-3 pl-4`
 const InputValue = tw.div`col-start-6 col-end-8 border  pl-4`

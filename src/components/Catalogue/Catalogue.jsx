@@ -59,9 +59,6 @@ export default class Catalogue extends Component {
               </CatalogueBodyRow>
             </CatalogueNav>
           </CatalogueBody>
-          <CatalogueBtn>
-            РАСЧИТАТЬ СТОИМОСТЬ
-          </CatalogueBtn>
         </CatalogueUpperBlock>
 
         <SliderWrapper>
@@ -101,18 +98,17 @@ export default class Catalogue extends Component {
   }
 }
 
-const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[40px]`;
-const CatalogueUpperBlock = tw.div`flex flex-col`;
-const CatalogueTitle = tw.div`flex text-6xl font-medium`;
-const CatalogueBody = tw.div`flex flex-col  mt-[70px]  text-base `;
-const CatalogueBodyRow = tw.div`flex flex-row flex-wrap gap-4 pr-2 mb-[26px]`;
-const CatalogueBtn = tw.button`w-[400px] h-[60px] border hover:shadow-md active:bg-red-50`;
-const CatalogueSliderBtn = tw.div`w-[300px] h-[60px] cursor-pointer`;
-const CatalogueNav = tw.nav`flex flex-col`;
-const SliderBody = tw.div`flex flex-col w-full`;
-const SliderSeparator = tw.div`flex w-full h-px bg-black`;
-const SliderButtons = tw.div`flex justify-center w-full mt-16`;
-const SliderNawDown = tw.nav`flex justify-between w-44`;
+const CatalogueWrapper = tw.div`flex flex-col justify-center w-full mt-[40px]`
+const CatalogueUpperBlock = tw.div`flex flex-col`
+const CatalogueTitle = tw.div`flex text-6xl font-medium`
+const CatalogueBody = tw.div`flex flex-col  mt-[70px]  text-base `
+const CatalogueBodyRow = tw.div`flex flex-row flex-wrap gap-4 pr-2 mb-[26px]`
+  const CatalogueSliderBtn = tw.div`w-[300px] h-[60px] cursor-pointer`
+const CatalogueNav = tw.nav`flex flex-col`
+const SliderBody = tw.div`flex flex-col w-full`
+const SliderSeparator = tw.div`flex w-full h-px bg-black`
+const SliderButtons = tw.div`flex justify-center w-full mt-16`
+const SliderNawDown = tw.nav`flex justify-between w-44`
 
 
-const SliderWrapper = tw.div`flex w-full mt-36`;
+const SliderWrapper = tw.div`flex w-full mt-10`
