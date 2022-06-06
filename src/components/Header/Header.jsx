@@ -9,9 +9,7 @@ const Header = () => {
   return (
       <BodyContainer>
         <Body>
-          <NavLink className='hover:text-gray-300 pr-8' to='/' end>
-            <Logo />
-          </NavLink>
+          
           <Menu>
             <Link className='py-2 px-1 cursor-pointer hover:bg-gray-300 border-t-2 border-white' to='catalogue' spy={true} smooth={true} duration={500}>
               КАТАЛОГ
