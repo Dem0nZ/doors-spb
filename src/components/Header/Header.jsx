@@ -9,7 +9,6 @@ const Header = () => {
   return (
       <BodyContainer>
         <Body>
-          <div>test</div>
           <NavLink className='hover:text-gray-300 pr-6' to='/' end>
             <Logo />
           </NavLink>
