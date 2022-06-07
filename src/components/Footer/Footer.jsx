@@ -11,50 +11,60 @@ const Footer = (props) => {
     <FooterWrapper id='contacts'>
       {!match ? <FooterBody>
 
-          <FooterTitle>
-            <Logo className='text-white'/>
-          </FooterTitle>
+        <FooterTitle>
+          <Logo className='text-white' />
+        </FooterTitle>
 
-          <FooterBodyCol>
-            <FooterColumnTitle>
-              <FooterColumnLine />
-              <div>
-                ЗВОНИТЕ
-              </div>
-            </FooterColumnTitle>
-            <FooterColumnText>
-              <a href='tel:RU79119978257'>RU +7 911 997 82 57</a>
-            </FooterColumnText>
-          </FooterBodyCol>
+        <FooterBodyCol>
+          <FooterColumnTitle>
+            <FooterColumnLine />
+            <div>
+              ЗВОНИТЕ
+            </div>
+          </FooterColumnTitle>
+          <FooterColumnText>
+            <a href='tel:RU79119978257'>RU +7 911 997 82 57</a>
+          </FooterColumnText>
+        </FooterBodyCol>
 
-          <FooterBodyCol>
-            <FooterColumnTitle>
-              <FooterColumnLine />
-              <div>
-                ПИШИТЕ
-              </div>
-            </FooterColumnTitle>
-            <FooterColumnText>
-              <a href='mailto:info@info@mebel-178.ru'>info@info@mebel-178.ru</a>
-            </FooterColumnText>
-          </FooterBodyCol>
+        <FooterBodyCol>
+          <FooterColumnTitle>
+            <FooterColumnLine />
+            <div>
+              ПИШИТЕ
+            </div>
+          </FooterColumnTitle>
+          <FooterColumnText>
+            <a href='mailto:info@info@mebel-178.ru'>
+              <span>
+                info@info@mebel-178.ru
+              </span>
+            </a>
+          </FooterColumnText>
+        </FooterBodyCol>
 
-          <FooterBodyColLast>
+        <FooterBodyColLast>
 
-            <FooterColumnTitle>
-              <FooterColumnLine />
-              <div>
-                ПРИЕЗЖАЙТЕ
-              </div>
-            </FooterColumnTitle>
-            <FooterColumnText>
-              Санкт-Петербург<br />
-              какой-то адрес<br />
-              какаято улица и дом
-            </FooterColumnText>
+          <FooterColumnTitle>
+            <FooterColumnLine />
+            <div>
+              ПРИЕЗЖАЙТЕ
+            </div>
+          </FooterColumnTitle>
+          <FooterColumnText>
+            <p>
+              Санкт-Петербург
+            </p>
+            <p>
+              Коттеджный посёлок
+            </p>
+            <p>
+              Северные террасы, 22
+            </p>
+          </FooterColumnText>
 
-          </FooterBodyColLast>
-        </FooterBody>
+        </FooterBodyColLast>
+      </FooterBody>
         : null}
 
 
@@ -65,7 +75,9 @@ const Footer = (props) => {
 
 
           <FooterCopirateBlock>
-            © your doors. all rights reserved
+            <p>
+              © MEBEL-178
+            </p>
           </FooterCopirateBlock>
 
 
@@ -78,25 +90,19 @@ const Footer = (props) => {
   );
 };
 
-const FooterWrapper = tw.div`flex flex-col  items-center w-screen  h-[323px] mb-0 bg-black text-white text-sm`;
-const FooterBody = tw.div`flex flex-row w-full justify-center pt-[50px]`;
+const FooterWrapper = tw.div`flex flex-col  items-center w-screen   mb-0 bg-black text-white text-sm`;
+const FooterBody = tw.div`grid grid-cols-[45% 1fr 1fr 1fr] w-8/12 max-w-[1100px] justify-center pt-12`;
 
-const FooterTitle = tw.div`flex flex-col w-[600px]`;
-const FooterLogo = tw.div`flex h-[55.6px] font-bold`;
-const FooterLogoImg = tw.img` mt-[15px] w-[45px] h-[45px]`;
-const FooterLogoSeparator = tw.div` mt-[11px] w-[2px] h-[60px] bg-white ml-[15px]`;
-const FooterLogoName = tw.div` mt-[9px] pl-[15px] leading-6`;
-const FooterTitleText = tw.div`flex mt-[38px] max-w-[450px] pl-[50px]`;
-
-const FooterBodyCol = tw.div`flex flex-col mt-[30px] pr-5`;
-const FooterBodyColLast = tw.div`flex flex-col mt-[30px] max-w-[200px]`;
+const FooterTitle = tw.div`flex flex-col `;
+const FooterBodyCol = tw.div`flex flex-col mt-8 pr-5`;
+const FooterBodyColLast = tw.div`flex flex-col mt-8 `;
 const FooterColumnTitle = tw.div`flex`;
-const FooterColumnLine = tw.div`w-[32px] h-[1px] mt-[7px] mr-[14px] bg-white`;
-const FooterColumnText = tw.div`flex flex-col mt-[40px] leading-6`;
+const FooterColumnLine = tw.div`w-8 h-[1px] mt-2 mr-4 bg-white`;
+const FooterColumnText = tw.div`flex flex-col mt-10 leading-6`;
 
 const FooterBottomWrapper = tw.div`flex flex-row justify-center w-full`;
 
-const FooterBottom = tw.div`flex flex-col w-[1200px] h-[50px] mt-[48px] `;
-const FooterCopirateBlock = tw.div`flex justify-between ml-[53px] pt-3 pl-10 border-t-2 `;
+const FooterBottom = tw.div`flex flex-col w-[1200px] h-12 mt-12 `;
+const FooterCopirateBlock = tw.div`flex justify-between    pt-3 pl-10 border-t-2 `;
 
 export default Footer;

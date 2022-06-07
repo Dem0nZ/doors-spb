@@ -103,14 +103,14 @@ const Contacts = () => {
     )
 
 }
-const Wrapper = tw.div` flex w-screen justify-center`
+const Wrapper = tw.div` flex w-screen h-screen min-h-[1500px] justify-center`
 const Container = tw.div`flex flex-col w-[1000px] mt-40`
 
 const ContactsInfo = tw.div`grid grid-cols-[1fr 20% 20%] mt-16`
-const Column = tw.div`flex flex-col mt-[30px] pr-5`
+const Column = tw.div`flex flex-col mt-8 pr-5`
 const ColumnTitle = tw.div`flex`
 const ColumnText = tw.div`flex flex-col mt-[40px] leading-6`
-const ColumnLine = tw.div`w-[32px] h-[1px] mt-[10px] mr-[14px] bg-black`
+const ColumnLine = tw.div`w-8 h-[1px] mt-[10px] mr-[14px] bg-black`
 
 const Location = tw.div`flex justify-between gap-16 mt-10 `
 
