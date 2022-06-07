@@ -1,8 +1,8 @@
 import PhotoAlbum from "react-photo-album";
 import tw from "twin.macro";
-import {data} from '../../moks/data'
+import {images} from '../../moks/images'
 
-const photos = data.map((photo) => ({
+const photos = images.map((photo) => ({
   src: photo.original,
   width: photo.width,
   height: photo.height,
