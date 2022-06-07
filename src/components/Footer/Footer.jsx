@@ -1,120 +1,110 @@
-import React from 'react'
-import logo from '../../assets/logo_white.svg'
-import {  useMatch } from 'react-router-dom';
+import React from 'react';
+import { useMatch } from 'react-router-dom';
 
 import tw from 'twin.macro';
+import { Logo } from '../../assets';
 
 const Footer = (props) => {
-    const match = useMatch('/contacts')
+  const match = useMatch('/contacts');
 
-    return (
-        <FooterWrapper id='contacts'>
-            {!match ? <FooterBody>
+  return (
+    <FooterWrapper id='contacts'>
+      {!match ? <FooterBody>
 
-                <FooterTitle>
+          <FooterTitle>
 
-                    <FooterLogo>
-                        <FooterLogoImg src={logo} alt="img" />
-                        <FooterLogoSeparator></FooterLogoSeparator>
-                        <FooterLogoName>
-                            your<br />
-                            door
-                        </FooterLogoName>
+            <Logo className='text-white'/>
 
-                    </FooterLogo>
+            <FooterTitleText>
+              Наша команда берет на себя все: от разработки идеи
+              и до реализации. Функциональность и традиции — это
+              то, что мы внедряем в каждый наш проект.
+            </FooterTitleText>
 
-                    <FooterTitleText>
-                        Наша команда берет на себя все: от разработки идеи
-                        и до реализации. Функциональность и традиции — это
-                        то, что мы внедряем в каждый наш проект.
-                    </FooterTitleText>
+          </FooterTitle>
 
-                </FooterTitle>
+          <FooterBodyCol>
+            <FooterColumnTitle>
+              <FooterColumnLine />
+              <div>
+                ЗВОНИТЕ
+              </div>
+            </FooterColumnTitle>
+            <FooterColumnText>
+              <a href='tel:RU79119978257'>RU +7 911 997 82 57</a>
+            </FooterColumnText>
+          </FooterBodyCol>
 
-                <FooterBodyCol>
-                    <FooterColumnTitle>
-                        <FooterColumnLine />
-                        <div>
-                            ЗВОНИТЕ
-                        </div>
-                    </FooterColumnTitle>
-                    <FooterColumnText>
-                        <a href="tel:RU79119978257">RU +7 911 997 82 57</a>
-                    </FooterColumnText>
-                </FooterBodyCol>
+          <FooterBodyCol>
+            <FooterColumnTitle>
+              <FooterColumnLine />
+              <div>
+                ПИШИТЕ
+              </div>
+            </FooterColumnTitle>
+            <FooterColumnText>
+              <a href='mailto:info@info@mebel-178.ru'>info@info@mebel-178.ru</a>
+            </FooterColumnText>
+          </FooterBodyCol>
 
-                <FooterBodyCol>
-                    <FooterColumnTitle>
-                        <FooterColumnLine />
-                        <div>
-                            ПИШИТЕ
-                        </div>
-                    </FooterColumnTitle>
-                    <FooterColumnText>
-                        <a href="mailto:info@info@mebel-178.ru">info@info@mebel-178.ru</a>
-                    </FooterColumnText>
-                </FooterBodyCol>
+          <FooterBodyColLast>
 
-                <FooterBodyColLast>
+            <FooterColumnTitle>
+              <FooterColumnLine />
+              <div>
+                ПРИЕЗЖАЙТЕ
+              </div>
+            </FooterColumnTitle>
+            <FooterColumnText>
+              Санкт-Петербург<br />
+              какой-то адрес<br />
+              какаято улица и дом
+            </FooterColumnText>
 
-                    <FooterColumnTitle>
-                        <FooterColumnLine />
-                        <div>
-                            ПРИЕЗЖАЙТЕ
-                        </div>
-                    </FooterColumnTitle>
-                    <FooterColumnText>
-                        Санкт-Петербург<br />
-                        какой-то адрес<br />
-                        какаято улица и дом
-                    </FooterColumnText>
-
-                </FooterBodyColLast>
-            </FooterBody>
-            : null}
+          </FooterBodyColLast>
+        </FooterBody>
+        : null}
 
 
-
-            <FooterBottomWrapper>
-
+      <FooterBottomWrapper>
 
 
-                <FooterBottom>
+        <FooterBottom>
 
 
-                    <FooterCopirateBlock>
-                        © your doors. all rights reserved
-                    </FooterCopirateBlock>
+          <FooterCopirateBlock>
+            © your doors. all rights reserved
+          </FooterCopirateBlock>
 
 
-                </FooterBottom>
+        </FooterBottom>
 
 
-            </FooterBottomWrapper>
+      </FooterBottomWrapper>
 
-        </FooterWrapper>
-    )
-}
+    </FooterWrapper>
+  );
+};
 
-const FooterWrapper = tw.div`flex flex-col  items-center w-screen  h-[323px] mt-[150px] mb-0 bg-black text-white text-sm`
-const FooterBody = tw.div`flex flex-row w-full justify-center pt-[50px]`
+const FooterWrapper = tw.div`flex flex-col  items-center w-screen  h-[323px] mt-[150px] mb-0 bg-black text-white text-sm`;
+const FooterBody = tw.div`flex flex-row w-full justify-center pt-[50px]`;
 
-const FooterTitle = tw.div`flex flex-col w-[600px]`
-const FooterLogo = tw.div`flex h-[55.6px] font-bold`
-const FooterLogoImg = tw.img` mt-[15px] w-[45px] h-[45px]`
-const FooterLogoSeparator = tw.div` mt-[11px] w-[2px] h-[60px] bg-white ml-[15px]`
-const FooterLogoName = tw.div` mt-[9px] pl-[15px] leading-6`
-const FooterTitleText = tw.div`flex mt-[38px] max-w-[450px] pl-[50px]`
+const FooterTitle = tw.div`flex flex-col w-[600px]`;
+const FooterLogo = tw.div`flex h-[55.6px] font-bold`;
+const FooterLogoImg = tw.img` mt-[15px] w-[45px] h-[45px]`;
+const FooterLogoSeparator = tw.div` mt-[11px] w-[2px] h-[60px] bg-white ml-[15px]`;
+const FooterLogoName = tw.div` mt-[9px] pl-[15px] leading-6`;
+const FooterTitleText = tw.div`flex mt-[38px] max-w-[450px] pl-[50px]`;
 
-const FooterBodyCol = tw.div`flex flex-col mt-[30px] pr-5`
-const FooterBodyColLast = tw.div`flex flex-col mt-[30px] max-w-[200px]`
-const FooterColumnTitle = tw.div`flex`
-const FooterColumnLine = tw.div`w-[32px] h-[1px] mt-[7px] mr-[14px] bg-white`
-const FooterColumnText = tw.div`flex flex-col mt-[40px] leading-6`
+const FooterBodyCol = tw.div`flex flex-col mt-[30px] pr-5`;
+const FooterBodyColLast = tw.div`flex flex-col mt-[30px] max-w-[200px]`;
+const FooterColumnTitle = tw.div`flex`;
+const FooterColumnLine = tw.div`w-[32px] h-[1px] mt-[7px] mr-[14px] bg-white`;
+const FooterColumnText = tw.div`flex flex-col mt-[40px] leading-6`;
 
-const FooterBottomWrapper = tw.div`flex flex-row justify-center w-full`
+const FooterBottomWrapper = tw.div`flex flex-row justify-center w-full`;
 
-const FooterBottom = tw.div`flex flex-col w-[1200px] h-[50px] mt-[48px] `
-const FooterCopirateBlock = tw.div`flex justify-between ml-[53px] pt-3 pl-10 border-t-2 `
+const FooterBottom = tw.div`flex flex-col w-[1200px] h-[50px] mt-[48px] `;
+const FooterCopirateBlock = tw.div`flex justify-between ml-[53px] pt-3 pl-10 border-t-2 `;
 
-export default Footer
+export default Footer;

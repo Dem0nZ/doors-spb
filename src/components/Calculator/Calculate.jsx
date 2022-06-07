@@ -9,7 +9,6 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import PreviewDoors from './local-components/PreviewDoors';
-import MyRadioGroup from './RadioGroup/RadioGroup'
 const Calculate = () => {
   return (
     <Wrapper>
@@ -54,7 +53,7 @@ const Calculate = () => {
                 <option>4</option>
               </SelectDoorsCount>
              </div>
-              
+
             </AccordionItemPanel>
           </AccordionItem>
 
@@ -68,14 +67,6 @@ const Calculate = () => {
               <TitleTab>
                 Выберете наполнение
 
-                <MyRadioGroup/>
-                {/* <DropDownList name='СТЕКЛО С ПЛЕНКОЙ'/>
-                <DropDownList name='ПАНЕЛИ ЛДСП/МДФ'/>
-                <DropDownList name='ПАНЕЛИ МДФ ГЛЯНЕЦ'/>
-                <DropDownList name='ПЕСКОСТРУЙНЫЙ РИСУНОК'/>
-                <DropDownList name='ФОТОПЕЧАТЬ'/>
-                <DropDownList name='ЛАКОБЕЛЬ'/>
-                <DropDownList name='СТЕКЛО ПРОЗРАЧНОЕ'/> */}
               </TitleTab>
               <Filling>
 

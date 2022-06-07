@@ -7,39 +7,39 @@ import { Logo } from '../../assets';
 const Header = () => {
 
   return (
-      <BodyContainer>
-        <Body>
-          <NavLink className='hover:text-gray-300 pr-6' to='/' end>
-            <Logo />
-          </NavLink>
-          <Menu>
-            <Link className='py-2 px-1 cursor-pointer hover:bg-gray-300 border-t-2 border-white' to='catalogue' spy={true} smooth={true} duration={500}>
-              КАТАЛОГ
-            </Link>
-            <StyledNav to='/gallery'>
-              НАШИ РАБОТЫ
-            </StyledNav>
-            <StyledNav to='/contacts'>
-              КОНТАКТЫ
-            </StyledNav>
-            <StyledNav to='/calculate'>
-              РАСЧИТАТЬ СТОИМОСТЬ
-            </StyledNav>
-          </Menu>
-        </Body>
-      </BodyContainer>
+    <Wrapper>
+      <Container>
+        <NavLink className='hover:text-gray-300 pr-6' to='/' end>
+          <Logo className='h-20' />
+        </NavLink>
+        <SiteMenu>
+          <Link className='pt-2 pb-4 px-2 cursor-pointer hover:bg-gray-300' to='catalogue' spy={true} smooth={true}
+                duration={500}>
+            КАТАЛОГ
+          </Link>
+          <StyledNav to='/gallery'>
+            НАШИ РАБОТЫ
+          </StyledNav>
+          <StyledNav to='/contacts'>
+            КОНТАКТЫ
+          </StyledNav>
+          <StyledNav to='/calculate'>
+            РАСЧИТАТЬ СТОИМОСТЬ
+          </StyledNav>
+        </SiteMenu>
+      </Container>
+    </Wrapper>
   );
 };
 
 const StyledNav = styled(NavLink)`
-  ${tw`py-2 px-1 hover:bg-gray-300 border-t-2 border-white`}
+  ${tw`pt-2 pb-4 px-2 hover:bg-gray-300`}
   &.active {
-    ${tw`text-gray-500 border-gray-500`}
-  }
-`;
+    ${tw`text-white bg-gray-500`}
+  }`;
 
-const BodyContainer = tw.div`flex justify-center pt-4 w-screen border-b border-black`;
-const Body = tw.div`flex justify-between items-center`;
-const Menu = tw.div`flex gap-4 w-full`;
+const Wrapper = tw.div`flex justify-center pt-4 w-screen border-b border-black`;
+const Container = tw.div`flex max-w-[1000px] justify-between items-end w-full`;
+const SiteMenu = tw.div`flex`;
 
 export default Header;
