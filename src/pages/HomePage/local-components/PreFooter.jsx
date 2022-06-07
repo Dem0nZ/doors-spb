@@ -1,6 +1,6 @@
 import React from 'react'
-import inst from '../../assets/inst_1.svg'
-import fcb from '../../assets/fcb_1.svg'
+import inst from '../../../assets/icons/inst_1.svg'
+import fcb from '../../../assets/icons/fb-icon.svg'
 import tw from 'twin.macro'
 import { Link } from 'react-router-dom'
 

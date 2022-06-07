@@ -13,7 +13,7 @@ import Screen_6 from './screnns/Screen_6';
 import tw from 'twin.macro';
 
 
-export default class Catalogue extends Component {
+export default class Catalog extends Component {
   constructor(props) {
     super(props);
     this.next = this.next.bind(this);

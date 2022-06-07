@@ -1,11 +1,11 @@
 import React from 'react';
-import arrowdown from '../../assets/infoBlock/arrowDown.svg';
-import bed from '../../assets/infoBlock/bed.svg';
-import home from '../../assets/infoBlock/home.svg';
-import pc from '../../assets/infoBlock/pc.svg';
-import fabric from '../../assets/infoBlock/fabric.svg';
-import hoot from '../../assets/infoBlock/hoot.svg';
-import say from '../../assets/infoBlock/say.svg';
+import arrowdown from '../../../assets/icons/arrowDown.svg';
+import bed from '../../../assets/icons/bed.svg';
+import home from '../../../assets/icons/home.svg';
+import pc from '../../../assets/icons/pc.svg';
+import fabric from '../../../assets/icons/fabric.svg';
+import hoot from '../../../assets/icons/hoot.svg';
+import say from '../../../assets/icons/say.svg';
 import tw from 'twin.macro';
 
 

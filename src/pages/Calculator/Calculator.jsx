@@ -9,7 +9,7 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import PreviewDoors from './local-components/PreviewDoors';
-const Calculate = () => {
+const Calculator = () => {
   return (
     <Wrapper>
       <TwoColumns>
@@ -123,4 +123,4 @@ const InputSize = tw.input`h-full w-full focus:outline-none `
 const SelectDoorsCount = tw.select`w-1/3 py-4 mt-10`
 const Filling = tw.div`grid grid-cols-2`
 
-export default Calculate
+export default Calculator
