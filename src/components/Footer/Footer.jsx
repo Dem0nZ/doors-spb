@@ -12,15 +12,7 @@ const Footer = (props) => {
       {!match ? <FooterBody>
 
           <FooterTitle>
-
             <Logo className='text-white'/>
-
-            <FooterTitleText>
-              Наша команда берет на себя все: от разработки идеи
-              и до реализации. Функциональность и традиции — это
-              то, что мы внедряем в каждый наш проект.
-            </FooterTitleText>
-
           </FooterTitle>
 
           <FooterBodyCol>

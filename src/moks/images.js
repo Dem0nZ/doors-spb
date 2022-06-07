@@ -1,6 +1,6 @@
 
 
-export const data = [
+export const images = [
     {
         original: "https://idei.club/uploads/posts/2021-11/thumbs/1637583654_1-idei-club-p-razdvizhnie-dveri-dlya-garderobnoi-interer-1.jpg",
         tumb: "http://",
