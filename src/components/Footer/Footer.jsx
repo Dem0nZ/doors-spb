@@ -86,7 +86,7 @@ const Footer = (props) => {
   );
 };
 
-const FooterWrapper = tw.div`flex flex-col  items-center w-screen  h-[323px] mt-[150px] mb-0 bg-black text-white text-sm`;
+const FooterWrapper = tw.div`flex flex-col  items-center w-screen  h-[323px] mb-0 bg-black text-white text-sm`;
 const FooterBody = tw.div`flex flex-row w-full justify-center pt-[50px]`;
 
 const FooterTitle = tw.div`flex flex-col w-[600px]`;

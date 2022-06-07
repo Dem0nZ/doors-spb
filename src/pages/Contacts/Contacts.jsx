@@ -1,8 +1,8 @@
 import { Input } from 'antd';
 import React from 'react'
 import tw from 'twin.macro';
-import Map from './Map';
-import facade_view from '../../assets/facade_view.jpg';
+import Map from './local-components/Map';
+import facade_view from '../../assets/office.jpg';
 
 const Contacts = () => {
 

@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import tw from 'twin.macro';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Gallery from './components/Gallery/Gallery';
-import Body from './components/Body/Body';
-import Calculate from './components/Calculator/Calculate';
-import Contacts from './components/Contacts/Contacts';
+import { Calculator, Contacts, Gallery, HomePage } from './pages';
+import { Footer, Header } from './components';
 
 
 class App extends Component {
@@ -15,9 +11,9 @@ class App extends Component {
       <AppContainer>
         <Header />
         <Routes>
-          <Route path='/' element={<Body />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='gallery' element={<Gallery />} />
-          <Route path='calculate' element={<Calculate />} />
+          <Route path='calculate' element={<Calculator />} />
           <Route path='contacts' element={<Contacts />} />
         </Routes>
         <Footer />
@@ -26,7 +22,6 @@ class App extends Component {
   }
 }
 
-
-const AppContainer = tw.div`flex flex-col justify-between items-center w-full h-screen`;
+const AppContainer = tw.div`flex flex-col items-center w-full`;
 
 export default App;
