@@ -5,8 +5,7 @@ import { Calculator, Contacts, Gallery, HomePage } from './pages';
 import { Footer, Header } from './components';
 
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <AppContainer>
         <Header />
@@ -19,7 +18,6 @@ class App extends Component {
         <Footer />
       </AppContainer>
     );
-  }
 }
 
 const AppContainer = tw.div`flex flex-col items-center w-full`;
