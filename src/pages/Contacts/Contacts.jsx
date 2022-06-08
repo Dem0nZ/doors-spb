@@ -119,7 +119,7 @@ const FeedbackTitle = tw.div`text-4xl font-medium `
 const Questions = tw.div`mt-8`
 
 const InputWrapper = tw.div`grid grid-cols-2 gap-y-12 gap-x-4 `
-const ButtonSend = tw.div`border text-center py-4 hover:shadow-md active:bg-red-50`
+const ButtonSend = tw.div`border text-center py-4 hover:bg-gray-300 active:bg-gray-500`
 
 
 

@@ -9,12 +9,10 @@ const Footer = (props) => {
 
   return (
     <FooterWrapper id='contacts'>
-      {!match ? <FooterBody>
-
+      {!match && <FooterBody>
         <FooterTitle>
           <Logo className='text-white' />
         </FooterTitle>
-
         <FooterBodyCol>
           <FooterColumnTitle>
             <FooterColumnLine />
@@ -23,7 +21,7 @@ const Footer = (props) => {
             </div>
           </FooterColumnTitle>
           <FooterColumnText>
-            <a href='tel:RU79119978257'>RU +7 911 997 82 57</a>
+            <a href='tel:+79119978257'>+79119978257</a>
           </FooterColumnText>
         </FooterBodyCol>
 
@@ -42,9 +40,7 @@ const Footer = (props) => {
             </a>
           </FooterColumnText>
         </FooterBodyCol>
-
         <FooterBodyColLast>
-
           <FooterColumnTitle>
             <FooterColumnLine />
             <div>
@@ -62,30 +58,11 @@ const Footer = (props) => {
               Северные террасы, 22
             </p>
           </FooterColumnText>
-
         </FooterBodyColLast>
-      </FooterBody>
-        : null}
-
-
-      <FooterBottomWrapper>
-
-
-        <FooterBottom>
-
-
-          <FooterCopirateBlock>
-            <p>
+      </FooterBody>}
+          <Copyright>
               © MEBEL-178
-            </p>
-          </FooterCopirateBlock>
-
-
-        </FooterBottom>
-
-
-      </FooterBottomWrapper>
-
+          </Copyright>
     </FooterWrapper>
   );
 };
@@ -97,12 +74,8 @@ const FooterTitle = tw.div`flex flex-col `;
 const FooterBodyCol = tw.div`flex flex-col mt-8 pr-5`;
 const FooterBodyColLast = tw.div`flex flex-col mt-8 `;
 const FooterColumnTitle = tw.div`flex`;
-const FooterColumnLine = tw.div`w-8 h-[1px] mt-2 mr-4 bg-white`;
+const FooterColumnLine = tw.div`w-8 h-px mt-2 mr-4 bg-white`;
 const FooterColumnText = tw.div`flex flex-col mt-10 leading-6`;
-
-const FooterBottomWrapper = tw.div`flex flex-row justify-center w-full`;
-
-const FooterBottom = tw.div`flex flex-col w-[1200px] h-12 mt-12 `;
-const FooterCopirateBlock = tw.div`flex justify-between    pt-3 pl-10 border-t-2 `;
+const Copyright = tw.p`flex justify-center w-full border-t-2 py-3 pl-10`;
 
 export default Footer;

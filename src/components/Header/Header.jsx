@@ -13,19 +13,18 @@ const Header = () => {
           <Logo className='h-20' />
         </NavLink>
         <SiteMenu>
-          <Link className='pt-2 pb-4 px-2 cursor-pointer hover:bg-gray-300' to='catalogue' spy={true} smooth={true}
-                duration={500}>
+          <StyledNav to='/' end>
             КАТАЛОГ
-          </Link>
+          </StyledNav>
           <StyledNav to='/gallery'>
             НАШИ РАБОТЫ
           </StyledNav>
           <StyledNav to='/contacts'>
             КОНТАКТЫ
           </StyledNav>
-          <StyledNav to='#'>
-            РАСЧИТАТЬ СТОИМОСТЬ
-          </StyledNav>
+          {/*<StyledNav to='/calculate'>*/}
+          {/*  РАСЧИТАТЬ СТОИМОСТЬ*/}
+          {/*</StyledNav>*/}
         </SiteMenu>
       </Container>
     </Wrapper>
