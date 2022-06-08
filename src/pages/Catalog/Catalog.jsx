@@ -82,11 +82,11 @@ export default class Catalog extends Component {
 
               <SliderNawDown>
 
-                <button className='hover:shadow-md' onClick={this.previous}>
+                <button className='hover:bg-gray-300 active:bg-gray-500' onClick={this.previous}>
                   <img src={arrows_left} alt='img' />
 
                 </button>
-                <button className='hover:shadow-md rotate-180' onClick={this.next}>
+                <button className='hover:bg-gray-300 active:bg-gray-500 rotate-180' onClick={this.next}>
                   <img src={arrows_left} alt='img' />
                 </button>
               </SliderNawDown>

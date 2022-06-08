@@ -16,7 +16,7 @@ const CalculatorBlock = () => {
         </Title>
         <Description>
         </Description>
-        <Button className={hoverLinkColor} onClick={() => navigate("/calculate")}>
+        <Button className='hover:bg-gray-300 active:bg-gray-500' onClick={() => navigate("#")}>
           РАСЧИТАТЬ СТОИМОСТЬ
         </Button>
       </Content>
@@ -24,7 +24,6 @@ const CalculatorBlock = () => {
     </Wrapper>
   )
 }
-const hoverLinkColor = `hover:shadow-md `
 
 
 const Wrapper = tw.div`flex justify-center mt-[110px] w-full`

@@ -23,7 +23,7 @@ const Header = () => {
           <StyledNav to='/contacts'>
             КОНТАКТЫ
           </StyledNav>
-          <StyledNav to='/calculate'>
+          <StyledNav to='#'>
             РАСЧИТАТЬ СТОИМОСТЬ
           </StyledNav>
         </SiteMenu>
