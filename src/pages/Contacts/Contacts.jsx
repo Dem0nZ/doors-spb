@@ -6,14 +6,6 @@ import facade_view from '../../assets/office.jpg';
 
 const Contacts = () => {
 
-    React.useEffect(() => {
-        (async () => {
-            const response = await fetch( 'http://admin.mebel-178.ru/api/contacts', {method: 'get', mode: 'no-cors'})
-            const data = await response.body;
-            console.log('DATA>>>', response);
-        })()
-    }, []);
-
   return (
     <Wrapper>
       <Container>

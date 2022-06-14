@@ -12,7 +12,7 @@ const BenefitsBlock = () => {
   return (
     <div className='flex flex-col'>
       <Title>
-        КАК ВЫ МОЖЕТЕ ИХ ИСПОЛЬЗОВАТЬ
+        НАШИ ГЛАВНЫЕ ПРЕИМУЩЕСТВА
       </Title>
       <Benefits>
         {benefitsArray}
@@ -21,7 +21,7 @@ const BenefitsBlock = () => {
   );
 };
 
-const Title = tw.h1`text-5xl font-medium pb-20`;
+const Title = tw.h1`text-5xl font-medium py-20`;
 const Benefits = tw.div`flex flex-wrap text-xl font-medium gap-10`;
 const ItemBlock = tw.div`flex gap-4 w-[400px]`;
 
