@@ -30,8 +30,15 @@ export default class Catalog extends Component {
 
   render() {
     const settings = {
-      dots: false, infinite: true, arrows: false, speed: 500, slidesToShow: 1, slidesToScroll: 1, adaptiveHeight: true,
+      dots: false,
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
     };
+
     return (
       <Wrapper>
         <UpperBlock>
@@ -75,10 +82,10 @@ export default class Catalog extends Component {
 
 const Wrapper = tw.div`flex flex-col justify-center w-full mt-12`;
 const UpperBlock = tw.div`flex flex-col`;
-const Title = tw.div`flex text-5xl font-medium`;
+const Title = tw.div`flex text-5xl font-medium sm:text-3xl sm:px-4`;
 const Nav = tw.div`flex flex-wrap gap-4 mt-12`;
 const SliderButton = tw.div`w-[300px] p-4 cursor-pointer hover:bg-gray-100`;
 const SliderBody = tw.div`flex flex-col w-full`;
-const SliderButtons = tw.div`flex justify-center w-full mt-12`;
-const SliderNawDown = tw.nav`flex justify-between w-44`;
+const SliderButtons = tw.div`flex justify-center w-full mt-12 sm:mt-4`;
+const SliderNawDown = tw.nav`flex gap-10`;
 const SliderWrapper = tw.div`flex w-full mt-10`;

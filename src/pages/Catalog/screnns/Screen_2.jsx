@@ -9,13 +9,13 @@ import img7 from '../../../assets/slider/partition/partition_21.jpg';
 
 const Screen_2 = () => {
   return (
-    <ScreenWrapper>
+    <Wrapper>
       <Title>
         ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ
       </Title>
-      <ScreenImgBlock>
-        <ScreenImg className='col-span-2' src={img1} alt='img' />
-        <ScreenImg src={img2} alt='img' />
+      <Content>
+        <Img className='col-span-2' src={img1} alt='img' />
+        <Img src={img2} alt='img' />
         <Text>
           Основная функция межкомнатных перегородок это разграничение площади помещения.
           Проще говоря - зонирования.
@@ -24,19 +24,19 @@ const Screen_2 = () => {
           Они добавляют эстетические и художественные акценты в обстановку.
           Такие перегородки служат одновременно и стенами, и дверями.
         </Text>
-        <ScreenImg src={img3} alt='img' />
-        <ScreenImg src={img4} alt='img' />
-        <ScreenImg className='col-span-2 w-full' src={img7} alt='img' />
-      </ScreenImgBlock>
-    </ScreenWrapper>
+        <Img src={img3} alt='img' />
+        <Img src={img4} alt='img' />
+        <Img className='col-span-2 w-full' src={img7} alt='img' />
+      </Content>
+    </Wrapper>
   );
 };
 
-const ScreenWrapper = tw.div`flex flex-col mb-16 mx-px`;
-const Title = tw.div`flex mt-10 text-6xl font-medium`;
-const ScreenImgBlock = tw.div`grid grid-cols-2 mt-10  gap-20 place-items-stretch`;
-const Text = tw.p`text-2xl`;
-const ScreenImg = tw.img`object-cover`;
+const Wrapper = tw.div`flex flex-col mb-16 mx-px`;
+const Title = tw.div`flex mt-10 text-6xl font-medium sm:text-3xl sm:font-light sm:px-4`;
+const Content = tw.div`grid grid-cols-2 mt-10  gap-20 place-items-stretch sm:gap-4`;
+const Text = tw.p`text-2xl sm:text-xs sm:pr-2`;
+const Img = tw.img`object-cover`;
 
 
 export default Screen_2;

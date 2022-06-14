@@ -1,12 +1,11 @@
 import React from 'react';
 import tw from 'twin.macro';
+import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import { Calculator, Contacts, Gallery, HomePage } from './pages';
 import { Footer, Header } from './components';
-import axios from 'axios';
 
 const App = () => {
-
   const [contacts, setContacts] = React.useState();
   React.useEffect(() => {
     (async () => {
@@ -21,7 +20,7 @@ const App = () => {
   }, []);
 
   return (
-    <AppContainer>
+    <div className='relative flex flex-col items-center w-full'>
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -31,10 +30,8 @@ const App = () => {
         <Route path='*' element={<HomePage />} />
       </Routes>
       <Footer contacts={contacts}/>
-    </AppContainer>
+    </div>
   );
 };
-
-const AppContainer = tw.div`relative flex flex-col items-center w-full`;
 
 export default App;

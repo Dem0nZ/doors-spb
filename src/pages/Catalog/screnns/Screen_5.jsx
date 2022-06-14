@@ -20,7 +20,7 @@ const Screen_5 = () => {
       <Title>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</Title>
       <Content>
         <Img className='col-span-2' src={img1} alt='img' />
-        <div className='flex flex-col justify-between'>
+        <div className='flex flex-col justify-between sm:col-span-2 sm:flex-row sm:items-center'>
           <Text>
             Встроенные шкафы-купе занимают минимум полезной площади
             и идеально вписываются в отведенную под мебель зону.
@@ -36,7 +36,7 @@ const Screen_5 = () => {
                 <Img src={img3} alt='img' />
                 <Img src={img5} alt='img' />
             </div>
-            <div>
+            <div className='sm:hidden'>
                 <Img src={img6} alt='img' />
                 <Img src={img2} alt='img' />
             </div>
@@ -49,11 +49,10 @@ const Screen_5 = () => {
 };
 
 const Wrapper = tw.div`flex flex-col mb-16 mx-px`;
-const Title = tw.div`flex mt-10 text-5xl font-medium`;
-const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch`;
-const Text = tw.p`text-2xl`;
+const Title = tw.div`flex mt-10 text-5xl font-medium sm:text-3xl sm:font-light sm:px-4`;
+const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch sm:gap-4`;
+const Text = tw.p`text-2xl sm:text-xs sm:pl-2`;
 const Img = tw.img`object-cover`;
-const Block_4 = tw.div`col-span-2 grid grid-cols-2 gap-24 mt-20`;
-const Button = tw.button` p-6 text-sm border hover:shadow-md active:bg-red-50`;
+const Button = tw.button` p-6 text-sm border hover:shadow-md active:bg-gray-200 sm:mt-6 sm:text-transparent sm:text-2xl sm:font-bold sm:bg-clip-text sm:bg-gradient-to-r sm:from-purple-400 sm:to-pink-600`;
 
 export default Screen_5;

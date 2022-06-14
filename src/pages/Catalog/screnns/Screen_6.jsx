@@ -35,8 +35,8 @@ const Screen_6 = () => {
 };
 
 const Wrapper = tw.div`flex flex-col mb-16 mx-px`;
-const Title = tw.div`flex mt-10 text-5xl font-medium`;
-const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch`;
+const Title = tw.div`flex mt-10 text-5xl font-medium sm:text-3xl sm:font-light sm:px-4`;
+const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch sm:gap-4`;
 const Img = tw.img`object-cover`;
 
 

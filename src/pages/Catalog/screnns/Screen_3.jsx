@@ -11,29 +11,29 @@ import img7 from '../../../assets/slider/doors/doors_7.jpg';
 
 const Screen_3 = () => {
   return (
-    <ScreenWrapper>
+    <Wrapper>
       <Title>
         ДВЕРИ-КУПЕ МЕЖКОМНАТНЫЕ
       </Title>
-      <ScreenImgBlock>
-          <ScreenImg className='col-span-2' src={img1} alt='img' />
-          <ScreenImg src={img7} alt='img' />
-          <ScreenImg src={img6} alt='img' />
-          <ScreenImg className='col-span-2' src={img5} alt='img' />
-          <ScreenImg className='col-span-2' src={img8} alt='img' />
+      <Content>
+          <Img className='col-span-2' src={img1} alt='img' />
+          <Img src={img7} alt='img' />
+          <Img src={img6} alt='img' />
+          <Img className='col-span-2' src={img5} alt='img' />
+          <Img className='col-span-2' src={img8} alt='img' />
         <div className='flex flex-col justify-between gap-4'>
-          <ScreenImg src={img2} alt='img' />
-          <ScreenImg src={img3} alt='img' />
+          <Img src={img2} alt='img' />
+          <Img src={img3} alt='img' />
         </div>
-          <ScreenImg src={img4} alt='img' />
-      </ScreenImgBlock>
-    </ScreenWrapper>
+          <Img src={img4} alt='img' />
+      </Content>
+    </Wrapper>
   );
 };
 
-const ScreenWrapper = tw.div`flex flex-col mb-16 mx-[1px]`;
-const Title = tw.div`flex mt-10 text-6xl font-medium`;
-const ScreenImgBlock = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch`;
-const ScreenImg = tw.img`object-cover`;
+const Wrapper = tw.div`flex flex-col mb-16 mx-[1px]`;
+const Title = tw.div`flex mt-10 text-6xl font-medium sm:text-3xl sm:font-light sm:px-4`;
+const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch sm:gap-4`;
+const Img = tw.img`object-cover`;
 
 export default Screen_3;

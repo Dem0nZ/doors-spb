@@ -32,9 +32,9 @@ const Screen_4 = () => {
 };
 
 const Wrapper = tw.div`flex flex-col mb-16 mx-px`;
-const Title = tw.div`flex mt-10 text-5xl font-medium`;
-const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch`;
-const Text = tw.p`text-2xl`;
+const Title = tw.div`flex mt-10 text-5xl font-medium sm:text-3xl sm:font-light sm:px-4`;
+const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch sm:gap-4`;
+const Text = tw.p`text-2xl sm:text-xs sm:pl-2`;
 const Img = tw.img`object-cover`;
 
 export default Screen_4;

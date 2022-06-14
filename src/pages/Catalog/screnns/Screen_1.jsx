@@ -23,7 +23,7 @@ const Screen_1 = () => {
           В таких шкафах нет стенок,
           вся конструкция шкафа крепится к стенкам, потолку и полу.
         </Text>
-        <Img src={img2} alt='img' />
+        <div className='sm:hidden'><Img src={img2} alt='img' /></div>
         <Img src={img3} alt='img' />
         <Img src={img4} alt='img' />
         <Img className='col-span-2' src={img5} alt='img' />
@@ -34,9 +34,9 @@ const Screen_1 = () => {
 };
 
 const Wrapper = tw.div`flex flex-col mb-16 mx-px`;
-const Title = tw.div`flex mt-10 text-5xl font-medium`;
-const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch`;
-const Text = tw.p`text-2xl`;
+const Content = tw.div`grid grid-cols-2 mt-10 gap-20 place-items-stretch sm:gap-4`;
+const Title = tw.div`flex mt-10 text-5xl font-medium sm:text-3xl sm:font-light sm:px-4`;
+const Text = tw.p`text-2xl sm:text-xs sm:pl-2 sm:col-span-2`;
 const Img = tw.img`object-cover`;
 
 export default Screen_1;
