@@ -1,7 +1,6 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-scroll';
 import { Logo } from '../../assets';
 
 const Header = () => {
@@ -37,7 +36,7 @@ const StyledNav = styled(NavLink)`
     ${tw`text-white bg-gray-500`}
   }`;
 
-const Wrapper = tw.div`flex justify-center pt-4 w-screen border-b border-black`;
+const Wrapper = tw.div`flex fixed top-0 z-40 bg-white justify-center pt-4 w-screen border-b border-black h-24`;
 const Container = tw.div`flex max-w-[1000px] justify-between items-end w-full`;
 const SiteMenu = tw.div`flex`;
 

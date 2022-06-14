@@ -6,14 +6,14 @@ import Intro from './local-components/Intro';
 import CalculatorBlock from './local-components/CalculatorBlock';
 
 const HomePage = () => {
-  return (
+  return (<>
+    <Intro />
     <Wrapper>
-      <Intro />
       <BenefitsBlock />
       <CalculatorBlock />
       <Catalog />
     </Wrapper>
-  );
+  </>);
 };
 
 const Wrapper = tw.div`flex flex-col pb-32 max-w-[1000px]`;
