@@ -13,11 +13,11 @@ const Footer = ({contacts}) => {
         <Logo className='text-white sm:self-center' />
         <Cell>
           <div className='flex'><ColumnLine />ЗВОНИТЕ</div>
-            <a href='tel:+79119978257'>{contacts?.phone1}</a>
+          <a href={`tel:${contacts?.phone1}`}>{contacts?.phone1}</a>
         </Cell>
         <Cell>
           <div className='flex'><ColumnLine />ПИШИТЕ</div>
-            <a href='mailto:info@info@mebel-178.ru'>{contacts?.email}</a>
+            <a href={`mailto:${contacts?.email}`}>{contacts?.email}</a>
         </Cell>
         <Cell>
           <div className='flex'><ColumnLine />ПРИЕЗЖАЙТЕ</div>

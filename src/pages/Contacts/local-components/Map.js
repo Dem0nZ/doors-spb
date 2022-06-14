@@ -17,7 +17,7 @@ const Map = () => {
       });
 
   }, []);
-  return (<div id='map' className='w-1000 h-450 bg-red-300 sm:w-full sm:h-96'></div>);
+  return (<div id='map' className='w-[700px] h-[450px] bg-red-300 sm:w-full sm:h-96'></div>);
 };
 
 export default Map;
