@@ -7,7 +7,7 @@ import CalculatorBlock from './local-components/CalculatorBlock';
 
 const HomePage = () => {
   return (<>
-    <Intro />
+    <Intro/>
     <Wrapper>
       <BenefitsBlock />
       <CalculatorBlock />
@@ -17,6 +17,5 @@ const HomePage = () => {
 };
 
 const Wrapper = tw.div`flex flex-col pb-32 max-w-[1000px]`;
-
 
 export default HomePage;

@@ -6,6 +6,10 @@ module.exports = {
         blacked: '#161616',
       }
     },
+    screens: {
+      'lg': { 'min': '769px' },
+      'sm': { 'max': '768px' },
+    },
   },
   plugins: [],
 }

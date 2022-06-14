@@ -16,9 +16,9 @@ const Footer = (props) => {
         <FooterBodyCol>
           <FooterColumnTitle>
             <FooterColumnLine />
-            <div>
+            <p>
               ЗВОНИТЕ
-            </div>
+            </p>
           </FooterColumnTitle>
           <FooterColumnText>
             <a href='tel:+79119978257'>+79119978257</a>
@@ -28,9 +28,9 @@ const Footer = (props) => {
         <FooterBodyCol>
           <FooterColumnTitle>
             <FooterColumnLine />
-            <div>
+            <p>
               ПИШИТЕ
-            </div>
+            </p>
           </FooterColumnTitle>
           <FooterColumnText>
             <a href='mailto:info@info@mebel-178.ru'>
@@ -68,7 +68,7 @@ const Footer = (props) => {
 };
 
 const FooterWrapper = tw.div`flex flex-col  items-center w-screen   mb-0 bg-black text-white text-sm`;
-const FooterBody = tw.div`grid grid-cols-[45% 1fr 1fr 1fr] w-8/12 max-w-[1100px] justify-center pt-12`;
+const FooterBody = tw.div`grid grid-cols-[45% 1fr 1fr 1fr] sm:flex sm:flex-col w-8/12 max-w-[1100px] justify-center pt-12`;
 
 const FooterTitle = tw.div`flex flex-col `;
 const FooterBodyCol = tw.div`flex flex-col mt-8 pr-5`;
