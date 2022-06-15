@@ -18,7 +18,8 @@
     "react-slick": "^0.29.0",
     "react-slide-routes": "^2.0.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "yet-another-react-lightbox": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",

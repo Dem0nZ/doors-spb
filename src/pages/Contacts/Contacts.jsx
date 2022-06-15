@@ -29,7 +29,7 @@ const Contacts = ({ contacts }) => {
 
         <Location>
           <img src={facade_view} alt='img' />
-          <Map />
+          <Map lat={contacts.lat} lon={contacts.lan}/>
         </Location>
         <Feedback>
           <div>

@@ -2,15 +2,15 @@ import React from 'react';
 import DG from '2gis-maps';
 import { useEffect } from 'react';
 
-const Map = () => {
+const Map = ({lat, lon}) => {
   useEffect(() => {
     const map = DG.map('map', {
-      'center': [60.181844, 30.364242],
+      'center': [lat, lon],
       'zoom': 15,
       'zoomControl': false,
       'fullscreenControl': false,
     });
-    DG.marker([60.181844, 30.364242])
+    DG.marker([lat, lon])
       .addTo(map)
       .bindLabel('Офис', {
         static: true,
