@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import arrows_left from '../../assets/slider/arrow_left.png';
 import Screen1 from './screnns/Screen_1';
 import Screen2 from './screnns/Screen_2';
 import Screen3 from './screnns/Screen_3';
@@ -10,6 +9,7 @@ import Screen4 from './screnns/Screen_4';
 import Screen5 from './screnns/Screen_5';
 import Screen6 from './screnns/Screen_6';
 import tw from 'twin.macro';
+import { ArrowIcon } from '../../assets';
 
 const windowInnerWidth = document.documentElement.clientWidth < 1000 ? document.documentElement.clientWidth : 1000;
 
@@ -67,10 +67,10 @@ export default class Catalog extends Component {
             <SliderButtons>
               <SliderNawDown>
                 <button className='hover:bg-gray-300 active:bg-gray-500' onClick={this.previous}>
-                  <img src={arrows_left} alt='img' />
+                  <ArrowIcon/>
                 </button>
                 <button className='hover:bg-gray-300 active:bg-gray-500 rotate-180' onClick={this.next}>
-                  <img src={arrows_left} alt='img' />
+                  <ArrowIcon/>
                 </button>
               </SliderNawDown>
             </SliderButtons>

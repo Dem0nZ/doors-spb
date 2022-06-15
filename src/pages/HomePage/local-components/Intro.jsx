@@ -12,9 +12,7 @@ const Intro = () => {
       </TextBlock>
       <img className='h-full w-full object-cover' src={intro} alt='img' />
       <TextBlock className='absolute bottom-16 left-0 mx-12 sm:right-0 sm:bottom-0 sm:mx-0'>
-        Делаем дом красивым, Мы воплощаем мечты,
-        Придаем форму вашим идеям,
-        Измените свой дом, Двери с историей
+        Делаем дом красивым. Мы воплощаем мечты, придаем форму вашим идеям. Измените свой дом. Двери с историей.
       </TextBlock>
     </div>
   );

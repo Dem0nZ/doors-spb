@@ -1,5 +1,4 @@
 import React from 'react';
-import tw from 'twin.macro';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import { Calculator, Contacts, Gallery, HomePage } from './pages';
