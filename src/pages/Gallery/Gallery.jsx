@@ -36,7 +36,6 @@ const Gallery = () => {
       <PhotoAlbum
         photos={photos}
         layout='masonry'
-        targetRowHeight={250}
         onClick={(event, photo, index) => setIndex(index)}
       />
       <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} />
