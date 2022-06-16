@@ -1,6 +1,6 @@
+import React from 'react';
 import PhotoAlbum from 'react-photo-album';
 import tw from 'twin.macro';
-import React from 'react';
 import axios from 'axios';
 import { Lightbox } from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';

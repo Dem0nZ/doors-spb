@@ -35,6 +35,7 @@ export default class Catalog extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true,
+      initialSlide: 3
     };
 
     return (

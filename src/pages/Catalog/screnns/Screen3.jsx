@@ -1,24 +1,19 @@
 import React from 'react';
 import tw from 'twin.macro';
-import img1 from '../../../assets/slider/doors/checkroom/checkroom_010.jpg';
-import img2 from '../../../assets/slider/doors/checkroom/checkroom_02.jpg';
-import img3 from '../../../assets/slider/doors/checkroom/checkroom_03.jpg';
-import img4 from '../../../assets/slider/doors/checkroom/checkroom_04.jpg';
-import img5 from '../../../assets/slider/doors/checkroom/checkroom_05.jpg';
-import img6 from '../../../assets/slider/doors/checkroom/checkroom_007.jpg';
-import img7 from '../../../assets/slider/doors/checkroom/checkroom_07.jpg';
-import img9 from '../../../assets/slider/doors/checkroom/checkroom_09.jpg';
-import img10 from '../../../assets/slider/doors/checkroom/checkroom_013.jpg';
-import img11 from '../../../assets/slider/doors/checkroom/checkroom_015.jpg';
-import { useNavigate } from 'react-router-dom';
+
+import photo1 from '../../../assets/catalog/compartment-doors/001.jpg';
+import photo2 from '../../../assets/catalog/compartment-doors/002.jpg';
+import photo3 from '../../../assets/catalog/compartment-doors/003.jpg';
+import photo4 from '../../../assets/catalog/compartment-doors/004.jpg';
+import photo5 from '../../../assets/catalog/compartment-doors/005.jpg';
+import photo6 from '../../../assets/catalog/compartment-doors/006.jpg';
 
 const Screen3 = () => {
-  const navigate = useNavigate();
   return (
     <Wrapper>
       <Title>ДВЕРИ-КУПЕ</Title>
       <Content>
-        <Img className='col-span-2' src={img1} alt='img' />
+        <Img className='col-span-2' src={photo6} alt='img' />
         <div className='flex flex-col gap-4 sm:col-span-2'>
           <Text>
             В современной жизни сложно представить помещение, в котором не было бы дверей-купе. Ведь двери-купе это
@@ -29,15 +24,13 @@ const Screen3 = () => {
           </Text>
           <Button>РАСЧИТАТЬ СТОИМОСТЬ</Button>
         </div>
-        <Img className='sm:col-span-2' src={img6} alt='img' />
-        <Img className='col-span-2' src={img7} alt='img' />
-        <Img src={img4} alt='img' />
+        <Img className='sm:col-span-2' src={photo4} alt='img' />
+        <Img className='col-span-2' src={photo3} alt='img' />
+        <Img src={photo2} alt='img' />
         <div className='flex flex-col gap-4'>
-          <Img src={img2} alt='img' />
-          <Img src={img9} alt='img' />
+          <Img src={photo1} alt='img' />
+          <Img src={photo5} alt='img' />
         </div>
-        <Img src={img10} alt='img' />
-        <Img src={img11} alt='img' />
       </Content>
     </Wrapper>);
 };

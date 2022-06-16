@@ -1,6 +1,6 @@
 import React from 'react';
 import tw from 'twin.macro';
-import { benefits } from '../../../moks/benefits';
+import { benefits } from './benefits';
 
 const BenefitsBlock = () => {
 

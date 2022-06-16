@@ -1,11 +1,10 @@
 import React from 'react';
 import tw from 'twin.macro';
 
-import img4 from '../../../assets/slider/partition/partition_10.jpg';
-import img3 from '../../../assets/slider/partition/partition_11.jpg';
-import img1 from '../../../assets/slider/partition/partition_19.jpg';
-import img2 from '../../../assets/slider/partition/partition_27.jpg';
-import img7 from '../../../assets/slider/partition/partition_21.jpg';
+import photo1 from '../../../assets/catalog/interrior-walls/001.jpeg';
+import photo2 from '../../../assets/catalog/interrior-walls/002.jpeg';
+import photo3 from '../../../assets/catalog/interrior-walls/003.jpeg';
+import photo4 from '../../../assets/catalog/interrior-walls/004.jpeg';
 
 const Screen1 = () => {
   return (
@@ -14,16 +13,16 @@ const Screen1 = () => {
         ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ
       </Title>
       <Content>
-        <Img className='col-span-2' src={img1} alt='img' />
+        <Img className='col-span-2' src={photo1} alt='img' />
         <Text>
           Основная функция межкомнатных перегородок это разграничение площади помещения. Проще говоря - зонирования.
           Раздвижные межкомнатные перегородки это отличное решение, а так же простой и легкий способ деления открытого
           пространства. Они добавляют эстетические и художественные акценты в обстановку. Такие перегородки служат
           одновременно и стенами, и дверями.
         </Text>
-        <Img src={img2} alt='img' />
-        <Img src={img4} alt='img' />
-        <Img className='col-span-2 w-full' src={img7} alt='img' />
+        <Img src={photo4} alt='img' />
+        <Img src={photo2} alt='img' />
+        <Img className='col-span-2 w-full' src={photo3} alt='img' />
       </Content>
     </Wrapper>
   );

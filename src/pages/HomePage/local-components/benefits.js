@@ -1,4 +1,4 @@
-import { ChoiceIcon, FactoryIcon, FastTimeIcon, InstallationIcon, SketchIcon, WarrantyIcon } from '../assets';
+import { ChoiceIcon, FactoryIcon, FastTimeIcon, InstallationIcon, SketchIcon, WarrantyIcon } from '../../../assets';
 
 
 export const benefits = [
