@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='relative flex flex-col items-center w-full'>
+    <div className='relative flex flex-col items-center w-full min-h-screen'>
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />

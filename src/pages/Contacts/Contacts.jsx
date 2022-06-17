@@ -1,4 +1,3 @@
-import { Input } from 'antd';
 import React from 'react';
 import tw from 'twin.macro';
 import Map from './local-components/Map';
@@ -40,14 +39,11 @@ const Contacts = ({ contacts }) => {
             </div>
           </div>
           <InputWrapper>
-            <Input className='border-b-2 outline-none' placeholder='Имя' bordered={false} />
-            <Input className='border-b-2 outline-none' placeholder='Фамилия' bordered={false} />
-            <Input className='col-span-2 border-b-2 outline-none' placeholder='Ваш Email*'
-                   bordered={false} />
-            <Input className='col-span-2 border-b-2 outline-none' placeholder='Ваш телефон*'
-                   bordered={false} />
-            <Input className='col-span-2 border-b-2 outline-none' placeholder='Ваше сообщение'
-                   bordered={false} />
+            <input className='border-b-2 outline-none' placeholder='Имя' />
+            <input className='border-b-2 outline-none' placeholder='Фамилия' />
+            <input className='col-span-2 border-b-2 outline-none' placeholder='Ваш Email*'/>
+            <input className='col-span-2 border-b-2 outline-none' placeholder='Ваш телефон*'/>
+            <textarea className='col-span-2 border-b-2 outline-none resize-none' rows={4} placeholder='Ваше сообщение' />
             <ButtonSend>ОТПРАВИТЬ</ButtonSend>
           </InputWrapper>
         </Feedback>
@@ -57,7 +53,7 @@ const Contacts = ({ contacts }) => {
 };
 
 const Wrapper = tw.div` flex w-screen justify-center`;
-const Container = tw.div`flex flex-col max-w-[1000px] mt-40 py-20`;
+const Container = tw.div`flex flex-col max-w-[1000px] py-20`;
 const ContactsInfo = tw.div`grid grid-cols-[1fr 20% 20%] mt-16 sm:flex sm:flex-col sm:px-4`;
 const Column = tw.div`flex flex-col mt-8 pr-5`;
 const ColumnLine = tw.div`w-8 h-[1px] mt-[10px] mr-[14px] bg-black`;
