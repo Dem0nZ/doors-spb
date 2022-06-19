@@ -6,9 +6,14 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from 'react-accessible-accordion';
+
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { data } from '../../../mocks/calculator_data';
+import FillingItem from './FillingItem';
 
 const Step3 = () => {
+  const fillers = data.map(filler => (<FillingItem key={filler.id} filler={filler}/>));
+
   return (
     <AccordionItem>
       <AccordionItemHeading>
@@ -19,17 +24,16 @@ const Step3 = () => {
       <AccordionItemPanel>
         <TitleTab>
           Выберете наполнение
-
         </TitleTab>
-        <Filling>
-
-        </Filling>
+        <FillingContainer>
+          {fillers}
+        </FillingContainer>
       </AccordionItemPanel>
     </AccordionItem>
   );
 };
 
-const TitleTab = tw.div`flex flex-col text-4xl font-thin`;
-const Filling = tw.div`grid grid-cols-2`
+const TitleTab = tw.div`text-4xl font-thin mb-6`;
+const FillingContainer = tw.div`flex flex-wrap gap-4 w-full`;
 
 export default Step3;
