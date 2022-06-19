@@ -1,9 +1,30 @@
 import React from 'react';
 import tw from 'twin.macro';
 import Map from './local-components/Map';
+import { useForm } from 'react-hook-form';
 import facade_view from '../../assets/office.jpg';
 
 const Contacts = ({ contacts }) => {
+  const { register, handleSubmit, reset,  formState: { errors }} = useForm();
+  const onSubmit = async (data) => {
+  console.log(data);
+    try {
+      let response = await fetch('http://mebel-178.ru/mailscript/send_email.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify({type:"callback", contacts: data })
+      })
+      if (response.status === 200) {
+        console.log('Ваша заявка отправлена');
+        reset();
+      }
+    } catch (e) {
+      console.log('Упс. Что-то пошло не так.');
+    }
+  }
+
   return (
     <Wrapper>
       <Container>
@@ -20,6 +41,7 @@ const Contacts = ({ contacts }) => {
             <div className='flex'><ColumnLine />ПИШИТЕ</div>
             <a href={`mailto:${contacts?.email}`}>{contacts?.email}</a>
           </Column>
+
           <Column>
             <div className='flex'><ColumnLine />ЗВОНИТЕ</div>
             <a href={`tel:${contacts?.phone1}`}>{contacts?.phone1}</a>
@@ -38,14 +60,15 @@ const Contacts = ({ contacts }) => {
               <p>Заполните форму, и наш менеджер свяжется с Вами в ближайшее время.</p>
             </div>
           </div>
-          <InputWrapper>
-            <input className='border-b-2 outline-none' placeholder='Имя' />
-            <input className='border-b-2 outline-none' placeholder='Фамилия' />
-            <input className='col-span-2 border-b-2 outline-none' placeholder='Ваш Email*'/>
-            <input className='col-span-2 border-b-2 outline-none' placeholder='Ваш телефон*'/>
-            <textarea className='col-span-2 border-b-2 outline-none resize-none' rows={4} placeholder='Ваше сообщение' />
-            <ButtonSend>ОТПРАВИТЬ</ButtonSend>
-          </InputWrapper>
+            <Form onSubmit={handleSubmit(onSubmit)}>
+            <input className='border-b-2 outline-none' placeholder='Имя' {...register('name', { required: true })}/>
+            <input className='border-b-2 outline-none' placeholder='Фамилия' {...register('surname')}/>
+            <input className='col-span-2 border-b-2 outline-none' placeholder='Ваш Email*'{...register('email', { required: true })}/>
+            <input className='col-span-2 border-b-2 outline-none' placeholder='Ваш телефон*' {...register('phone', { required: true })}/>
+            <textarea className='col-span-2 border-b-2 outline-none resize-none' rows={4} placeholder='Ваше сообщение' {...register('message', { required: true })}/>
+              {(Object.keys(errors).length >0)&& <ErrorMessage>{ errors?.name && 'имя'} { errors?.email && 'почта'} { errors?.phone && 'телефон'} { errors?.message && 'сообщение'} обязательны для отправки формы</ErrorMessage>}
+            <ButtonSend type='submit' value='ОТПРАВИТЬ'/>
+            </Form>
         </Feedback>
       </Container>
     </Wrapper>
@@ -60,8 +83,9 @@ const ColumnLine = tw.div`w-8 h-[1px] mt-[10px] mr-[14px] bg-black`;
 const Location = tw.div`flex justify-between gap-16 mt-10 sm:flex-col`;
 const Feedback = tw.div`flex gap-20 mt-20 sm:flex-col sm:px-4`;
 const FeedbackTitle = tw.p`text-4xl font-medium `;
-const InputWrapper = tw.div`grid grid-cols-2 gap-y-12 gap-x-4 `;
-const ButtonSend = tw.div`col-span-2 mt-10 border text-center py-4 hover:bg-gray-300 active:bg-gray-500`;
+const Form = tw.form`grid grid-cols-2 gap-y-12 gap-x-4 `;
+const ErrorMessage = tw.span`col-span-2 text-red-500 text-xs`
+const ButtonSend = tw.input`mt-10 border text-center py-4 hover:bg-gray-300 active:bg-gray-500`;
 
 
 export default Contacts;
