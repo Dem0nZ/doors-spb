@@ -15,6 +15,9 @@ const Header = () => {
           <StyledNav to='/' end>
             КАТАЛОГ
           </StyledNav>
+          <StyledNav to='/materials' end>
+            МАТЕРИАЛЫ
+          </StyledNav>
           <StyledNav to='/gallery'>
             НАШИ РАБОТЫ
           </StyledNav>

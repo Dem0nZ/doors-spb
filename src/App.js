@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
-import { Calculator, Contacts, Gallery, HomePage } from './pages';
+import { Calculator, Contacts, Gallery, HomePage, Materials } from './pages';
 import { Footer, Header } from './components';
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='materials' element={<Materials />} />
         <Route path='gallery' element={<Gallery />} />
         <Route path='calculate' element={<Calculator />} />
         <Route path='contacts' element={<Contacts contacts={contacts}/>} />

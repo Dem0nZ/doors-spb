@@ -10,7 +10,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 const Step1 = () => {
   return (
-    <AccordionItem>
+    <AccordionItem uuid={'sizes'}>
       <AccordionItemHeading>
         <AccordionItemButton>
           ШАГ 1:РАЗМЕРЫ
