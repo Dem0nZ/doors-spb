@@ -1,11 +1,16 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 import { Popover } from '@headlessui/react';
+import FillingItemVariables from './FillingItemVariables';
 
 const FillingItem = ({ filler }) => {
-  const fillerOptions = filler.fillers?.map(item => <div className='flex gap-4 p-2 uppercase text-lg font-extralight' key={item.id}>
-    <FillerImage />{item.name}
-  </div>);
+  const fillerOptions = filler.fillers?.map(item => {
+    return (item.variables?.length > 0)
+    ? (<FillingItemVariables item={item}/>)
+    : (<div className='flex gap-4 p-2 uppercase text-lg font-extralight' key={item.id}>
+      <FillerImage />{item.name}
+    </div>)
+  });
   return (
     <Popover>
       <Trigger>{filler.name}</Trigger>
