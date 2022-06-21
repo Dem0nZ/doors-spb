@@ -46,6 +46,11 @@ const Contacts = ({ contacts }) => {
             <div className='flex'><ColumnLine />ЗВОНИТЕ</div>
             <a href={`tel:${contacts?.phone1}`}>{contacts?.phone1}</a>
           </Column>
+          <Column>
+            <div className='flex col-span-3'><ColumnLine />КАК ДОБРАТЬСЯ</div>
+            <p>От м. Озерки: автобус № 109, маршрутное такси № 259,№ 673</p>
+            <p>От м. Пр. Просвещения: автобус № 104, 173, маршрутное такси № 01, 434, 455, 555, 676</p>
+          </Column>
         </ContactsInfo>
 
         <Location>
@@ -78,7 +83,7 @@ const Contacts = ({ contacts }) => {
 const Wrapper = tw.div` flex w-screen justify-center`;
 const Container = tw.div`flex flex-col max-w-[1000px] py-20`;
 const ContactsInfo = tw.div`grid grid-cols-[1fr 20% 20%] mt-16 sm:flex sm:flex-col sm:px-4`;
-const Column = tw.div`flex flex-col mt-8 pr-5`;
+const Column = tw.div`flex flex-col mt-8 pr-5 font-light`;
 const ColumnLine = tw.div`w-8 h-[1px] mt-[10px] mr-[14px] bg-black`;
 const Location = tw.div`flex justify-between gap-16 mt-10 sm:flex-col`;
 const Feedback = tw.div`flex gap-20 mt-20 sm:flex-col sm:px-4`;
