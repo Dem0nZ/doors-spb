@@ -1,5 +1,127 @@
 import { v4 as uuidv4 } from 'uuid';
 
+const oracal = [
+  {
+    id: uuidv4(),
+    name: 'White',
+    image: '#E8EAEE',
+  },
+  {
+    id: uuidv4(),
+    name: 'Signal Yellow',
+    image: ' #E9AA22',
+  },
+  {
+    id: uuidv4(),
+    name: 'Golden Yellow',
+    image: '#FAA71A',
+  },
+  {
+    id: uuidv4(),
+    name: 'Yellow',
+    image: '#FFC808',
+  },
+  {
+    id: uuidv4(),
+    name: 'Dark Red',
+    image: '#971B1E',
+  },
+  {
+    id: uuidv4(),
+    name: 'Light Red',
+    image: '#CC2027',
+  },
+  {
+    id: uuidv4(),
+    name: 'Orange',
+    image: '#E04926',
+  },
+  {
+    id: uuidv4(),
+    name: 'Light Orange',
+    image: '#EF6923',
+  },
+  {
+    id: uuidv4(),
+    name: 'Violet',
+    image: '#5F2B67',
+  },
+  {
+    id: uuidv4(),
+    name: 'Pink',
+    image: '#CA2A69',
+  },
+  {
+    id: uuidv4(),
+    name: 'Deep Sea Blue',
+    image: '#111D38',
+  },
+  {
+    id: uuidv4(),
+    name: 'Blue',
+    image: '#203D76',
+  },
+  {
+    id: uuidv4(),
+    name: 'Ice Blue',
+    image: '#40A1D3',
+  },
+  {
+    id: uuidv4(),
+    name: 'Light Green',
+    image: '#028844',
+  },
+  {
+    id: uuidv4(),
+    name: 'Dark Green',
+    image: ' #013C24',
+  },
+  {
+    id: uuidv4(),
+    name: 'Nut Brown',
+    image: ' #B25B27',
+  },
+  {
+    id: uuidv4(),
+    name: 'Beige',
+    image: ' #CCBF9E',
+  },
+  {
+    id: uuidv4(),
+    name: 'Cream',
+    image: '#EAD294',
+  },
+  {
+    id: uuidv4(),
+    name: 'Black',
+    image: '#070809',
+  },
+  {
+    id: uuidv4(),
+    name: 'Grey',
+    image: '#747E7B',
+  },
+  {
+    id: uuidv4(),
+    name: 'Light Grey',
+    image: '#C1C3C3',
+  },
+  {
+    id: uuidv4(),
+    name: 'Silver Grey (metallic)',
+    image: '#6F7275',
+  },
+  {
+    id: uuidv4(),
+    name: 'Gold (metallic)',
+    image: '#7A6531',
+  },
+  {
+    id: uuidv4(),
+    name: 'Copper (metallic)',
+    image: '#6C411C',
+  },
+];
 export const data = [
   {
     id: uuidv4(),
@@ -10,55 +132,55 @@ export const data = [
         id: uuidv4(),
         name: 'серебро agc glass',
         image: '',
-        children: null,
+        variables: [],
       },
       {
         id: uuidv4(),
         name: 'бронза agc glass',
         image: '',
-        children: null,
+        variables: [],
       },
       {
         id: uuidv4(),
         name: 'графит agc glass',
         image: '',
-        children: null,
+        variables: [],
       },
       {
         id: uuidv4(),
         name: 'сербро + пленка 641',
         image: '',
-        children: null,
+        variables: oracal,
       },
       {
         id: uuidv4(),
         name: 'бронза + пленка 641',
         image: '',
-        children: null,
+        variables: oracal,
       },
       {
         id: uuidv4(),
         name: 'графит + пленка 641',
         image: '',
-        children: null,
+        variables: oracal,
       },
       {
         id: uuidv4(),
         name: 'серебро matelac',
         image: '',
-        children: null,
+        variables: [],
       },
       {
         id: uuidv4(),
         name: 'бронза matelac',
         image: '',
-        children: null,
+        variables: [],
       },
       {
         id: uuidv4(),
         name: 'графит matelac',
         image: '',
-        children: null,
+        variables: [],
       },
     ],
   },
@@ -71,25 +193,25 @@ export const data = [
         id: uuidv4(),
         name: 'на обычном стекле',
         image: '',
-        children: null,
+        variables: oracal,
       },
       {
         id: uuidv4(),
         name: 'сатинат',
         image: '',
-        children: null,
+        variables: oracal,
       },
       {
         id: uuidv4(),
         name: 'оптивайт',
         image: '',
-        children: null,
+        variables: oracal,
       },
       {
         id: uuidv4(),
         name: 'сатинат выбеленный',
         image: '',
-        children: null,
+        variables: oracal,
       },
     ],
   },
@@ -286,4 +408,4 @@ export const data = [
       },
     ],
   },
-]
+];
