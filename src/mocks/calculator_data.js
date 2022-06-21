@@ -4,7 +4,7 @@ const oracal = [
   {
     id: uuidv4(),
     name: '',
-    image: ''
+    image: '',
   },
 ];
 export const data = [
