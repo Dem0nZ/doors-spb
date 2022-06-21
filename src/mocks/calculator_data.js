@@ -116,30 +116,6 @@ export const data = [
             cost: '1200',
             image: '',
           },
-          {
-            id: uuidv4(),
-            name: 'береза',
-            cost: '1200',
-            image: '',
-          },
-          {
-            id: uuidv4(),
-            name: 'ясень',
-            cost: '1200',
-            image: '',
-          },
-          {
-            id: uuidv4(),
-            name: 'клен',
-            cost: '1200',
-            image: '',
-          },
-          {
-            id: uuidv4(),
-            name: 'дуб',
-            cost: '1200',
-            image: '',
-          },
         ],
       },
       {
