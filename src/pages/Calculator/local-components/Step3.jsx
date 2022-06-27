@@ -13,10 +13,9 @@ import FillingItem from './FillingItem';
 
 const Step3 = () => {
   const [currentFiller, setCurrentFiller] = React.useState(null);
-  const [currentFillerOption, setCurrentFillerOption] = React.useState(null);
-  const fillers = data.map(filler => (
-    <FillingItem key={filler.id} filler={filler} currentFiller={currentFiller} setCurrentFiller={setCurrentFiller}
-                 setCurrentFillerOption={setCurrentFillerOption} currentFillerOption={currentFillerOption} />));
+  const payload = currentFiller;
+
+  const fillers = data.map(filler => <FillingItem key={filler.id} filler={filler} currentFiller={currentFiller} setCurrentFiller={setCurrentFiller} />);
 
   return (
     <AccordionItem uuid={'fillers'}>

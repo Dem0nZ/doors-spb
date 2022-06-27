@@ -3,27 +3,20 @@ import tw, { styled } from 'twin.macro';
 import { Popover } from '@headlessui/react';
 import FillingItemVariables from './FillingItemVariables';
 
-const FillingItem = ({ filler, currentFiller, currentFillerOption, setCurrentFiller, setCurrentFillerOption }) => {
-
-  const setFillerOption = () => setCurrentFillerOption(filler);
-  const onFillerClickHandler = (item) => {
-    setCurrentFiller(item);
-    setFillerOption();
-  };
+const FillingItem = ({ filler, currentFiller, setCurrentFiller}) => {
 
   const fillerOptions = filler.fillers?.map(item => {
     return (item.variables?.length > 0)
-      ? (<FillingItemVariables item={item} setCurrentFiller={setCurrentFiller}
-                               currentFiller={currentFiller} setFillerOption={setFillerOption}/>)
+      ? (<FillingItemVariables item={item} setCurrentFiller={setCurrentFiller} section={filler.id} currentFiller={currentFiller}/>)
       : (<div className='flex gap-4 p-2 uppercase text-lg font-extralight' key={item.id}
-              onClick={() => onFillerClickHandler(item)}>
-        <FillerImage image={item?.image} active={item.id === currentFiller?.id} />{item.name}
+              onClick={() => setCurrentFiller({ filler:item, section: filler.id, subsection: null })}>
+        <FillerImage image={item?.image} active={item.id === currentFiller?.filler.id}/>{item.name}
       </div>);
   });
   return (
     <Popover>
       <Trigger
-        active={currentFillerOption?.id === filler.id}>{filler.name}</Trigger>
+        active={currentFiller?.section === filler.id}>{filler.name}</Trigger>
 
       <Popover.Panel className='absolute z-10 bg-gray-100 border border-gray-300 p-6 gap-2'>
         {fillerOptions}
