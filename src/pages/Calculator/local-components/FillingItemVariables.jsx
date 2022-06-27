@@ -5,7 +5,7 @@ import { Popover } from '@headlessui/react';
 const FillingItemVariables = ({ item, setCurrentFiller, section, currentFiller }) => {
 
   const variablesOptions = item.variables.map(variable =>
-    <FillerImage key={variable.id} image={variable?.image} active={variable.id === currentFiller.filler.id && section === currentFiller.section}
+    <FillerImage key={variable.id} image={variable?.image} active={variable.id === currentFiller?.filler.id && section === currentFiller?.section}
                  onClick={() => setCurrentFiller({ filler: variable, section, subsection: item.id })} />);
   return (
     <Popover>
