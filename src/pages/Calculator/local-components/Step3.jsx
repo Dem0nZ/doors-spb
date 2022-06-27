@@ -12,10 +12,14 @@ import { data } from '../../../mocks/calculator_data';
 import FillingItem from './FillingItem';
 
 const Step3 = () => {
-  const fillers = data.map(filler => (<FillingItem key={filler.id} filler={filler}/>));
+  const [currentFiller, setCurrentFiller] = React.useState(null);
+  const [currentFillerOption, setCurrentFillerOption] = React.useState(null);
+  const fillers = data.map(filler => (
+    <FillingItem key={filler.id} filler={filler} currentFiller={currentFiller} setCurrentFiller={setCurrentFiller}
+                 setCurrentFillerOption={setCurrentFillerOption} currentFillerOption={currentFillerOption} />));
 
   return (
-    <AccordionItem>
+    <AccordionItem uuid={'fillers'}>
       <AccordionItemHeading>
         <AccordionItemButton>
           ШАГ 3: НАПОЛНЕНИЕ

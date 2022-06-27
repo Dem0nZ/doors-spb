@@ -1,19 +1,20 @@
 import { generatePath } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
-let mirror = '../assets/materials/fillers/mirror/';
-let mirrorGraphitFilm = '../assets/materials/fillers/mirror/graphit_film';
-let sheksna = '../assets/materials/fillers/sheksna/';
-let eggerkat1 = '../assets/materials/fillers/eggerkat1/';
-let eggerkat2 = '../assets/materials/fillers/eggerkat2/';
-let eggerkat3 = '../assets/materials/fillers/eggerkat3/';
-let lakobelStandart = '../assets/materials/fillers/lakobel/standart/';
-let lakobelClassic = '../assets/materials/fillers/lakobel/classic/';
-let glass = '../assets/materials/fillers/glass/';
-let mdfGlosStandart = '../assets/materials/fillers/panel_mdf_gloss/standart';
-let mdfGlosPremium = '../assets/materials/fillers/panel_mdf_gloss/premium';
+const BASE_URL = 'http://mebel-178.ru/fillers';
+const mirror = `${BASE_URL}/mirror/`;
+const mirrorGraphitFilm = `${BASE_URL}/mirror/graphit_film/`;
+const sheksna = `${BASE_URL}/panel_mdf/sheksna/`;
+const eggerkat1 = `${BASE_URL}/panel_mdf/eggerkat1/`;
+const eggerkat2 = `${BASE_URL}/panel_mdf/eggerkat2/`;
+const eggerkat3 = `${BASE_URL}/panel_mdf/eggerkat3/`;
+const lakobelStandart = `${BASE_URL}/lakobel/standart/`;
+const lakobelClassic = `${BASE_URL}/lakobel/classic/`;
+const glass = `${BASE_URL}/glass/`;
+const mdfGlosStandart = `${BASE_URL}/panel_mdf_gloss/standart/`;
+const mdfGlosPremium = `${BASE_URL}/panel_mdf_gloss/premium/`;
 
-let colors = [
+const colors = [
   {
     id: uuidv4(),
     name: '010 Белый',
@@ -160,13 +161,6 @@ let colors = [
   },
 ];
 
-const oracal = [
-  {
-    id: uuidv4(),
-    name: '',
-    image: '',
-  },
-];
 export const data = [
   {
     id: uuidv4(),

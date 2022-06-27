@@ -13,7 +13,7 @@ const Calculator = () => {
   return (
     <Wrapper>
       <Columns>
-        <Accordion className='border-none' preExpanded={['sizes']}>
+        <Accordion className='border-none' preExpanded={['fillers']}>
           <Step1 />
           <Step2 />
           <Step3 />
