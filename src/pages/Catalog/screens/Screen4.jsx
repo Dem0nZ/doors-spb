@@ -9,7 +9,7 @@ import photo4 from '../../../assets/catalog/attic-closets/004.jpg';
 const Screen4 = () => {
   return (
     <Wrapper>
-      <Title>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</Title>
+      <Title>МАНСАРДНЫЕ ШКАФЫ</Title>
       <Content>
         <Img className='col-span-2' src={photo1} alt='img' />
         <Text className='col-span-2 indent-6'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import Slider from 'react-slick';
-import { Screen0, Screen1, Screen2, Screen3, Screen4 } from './screens';
+import { Screen0, Screen1, Screen2, Screen3, Screen4, Screen5 } from './screens';
 import { ArrowIcon } from '../../assets';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -44,6 +44,7 @@ export default class Catalog extends React.Component {
             <SliderButton onClick={() => this.slider.slickGoTo(2)}>ШКАФЫ-КУПЕ ОТДЕЛЬНО СТОЯЩИЕ</SliderButton>
             <SliderButton onClick={() => this.slider.slickGoTo(3)}>ДВЕРИ-КУПЕ</SliderButton>
             <SliderButton onClick={() => this.slider.slickGoTo(4)}>МАНСАРДНЫЕ ШКАФЫ</SliderButton>
+            <SliderButton onClick={() => this.slider.slickGoTo(5)}>РАСПАШНЫЕ ШКАФЫ</SliderButton>
           </Nav>
         </UpperBlock>
         <SliderWrapper>
@@ -56,6 +57,7 @@ export default class Catalog extends React.Component {
               <Screen2 />
               <Screen3 />
               <Screen4 />
+              <Screen5 />
             </Slider>
             <SliderButtons>
               <SliderNawDown>
@@ -76,7 +78,7 @@ export default class Catalog extends React.Component {
 const Wrapper = tw.div`flex flex-col justify-center w-full mt-12`;
 const UpperBlock = tw.div`flex flex-col`;
 const Title = tw.div`flex text-5xl font-medium sm:text-3xl sm:px-4`;
-const Nav = tw.div`flex flex-wrap justify-between mt-12 px-4 gap-y-4`;
+const Nav = tw.div`flex flex-wrap mt-12 px-4 gap-4`;
 const SliderButton = tw.button`px-2 py-4 border cursor-pointer hover:bg-gray-300`;
 const SliderBody = tw.div`flex flex-col w-full`;
 const SliderButtons = tw.div`flex justify-center w-full mt-12 sm:mt-4`;
