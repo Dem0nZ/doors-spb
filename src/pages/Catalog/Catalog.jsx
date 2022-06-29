@@ -61,10 +61,10 @@ export default class Catalog extends React.Component {
             </Slider>
             <SliderButtons>
               <SliderNawDown>
-                <button className='hover:bg-gray-300 active:bg-gray-500' onClick={this.previous}>
+                <button className='hover:bg-gray-300 active:bg-gray-500 transition-all duration-300' onClick={this.previous}>
                   <ArrowIcon />
                 </button>
-                <button className='hover:bg-gray-300 active:bg-gray-500 rotate-180' onClick={this.next}>
+                <button className='hover:bg-gray-300 active:bg-gray-500 rotate-180 transition-all duration-300' onClick={this.next}>
                   <ArrowIcon />
                 </button>
               </SliderNawDown>
@@ -79,7 +79,7 @@ const Wrapper = tw.div`flex flex-col justify-center w-full mt-12`;
 const UpperBlock = tw.div`flex flex-col`;
 const Title = tw.div`flex text-5xl font-medium sm:text-3xl sm:px-4`;
 const Nav = tw.div`flex flex-wrap mt-12 px-4 gap-4`;
-const SliderButton = tw.button`px-2 py-4 border cursor-pointer hover:bg-gray-300`;
+const SliderButton = tw.button`px-2 py-4 border cursor-pointer hover:bg-gray-300 transition-all duration-300`;
 const SliderBody = tw.div`flex flex-col w-full`;
 const SliderButtons = tw.div`flex justify-center w-full mt-12 sm:mt-4`;
 const SliderNawDown = tw.nav`flex gap-10`;
