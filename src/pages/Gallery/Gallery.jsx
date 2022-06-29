@@ -3,7 +3,9 @@ import PhotoAlbum from 'react-photo-album';
 import tw from 'twin.macro';
 import axios from 'axios';
 import { Lightbox } from 'yet-another-react-lightbox';
+import { Captions } from 'yet-another-react-lightbox/plugins';
 import 'yet-another-react-lightbox/styles.css';
+import "yet-another-react-lightbox/plugins/captions.css";
 
 const Gallery = () => {
   const [rawPhotos, setPhotos] = React.useState();
@@ -24,11 +26,13 @@ const Gallery = () => {
     src: `http://admin.mebel-178.ru${photo.original_path}`,
     width: photo.width,
     height: photo.height,
+    description: photo.description
   }));
 
-  const slides = photos?.map(({ src, width, height }) => ({
+  const slides = photos?.map(({ src, width, height, description }) => ({
     src,
     aspectRatio: width / height,
+    description
   }));
 
   return (
@@ -38,7 +42,7 @@ const Gallery = () => {
         layout='masonry'
         onClick={(event, photo, index) => setIndex(index)}
       />
-      <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} />
+      <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} plugins={[Captions]} captions={{ descriptionTextAlign: 'center' }} />
     </Wrapper>
   );
 };
