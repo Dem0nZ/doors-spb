@@ -47,8 +47,7 @@ export default class Catalog extends React.Component {
             <SliderButton onClick={() => this.slider.slickGoTo(5)}>РАСПАШНЫЕ ШКАФЫ</SliderButton>
           </Nav>
         </UpperBlock>
-        <SliderWrapper>
-          <SliderBody style={{
+          <SliderBody className='flex w-full mt-10' style={{
             width: windowInnerWidth + 'px',
           }}>
             <Slider ref={c => (this.slider = c)} {...settings}>
@@ -70,17 +69,15 @@ export default class Catalog extends React.Component {
               </SliderNawDown>
             </SliderButtons>
           </SliderBody>
-        </SliderWrapper>
       </Wrapper>);
   }
 }
 
 const Wrapper = tw.div`flex flex-col justify-center w-full mt-12`;
 const UpperBlock = tw.div`flex flex-col`;
-const Title = tw.div`flex text-5xl font-medium sm:text-3xl sm:px-4`;
+const Title = tw.div`flex text-5xl font-medium sm:text-2xl sm:px-4`;
 const Nav = tw.div`flex flex-wrap mt-12 px-4 gap-4`;
 const SliderButton = tw.button`px-2 py-4 border cursor-pointer hover:bg-gray-300 transition-all duration-300`;
 const SliderBody = tw.div`flex flex-col w-full`;
 const SliderButtons = tw.div`flex justify-center w-full mt-12 sm:mt-4`;
 const SliderNawDown = tw.nav`flex gap-10`;
-const SliderWrapper = tw.div`flex w-full mt-10`;
