@@ -27,7 +27,7 @@ const FillingItem = ({ filler, currentFiller, setCurrentFiller}) => {
 
 const Trigger = styled(Popover.Button)(({ active }) => [
   tw`px-4 py-2 border border-gray-300 text-lg font-extralight uppercase text-center hover:bg-gray-300 hover:border-gray-500`,
-  active && tw`bg-gray-500 text-white`,
+  active && tw`ring ring-pink-500`,
 ]);
 const FillerImage = styled.div(({ image, active }) => [
   tw`flex-shrink-0 h-8 w-8 border border-gray-700 bg-gray-500`,

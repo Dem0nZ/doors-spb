@@ -189,13 +189,13 @@ export const data = [
         id: uuidv4(),
         name: 'сербро + пленка 641',
         image: mirror + '2804_image.jpg',
-        variables: [],
+        variables: colors,
       },
       {
         id: uuidv4(),
         name: 'бронза + пленка 641',
         image: mirror + '2805_image.jpg',
-        variables: [],
+        variables: colors,
       },
       {
         id: uuidv4(),

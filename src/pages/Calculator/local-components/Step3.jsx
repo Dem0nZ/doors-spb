@@ -13,7 +13,6 @@ import FillingItem from './FillingItem';
 
 const Step3 = () => {
   const [currentFiller, setCurrentFiller] = React.useState(null);
-  const payload = currentFiller;
 
   const fillers = data.map(filler => <FillingItem key={filler.id} filler={filler} currentFiller={currentFiller} setCurrentFiller={setCurrentFiller} />);
 
