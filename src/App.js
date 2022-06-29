@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import { Calculator, Contacts, Gallery, HomePage, Materials } from './pages';
-import { Footer, Header } from './components';
+import { Footer, Header, SocialBlock } from './components';
 
 const App = () => {
   const [contacts, setContacts] = React.useState();
@@ -20,6 +20,7 @@ const App = () => {
 
   return (
     <div className='relative flex flex-col items-center w-full min-h-screen'>
+      <SocialBlock/>
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />

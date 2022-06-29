@@ -5,3 +5,5 @@ export { ReactComponent as InstallationIcon } from './installation-icon.svg';
 export { ReactComponent as SketchIcon } from './sketch-icon.svg';
 export { ReactComponent as WarrantyIcon } from './warranty-icon.svg';
 export { ReactComponent as ArrowIcon } from './arrow-icon.svg';
+export { ReactComponent as VkIcon } from './vk-icon.svg';
+export { ReactComponent as WhatsappIcon } from './whatsapp-icon.svg';

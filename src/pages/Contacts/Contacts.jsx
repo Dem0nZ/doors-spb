@@ -3,6 +3,7 @@ import tw from 'twin.macro';
 import Map from './local-components/Map';
 import { useForm } from 'react-hook-form';
 import facade_view from '../../assets/office.jpg';
+import { VkIcon, WhatsappIcon } from '../../assets';
 
 const Contacts = ({ contacts }) => {
   const { register, handleSubmit, reset,  formState: { errors }} = useForm();
@@ -47,9 +48,22 @@ const Contacts = ({ contacts }) => {
             <a href={`tel:${contacts?.phone1}`}>{contacts?.phone1}</a>
           </Column>
           <Column>
-            <div className='flex col-span-3'><ColumnLine />КАК ДОБРАТЬСЯ</div>
+            <div className='flex'><ColumnLine />КАК ДОБРАТЬСЯ</div>
             <p>От м. Озерки: автобус № 109, маршрутное такси № 259,№ 673</p>
             <p>От м. Пр. Просвещения: автобус № 104, 173, маршрутное такси № 01, 434, 455, 555, 676</p>
+          </Column>
+          <Column className='col-span-2'>
+            <div className='flex'><ColumnLine />СОЦИАЛЬНЫЕ СЕТИ</div>
+            <div className='flex py-4 px-8 gap-4'>
+            <a target="_blank" rel="noopener noreferrer" href='https://vk.com/mebel_comfort_spb'>
+              <VkIcon
+                className='h-8 text-blue-500 hover:animate-pulse transition-all' />
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href='https://wa.me/79119978257'>
+              <WhatsappIcon
+                className='h-8 text-green-500 hover:animate-pulse transition-all'/>
+            </a>
+            </div>
           </Column>
         </ContactsInfo>
 
