@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <NavLink className='hover:text-gray-300 pr-6' to='/' end>
+        <NavLink className='hover:text-gray-300 pr-6 transition-all duration-300' to='/' end>
           <Logo className='h-20' />
         </NavLink>
         <SiteMenu>
@@ -34,9 +34,9 @@ const Header = () => {
 };
 
 const StyledNav = styled(NavLink)`
-  ${tw`pt-2 pb-4 px-2 hover:bg-gray-300`}
+  ${tw`pt-2 pb-4 px-2 hover:bg-gray-300 transition-all duration-500`}
   &.active {
-    ${tw`text-white bg-gray-500`}
+    ${tw`text-white bg-gray-500 transition-all duration-500`}
   }`;
 
 const Wrapper = tw.div`flex bg-white justify-center pt-4 w-screen border-b border-black`;

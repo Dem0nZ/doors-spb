@@ -23,7 +23,7 @@ const BenefitsBlock = () => {
 
 const Title = tw.h1`text-5xl font-medium py-20 sm:text-3xl sm:px-4`;
 const Benefits = tw.div`flex flex-wrap text-xl font-light gap-10 sm:px-2`;
-const ItemBlock = tw.div`flex gap-4 w-[390px] hover:animate-pulse`;
+const ItemBlock = tw.div`flex gap-4 w-[340px] hover:animate-pulse`;
 
 
 export default BenefitsBlock;
