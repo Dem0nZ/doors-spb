@@ -1,5 +1,5 @@
 import React from 'react';
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import {
   Accordion,
   AccordionItem,
@@ -15,10 +15,11 @@ import componentImage005 from '../../assets/materials/components/005.jpeg';
 import componentImage006 from '../../assets/materials/components/006.jpeg';
 import componentImage007 from '../../assets/materials/components/007.jpeg';
 import componentImage008 from '../../assets/materials/components/008.jpeg';
+import { motion } from 'framer-motion';
 
 const Materials = () => {
   return (
-    <Wrapper>
+    <Wrapper initial={{width: 0}} animate={{width: '100%'}} exit={{x: window.innerWidth, transition:{duration: 0.4}}}>
       <Container>
         <p className='text-5xl font-medium sm:text-3xl'>МАТЕРИАЛЫ И КОМПЛЕКТУЮЩЕ</p>
         <p className='text-xl font-light my-10'>В производстве нашей продукции мы всегда стараемся использовать
@@ -145,7 +146,9 @@ const Materials = () => {
   );
 };
 
-const Wrapper = tw.div` flex w-screen justify-center flex-grow `;
+const Wrapper = styled(motion.div)(() => [
+  tw`flex w-screen justify-center flex-grow`,
+]);
 const Container = tw.div`flex flex-col max-w-[1000px] py-20 w-full bg-white shadow-lg p-6 my-6`;
 const Description = tw.p`font-light`;
 const PhotoBlock = tw.div`grid grid-cols-4 gap-4 sm:grid-cols-2`;
