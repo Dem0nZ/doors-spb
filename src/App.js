@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='relative flex flex-col items-center w-full min-h-screen'>
+    <div className='relative flex flex-col items-center w-full min-h-screen bg-gradient-to-r from-[#f7f7f7] to-[#d5d5d8]'>
       <SocialBlock/>
       <Header />
       <Routes>

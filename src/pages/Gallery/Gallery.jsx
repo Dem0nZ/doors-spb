@@ -39,7 +39,7 @@ const Gallery = () => {
     <Wrapper>
       <PhotoAlbum
         photos={photos}
-        layout='masonry'
+        layout='rows'
         onClick={(event, photo, index) => setIndex(index)}
       />
       <Lightbox slides={slides} open={index >= 0} index={index} close={() => setIndex(-1)} plugins={[Captions]} captions={{ descriptionTextAlign: 'center' }} />
@@ -47,6 +47,6 @@ const Gallery = () => {
   );
 };
 
-const Wrapper = tw.div`flex max-w-[1200px] my-20 p-10`;
+const Wrapper = tw.div`flex max-w-[1000px] my-20 p-10  bg-white shadow-lg p-6 my-6`;
 
 export default Gallery;

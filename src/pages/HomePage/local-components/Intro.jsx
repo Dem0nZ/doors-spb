@@ -10,7 +10,7 @@ const Intro = () => {
         Наша команда берет на себя все: от разработки идеи и до реализации. Функциональность и традиции — это то, что мы
         внедряем в каждый наш проект.
       </TextBlock>
-      <img className='h-full w-full object-cover' src={intro} alt='img' />
+      <img className='h-full w-full object-cover  shadow-lg' src={intro} alt='img' />
       <TextBlock className='absolute bottom-6 left-0 mx-12 sm:right-0 sm:bottom-0 sm:mx-0'>
         Делаем дом красивым. Мы воплощаем мечты, придаем форму вашим идеям. Измените свой дом. Двери с историей.
       </TextBlock>

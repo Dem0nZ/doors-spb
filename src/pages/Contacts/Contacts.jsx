@@ -95,7 +95,7 @@ const Contacts = ({ contacts }) => {
 };
 
 const Wrapper = tw.div` flex w-screen justify-center`;
-const Container = tw.div`flex flex-col max-w-[1000px] py-20`;
+const Container = tw.div`flex flex-col max-w-[1000px] py-20  bg-white shadow-lg p-6 my-6`;
 const ContactsInfo = tw.div`grid grid-cols-[1fr 20% 20%] mt-16 sm:flex sm:flex-col sm:px-4`;
 const Column = tw.div`flex flex-col mt-8 pr-5 font-light`;
 const ColumnLine = tw.div`w-8 h-[1px] mt-[10px] mr-[14px] bg-black`;

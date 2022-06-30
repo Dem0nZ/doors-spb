@@ -5,7 +5,9 @@ import { Screen0, Screen1, Screen2, Screen3, Screen4, Screen5 } from './screens'
 import { ArrowIcon } from '../../assets';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import * as Scroll from 'react-scroll';
 
+const Link = Scroll.Link;
 const windowInnerWidth = document.documentElement.clientWidth < 1000 ? document.documentElement.clientWidth : 1000;
 
 export default class Catalog extends React.Component {
@@ -37,7 +39,7 @@ export default class Catalog extends React.Component {
     return (
       <Wrapper>
         <UpperBlock>
-          <Title>КАТАЛОГ</Title>
+          <Title name='top-catalog'>КАТАЛОГ</Title>
           <Nav>
             <SliderButton onClick={() => this.slider.slickGoTo(0)}>ШКАФЫ-КУПЕ ВСТРОЕННЫЕ</SliderButton>
             <SliderButton onClick={() => this.slider.slickGoTo(1)}>ПЕРЕГОРОДКИ МЕЖКОМНАТНЫЕ</SliderButton>
@@ -47,28 +49,30 @@ export default class Catalog extends React.Component {
             <SliderButton onClick={() => this.slider.slickGoTo(5)}>РАСПАШНЫЕ ШКАФЫ</SliderButton>
           </Nav>
         </UpperBlock>
-          <SliderBody className='flex w-full mt-10' style={{
-            width: windowInnerWidth + 'px',
-          }}>
-            <Slider ref={c => (this.slider = c)} {...settings}>
-              <Screen0 />
-              <Screen1 />
-              <Screen2 />
-              <Screen3 />
-              <Screen4 />
-              <Screen5 />
-            </Slider>
-            <SliderButtons>
-              <SliderNawDown>
-                <button className='hover:bg-gray-300 active:bg-gray-500 transition-all duration-300' onClick={this.previous}>
-                  <ArrowIcon />
-                </button>
-                <button className='hover:bg-gray-300 active:bg-gray-500 rotate-180 transition-all duration-300' onClick={this.next}>
-                  <ArrowIcon />
-                </button>
-              </SliderNawDown>
-            </SliderButtons>
-          </SliderBody>
+        <SliderBody className='flex w-full mt-10' style={{
+          width: windowInnerWidth - 48 + 'px',
+        }}>
+          <Slider ref={c => (this.slider = c)} {...settings}>
+            <Screen0 />
+            <Screen1 />
+            <Screen2 />
+            <Screen3 />
+            <Screen4 />
+            <Screen5 />
+          </Slider>
+          <SliderButtons>
+            <SliderNawDown>
+              <Link className='hover:bg-gray-300 active:bg-gray-500 transition-all duration-300'
+                      onClick={this.previous} to='top-catalog' spy={true} smooth={true} offset={50} duration={500}>
+                <ArrowIcon />
+              </Link>
+              <Link className='hover:bg-gray-300 active:bg-gray-500 rotate-180 transition-all duration-300'
+                      onClick={this.next} to='top-catalog' spy={true} smooth={true} offset={50} duration={500}>
+                <ArrowIcon />
+              </Link>
+            </SliderNawDown>
+          </SliderButtons>
+        </SliderBody>
       </Wrapper>);
   }
 }

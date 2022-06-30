@@ -16,6 +16,6 @@ const HomePage = () => {
   </>);
 };
 
-const Wrapper = tw.div`flex flex-col pb-32 max-w-[1000px]`;
+const Wrapper = tw.div`flex flex-col pb-32 max-w-[1000px] bg-white shadow-lg p-6 my-6`;
 
 export default HomePage;

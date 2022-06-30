@@ -145,8 +145,8 @@ const Materials = () => {
   );
 };
 
-const Wrapper = tw.div` flex w-screen justify-center flex-grow`;
-const Container = tw.div`flex flex-col max-w-[1000px] py-20 w-full`;
+const Wrapper = tw.div` flex w-screen justify-center flex-grow `;
+const Container = tw.div`flex flex-col max-w-[1000px] py-20 w-full bg-white shadow-lg p-6 my-6`;
 const Description = tw.p`font-light`;
 const PhotoBlock = tw.div`grid grid-cols-4 gap-4 sm:grid-cols-2`;
 const Image = tw.img``;
