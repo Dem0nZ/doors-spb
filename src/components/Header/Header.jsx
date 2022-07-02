@@ -39,7 +39,7 @@ const StyledNav = styled(NavLink)`
     ${tw`text-white bg-gray-500 transition-all duration-500`}
   }`;
 
-const Wrapper = tw.div`flex bg-white justify-center pt-4 w-screen border-b border-black`;
+const Wrapper = tw.div`flex bg-white justify-center pt-4 w-screen border-b border-black bg-[#f7f7f7] shadow-md`;
 const Container = tw.div`flex max-w-[1000px] justify-between items-end w-full sm:flex-col sm:items-center`;
 const SiteMenu = tw.div`flex`;
 

@@ -7,3 +7,4 @@ export { ReactComponent as WarrantyIcon } from './warranty-icon.svg';
 export { ReactComponent as ArrowIcon } from './arrow-icon.svg';
 export { ReactComponent as VkIcon } from './vk-icon.svg';
 export { ReactComponent as WhatsappIcon } from './whatsapp-icon.svg';
+export { ReactComponent as TelegramIcon } from './telegram-icon.svg';
