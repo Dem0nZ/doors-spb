@@ -2,14 +2,14 @@ import React from 'react';
 import tw, { styled } from 'twin.macro';
 import { Popover } from '@headlessui/react';
 
-const FillingItemVariables = ({ item, setCurrentFiller, section, currentFiller }) => {
+const FillingItemVariables = ({ item, section, calculatorData, setCalculatorData }) => {
 
   const variablesOptions = item.variables.map(variable =>
-    <FillerImage key={variable.id} image={variable?.image} active={variable.id === currentFiller?.filler.id && section === currentFiller?.section}
-                 onClick={() => setCurrentFiller({ filler: variable, section, subsection: item.id })} />);
+    <FillerImage key={variable.id} image={variable?.image} active={variable.id === calculatorData.filler?.filler.id && section === calculatorData.filler?.section}
+                 onClick={() => setCalculatorData({...calculatorData, filler: { filler: variable, section, subsection: item.id }})} />);
   return (
     <Popover>
-      <Trigger active={item.id === currentFiller?.subsection}><><FillerImage/>{item.name}</>
+      <Trigger active={item.id === calculatorData.filler?.subsection}><><FillerImage/>{item.name}</>
       </Trigger>
 
       <Popover.Panel className='flex flex-wrap absolute z-10 bg-gray-100 border border-gray-300 p-4 gap-2 max-w-xs'>

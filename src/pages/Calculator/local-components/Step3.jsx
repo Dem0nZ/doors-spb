@@ -11,10 +11,9 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { data } from '../../../mocks/calculator_data';
 import FillingItem from './FillingItem';
 
-const Step3 = () => {
-  const [currentFiller, setCurrentFiller] = React.useState(null);
+const Step3 = ({calculatorData, setCalculatorData}) => {
 
-  const fillers = data.map(filler => <FillingItem key={filler.id} filler={filler} currentFiller={currentFiller} setCurrentFiller={setCurrentFiller} />);
+  const fillers = data.map(filler => <FillingItem key={filler.id} filler={filler} calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>);
 
   return (
     <AccordionItem uuid={'fillers'}>

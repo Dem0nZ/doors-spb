@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tw from 'twin.macro';
 import { Accordion } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
@@ -10,13 +10,20 @@ import Step4 from './local-components/Step4';
 import Step5 from './local-components/Step5';
 
 const Calculator = () => {
+  const [calculatorData, setCalculatorData] = useState({
+    height: '1000',
+    width: '1000',
+    numberOfDoors: '3',
+    filler: null,
+  });
+  console.log('doors',calculatorData);
   return (
     <Wrapper>
       <Columns>
-        <Accordion className='border-none' preExpanded={['fillers']}>
-          <Step1 />
-          <Step2 />
-          <Step3 />
+        <Accordion className='border-none' preExpanded={['sizes']}>
+          <Step1 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
+          <Step2 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
+          <Step3 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step4 />
           <Step5 />
         </Accordion>

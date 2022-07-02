@@ -3,20 +3,20 @@ import tw, { styled } from 'twin.macro';
 import { Popover } from '@headlessui/react';
 import FillingItemVariables from './FillingItemVariables';
 
-const FillingItem = ({ filler, currentFiller, setCurrentFiller}) => {
+const FillingItem = ({ filler, calculatorData, setCalculatorData}) => {
 
   const fillerOptions = filler.fillers?.map(item => {
     return (item.variables?.length > 0)
-      ? (<FillingItemVariables item={item} setCurrentFiller={setCurrentFiller} section={filler.id} currentFiller={currentFiller}/>)
+      ? (<FillingItemVariables item={item} section={filler.id} calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>)
       : (<div className='flex gap-4 p-2 uppercase text-lg font-extralight' key={item.id}
-              onClick={() => setCurrentFiller({ filler:item, section: filler.id, subsection: null })}>
-        <FillerImage image={item?.image} active={item.id === currentFiller?.filler.id}/>{item.name}
+              onClick={() => setCalculatorData({...calculatorData, filler:{ filler:item, section: filler.id, subsection: null }})}>
+        <FillerImage image={item?.image} active={item.id === calculatorData.filler?.filler.id}/>{item.name}
       </div>);
   });
   return (
     <Popover>
       <Trigger
-        active={currentFiller?.section === filler.id}>{filler.name}</Trigger>
+        active={calculatorData.filler?.section === filler.id}>{filler.name}</Trigger>
 
       <Popover.Panel className='absolute z-10 bg-gray-100 border border-gray-300 p-6 gap-2'>
         {fillerOptions}

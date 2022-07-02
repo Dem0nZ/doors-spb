@@ -8,7 +8,7 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 
-const Step1 = () => {
+const Step1 = ({calculatorData, setCalculatorData}) => {
   return (
     <AccordionItem uuid={'sizes'}>
       <AccordionItemHeading>
@@ -21,10 +21,20 @@ const Step1 = () => {
           Введите размер проема
         </TitleTab>
         <WidowInputSize>
-          <ValueName>Ширина</ValueName>
-          <InputValue><InputSize className='h-full ' type='text' /></InputValue>
-          <ValueName>Высота</ValueName>
-          <InputValue><InputSize className='h-full focus:outline-none' type='text' /></InputValue>
+          <div className='flex gap-4 items-center'>
+            <ValueName>Ширина</ValueName>
+            <InputSize type='text' value={calculatorData?.width} onChange={(e)=>setCalculatorData({
+              ...calculatorData,
+              width: e.target.value,
+            })}/>
+          </div>
+          <div className='flex gap-4 items-center'>
+            <ValueName>Высота</ValueName>
+            <InputSize type='text' value={calculatorData?.height} onChange={(e)=>setCalculatorData({
+              ...calculatorData,
+              height: e.target.value,
+            })}/>
+          </div>
         </WidowInputSize>
 
       </AccordionItemPanel>
@@ -33,9 +43,8 @@ const Step1 = () => {
 };
 
 const TitleTab = tw.div`text-4xl font-thin`;
-const WidowInputSize = tw.div`grid grid-cols-8 mt-10`;
-const ValueName = tw.div`col-start-3 col-end-6 border text-xl font-light py-3 pl-4`;
-const InputValue = tw.div`col-start-6 col-end-8 border  pl-4`;
-const InputSize = tw.input`h-full w-full focus:outline-none `;
+const WidowInputSize = tw.div`flex flex-col mt-10 items-end gap-4`;
+const ValueName = tw.div`text-xl font-light py-3 pl-4`;
+const InputSize = tw.input`pl-4 py-3 focus:outline-none`;
 
 export default Step1;

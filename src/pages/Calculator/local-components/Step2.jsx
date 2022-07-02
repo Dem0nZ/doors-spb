@@ -8,7 +8,7 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 
-const Step2 = () => {
+const Step2 = ({calculatorData, setCalculatorData}) => {
   return (
     <AccordionItem>
       <AccordionItemHeading>
@@ -21,10 +21,13 @@ const Step2 = () => {
           Выберете количество дверей
         </TitleTab>
         <div className='flex justify-center'>
-          <SelectDoorsCount>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
+          <SelectDoorsCount defaultValue={calculatorData?.numberOfDoors} onChange={(e)=>setCalculatorData({
+            ...calculatorData,
+            numberOfDoors: e.target.value,
+          })}>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
           </SelectDoorsCount>
         </div>
       </AccordionItemPanel>
