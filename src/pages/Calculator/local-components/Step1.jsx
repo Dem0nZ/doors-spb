@@ -21,14 +21,14 @@ const Step1 = ({calculatorData, setCalculatorData}) => {
           Введите размер проема
         </TitleTab>
         <WidowInputSize>
-          <div className='flex gap-4 items-center'>
+          <div className='flex gap-4'>
             <ValueName>Ширина</ValueName>
             <InputSize type='text' value={calculatorData?.width} onChange={(e)=>setCalculatorData({
               ...calculatorData,
               width: e.target.value,
             })}/>
           </div>
-          <div className='flex gap-4 items-center'>
+          <div className='flex gap-4'>
             <ValueName>Высота</ValueName>
             <InputSize type='text' value={calculatorData?.height} onChange={(e)=>setCalculatorData({
               ...calculatorData,
@@ -43,7 +43,7 @@ const Step1 = ({calculatorData, setCalculatorData}) => {
 };
 
 const TitleTab = tw.div`text-4xl font-thin`;
-const WidowInputSize = tw.div`flex flex-col mt-10 items-end gap-4`;
+const WidowInputSize = tw.div`flex flex-col mt-10 items-center gap-4`;
 const ValueName = tw.div`text-xl font-light py-3 pl-4`;
 const InputSize = tw.input`pl-4 py-3 focus:outline-none`;
 

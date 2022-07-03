@@ -1,5 +1,5 @@
 import React from 'react';
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import {
   AccordionItem,
   AccordionItemHeading,
@@ -8,7 +8,7 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 
-const Step4 = () => {
+const Step4 = ({calculatorData, setCalculatorData}) => {
   return (
     <AccordionItem>
       <AccordionItemHeading>
@@ -17,15 +17,69 @@ const Step4 = () => {
         </AccordionItemButton>
       </AccordionItemHeading>
       <AccordionItemPanel>
-        <p>
-          Exercitation in fugiat est ut ad ea cupidatat ut in
-          cupidatat occaecat ut occaecat consequat est minim minim
-          esse tempor laborum consequat esse adipisicing eu
-          reprehenderit enim.
-        </p>
+        <TitleTab>
+          РАЗДЕЛИТЕЛИ НА ДВЕРЯХ
+        </TitleTab>
+        <div className='flex gap-4 mt-10 justify-between'>
+          <Divider active={!calculatorData.dividers.enabled} onClick={()=> setCalculatorData({
+            ...calculatorData,
+            dividers: {
+              ...calculatorData.dividers,
+              enabled: false,
+            }
+          })}>
+            <Description>
+              Без разделителей
+            </Description>
+            <div className='w-24 h-44 border border-black bg-gray-300 bg-opacity-50'>
+            </div>
+          </Divider>
+          <Divider active={calculatorData.dividers.enabled} onClick={()=> setCalculatorData({
+            ...calculatorData,
+            dividers: {
+              ...calculatorData.dividers,
+              enabled: true,
+            }
+          })}>
+            <Description>
+              С разделителями
+            </Description>
+            <div className='flex gap-4'>
+              <div className='w-24 h-44 border border-black bg-gray-300 bg-opacity-50'>
+              </div>
+              <div>
+                <p className='text-xs'>Количество вставок в двери-купе</p>
+                <SelectDividers defaultValue={calculatorData?.dividers.qty} onChange={(e)=>setCalculatorData({
+                  ...calculatorData,
+                  dividers: {
+                    ...calculatorData.dividers,
+                    qty:e.target.value,
+                  },
+                })}>
+                  <option value='2'>1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
+                  <option value='4'>5</option>
+                  <option value='4'>6</option>
+                  <option value='4'>7</option>
+                  <option value='4'>8</option>
+                </SelectDividers>
+              </div>
+            </div>
+          </Divider>
+        </div>
       </AccordionItemPanel>
     </AccordionItem>
   );
 };
+
+const Description = tw.p`uppercase font-light text-sm`;
+const TitleTab = tw.div`text-4xl font-thin`;
+const SelectDividers = tw.select`w-4/5 py-4 mt-10`;
+const Divider = styled.div(({  active }) => [
+  tw`flex flex-col gap-4 items-center border border-gray-500 px-4 pb-6 pt-2`,
+  active && tw`ring ring-pink-500`,
+]);
 
 export default Step4;

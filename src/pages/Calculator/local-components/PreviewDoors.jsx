@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 const PreviewDoors = ({data}) => {
   return (
-    <div className='flex flex-grow bg-red-700'>
+    <div className='col-span-2 flex flex-grow bg-red-700'>
       <div  className='bg-red-700'>
 dffsdfsdfs
       </div>
