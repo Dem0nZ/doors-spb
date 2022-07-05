@@ -8,7 +8,7 @@ const App = () => {
   React.useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get('http://admin.mebel-178.ru/api/contacts');
+        const response = await axios.get('https://mebel-178.ru/admin/api/contacts');
         const data = await response.data;
         setContacts(data);
       } catch (e) {
