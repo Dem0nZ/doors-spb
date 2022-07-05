@@ -56,14 +56,14 @@ const Step4 = ({calculatorData, setCalculatorData}) => {
                     qty:e.target.value,
                   },
                 })}>
-                  <option value='2'>1</option>
+                  <option value='1'>1</option>
                   <option value='2'>2</option>
                   <option value='3'>3</option>
                   <option value='4'>4</option>
-                  <option value='4'>5</option>
-                  <option value='4'>6</option>
-                  <option value='4'>7</option>
-                  <option value='4'>8</option>
+                  <option value='5'>5</option>
+                  <option value='6'>6</option>
+                  <option value='7'>7</option>
+                  <option value='8'>8</option>
                 </SelectDividers>
               </div>
             </div>
@@ -75,10 +75,10 @@ const Step4 = ({calculatorData, setCalculatorData}) => {
 };
 
 const Description = tw.p`uppercase font-light text-sm`;
-const TitleTab = tw.div`text-4xl font-thin`;
+const TitleTab = tw.h1`text-4xl font-thin`;
 const SelectDividers = tw.select`w-4/5 py-4 mt-10`;
 const Divider = styled.div(({  active }) => [
-  tw`flex flex-col gap-4 items-center border border-gray-500 px-4 pb-6 pt-2`,
+  tw`flex flex-col gap-4 items-center border border-gray-500 px-2 pb-6 pt-2`,
   active && tw`ring ring-pink-500`,
 ]);
 
