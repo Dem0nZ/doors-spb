@@ -14,7 +14,7 @@ const Gallery = () => {
   React.useLayoutEffect(() => {
     (async () => {
       try {
-        const response = await axios.get('https://mebel-178.ru/admin/api/photos');
+        const response = await axios.get('http://localhost:3000/admin/api/photos');
         const data = await response.data;
         setPhotos(data);
       } catch (e) {
@@ -24,7 +24,7 @@ const Gallery = () => {
   }, []);
 
   const photos = rawPhotos?.map((photo) => ({
-    src: `https://mebel-178.ru${photo.original_path}`,
+    src: `http://localhost:3000${photo.original_path}`,
     width: photo.width,
     height: photo.height,
     description: photo.description

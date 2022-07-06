@@ -22,7 +22,7 @@ const buttons = [
 
 
 const Catalog = () => {
-  const slider = useRef();
+  const slider = React.useRef();
   const next = () => slider.current.SlickNext();
   const previous = () => slider.current.slickPrev();
   const goTo = (index) => slider.current.slickGoTo(index);

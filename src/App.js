@@ -4,11 +4,18 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { AnimatedRoutes, Footer, Header, SocialBlock } from './components';
 
 const App = () => {
-  const [contacts, setContacts] = React.useState();
-  React.useEffect(() => {
+  const [contacts, setContacts] = React.useState({
+    phone1: '',
+    phone2: '',
+    adress: '',
+    lat: '',
+    lan: '',
+    email: '',
+  });
+  React.useLayoutEffect(() => {
     (async () => {
       try {
-        const response = await axios.get('https://mebel-178.ru/admin/api/contacts');
+        const response = await axios.get('http://localhost:3000/admin/api/contacts');
         const data = await response.data;
         setContacts(data);
       } catch (e) {
@@ -23,7 +30,7 @@ const App = () => {
       <Router>
         <SocialBlock />
         <Header />
-        <AnimatedRoutes contacts={contacts}/>
+        <AnimatedRoutes contacts={contacts} />
         <Footer contacts={contacts} />
       </Router>
     </div>

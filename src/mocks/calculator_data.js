@@ -1,7 +1,6 @@
-import { generatePath } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
-const BASE_URL = 'http://mebel-178.ru/fillers';
+const BASE_URL = 'https://mebel-178.ru/fillers';
 const mirror = `${BASE_URL}/mirror/`;
 const mirrorGraphitFilm = `${BASE_URL}/mirror/graphit_film/`;
 const sheksna = `${BASE_URL}/panel_mdf/sheksna/`;
@@ -1058,13 +1057,310 @@ export const data = [
 
 export const profiles = [
   {
-    name: 'standard',
+    name: 'standart',
+    image: `${BASE_URL}/profiles/standart.jpeg`,
     colors: [
       {
         id: uuidv4(),
-        name: '',
-        color: '',
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
       },
-    ]
-  }
+      {
+        id: uuidv4(),
+        name: 'Золото анодировка',
+        color: '#DAC985',
+      },
+      {
+        id: uuidv4(),
+        name: 'шампань анодировка',
+        color: '#A2A679',
+      },
+      {
+        id: uuidv4(),
+        name: 'Лиственница крем. структура',
+        color: '#ffffe8;',
+      },
+      {
+        id: uuidv4(),
+        name: 'Берёза структура',
+        color: '#e2decb',
+      },
+      {
+        id: uuidv4(),
+        name: 'Дуб дымчатый структура',
+        color: '#d6ceb6',
+      },
+      {
+        id: uuidv4(),
+        name: 'Дуб Галифакс структура',
+        color: '#8c7f57',
+      },
+      {
+        id: uuidv4(),
+        name: 'Венге тёмный текстурный',
+        color: '#4e4645',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Платина',
+        color: '#e6ebe1',
+      },
+      {
+        id: uuidv4(),
+        name: 'Коньяк',
+        color: '#302702',
+      },
+      {
+        id: uuidv4(),
+        name: 'Графит',
+        color: '#7a7878',
+      },
+      {
+        id: uuidv4(),
+        name: 'Чёрный',
+        color: '#000000',
+      },
+      {
+        id: uuidv4(),
+        name: 'Софт-тач Капучино',
+        color: '#fcf5dd',
+      },
+      {
+        id: uuidv4(),
+        name: 'Софт-тач Грей',
+        color: '#a19999',
+      },
+      {
+        id: uuidv4(),
+        name: 'Серебро Браш',
+        color: '#d5d5d5',
+      },
+      {
+        id: uuidv4(),
+        name: '#ebd16e',
+        color: 'Золото Браш',
+      },
+      {
+        id: uuidv4(),
+        name: 'Шампань Браш',
+        color: '#b2bd9b',
+      },
+    ],
+  },
+  {
+    name: 'combo',
+    image: `${BASE_URL}/profiles/combo.jpeg`,
+    colors: [
+      {
+        id: uuidv4(),
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Платина',
+        color: '#e6ebe1',
+      },
+      {
+        id: uuidv4(),
+        name: 'Чёрный',
+        color: '#000000',
+      },
+    ],
+  },
+  {
+    name: 'venezia',
+    image: `${BASE_URL}/profiles/venezia.jpeg`,
+    colors: [
+      {
+        id: uuidv4(),
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
+      },
+      {
+        id: uuidv4(),
+        name: 'Дуб Галифакс структура',
+        color: '#8c7f57',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Софт-тач Капучино',
+        color: '#fcf5dd',
+      },
+      {
+        id: uuidv4(),
+        name: 'Софт-тач Грей',
+        color: '#a19999',
+      },
+      {
+        id: uuidv4(),
+        name: 'Серебро Браш',
+        color: '#d5d5d5',
+      },
+      {
+        id: uuidv4(),
+        name: '#ebd16e',
+        color: 'Золото Браш',
+      },
+      {
+        id: uuidv4(),
+        name: 'Шампань Браш',
+        color: '#b2bd9b',
+      },
+    ],
+  },
+  {
+    name: 'akka',
+    image: `${BASE_URL}/profiles/akka.jpeg`,
+    colors: [
+      {
+        id: uuidv4(),
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Платина',
+        color: '#e6ebe1',
+      },
+      {
+        id: uuidv4(),
+        name: 'Коньяк',
+        color: '#302702',
+      },
+      {
+        id: uuidv4(),
+        name: 'Чёрный',
+        color: '#000000',
+      },
+    ],
+  },
+  {
+    name: 'pi',
+    image: `${BASE_URL}/profiles/pi.jpeg`,
+    colors: [
+      {
+        id: uuidv4(),
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Платина',
+        color: '#e6ebe1',
+      },
+      {
+        id: uuidv4(),
+        name: 'Коньяк',
+        color: '#302702',
+      },
+      {
+        id: uuidv4(),
+        name: 'Чёрный',
+        color: '#000000',
+      },
+    ],
+  },
+  {
+    name: 'omega',
+    image: `${BASE_URL}/profiles/omega.jpeg`,
+    colors: [
+      {
+        id: uuidv4(),
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
+      },
+      {
+        id: uuidv4(),
+        name: 'Золото анодировка',
+        color: '#DAC985',
+      },
+      {
+        id: uuidv4(),
+        name: 'шампань анодировка',
+        color: '#A2A679',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Платина',
+        color: '#e6ebe1',
+      },
+      {
+        id: uuidv4(),
+        name: 'Чёрный',
+        color: '#000000',
+      },
+    ],
+  },
+  {
+    name: 'quadro',
+    image: `${BASE_URL}/profiles/quadro.jpeg`,
+    colors: [
+      {
+        id: uuidv4(),
+        name: 'серебро аннодированное',
+        color: '#D5D5D5',
+      },
+      {
+        id: uuidv4(),
+        name: 'Берёза структура',
+        color: '#e2decb',
+      },
+      {
+        id: uuidv4(),
+        name: 'Венге тёмный текстурный',
+        color: '#4e4645',
+      },
+      {
+        id: uuidv4(),
+        name: '#edeef2',
+        color: 'Белый глянец',
+      },
+      {
+        id: uuidv4(),
+        name: 'Платина',
+        color: '#e6ebe1',
+      },
+      {
+        id: uuidv4(),
+        name: 'Коньяк',
+        color: '#302702',
+      },
+      {
+        id: uuidv4(),
+        name: 'Чёрный',
+        color: '#000000',
+      },
+    ],
+  },
 ];

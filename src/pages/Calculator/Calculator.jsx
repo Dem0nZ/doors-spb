@@ -20,7 +20,7 @@ const Calculator = () => {
       qty: '1',
     },
     profiles: {
-      type: '',
+      name: 'standart',
       color: '',
     },
   });
@@ -28,7 +28,7 @@ const Calculator = () => {
   return (
     <Wrapper>
       <Columns>
-        <Accordion className='col-span-4 border-none' preExpanded={['sizes']}>
+        <Accordion className='col-span-4 border-none' preExpanded={['profiles']}>
           <Step1 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step2 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step3 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>

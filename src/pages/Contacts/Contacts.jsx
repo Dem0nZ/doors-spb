@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 import Map from './local-components/Map';
 import { useForm } from 'react-hook-form';
 import facade_view from '../../assets/office.jpg';
-import { VkIcon, WhatsappIcon } from '../../assets';
+import { TelegramIcon, VkIcon, WhatsappIcon } from '../../assets';
 import { motion } from 'framer-motion';
 
 const Contacts = ({ contacts }) => {
@@ -37,16 +37,16 @@ const Contacts = ({ contacts }) => {
         <ContactsInfo>
           <Column>
             <div className='flex'><ColumnLine />ПРИЕЗЖАЙТЕ</div>
-            <p>{contacts?.adress}</p>
+            <p>{contacts.adress}</p>
           </Column>
           <Column>
             <div className='flex'><ColumnLine />ПИШИТЕ</div>
-            <a href={`mailto:${contacts?.email}`}>{contacts?.email}</a>
+            <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
           </Column>
 
           <Column>
             <div className='flex'><ColumnLine />ЗВОНИТЕ</div>
-            <a href={`tel:${contacts?.phone1}`}>{contacts?.phone1}</a>
+            <a href={`tel:${contacts.phone1}`}>{contacts.phone1}</a>
           </Column>
           <Column>
             <div className='flex'><ColumnLine />КАК ДОБРАТЬСЯ</div>
@@ -64,13 +64,17 @@ const Contacts = ({ contacts }) => {
                 <WhatsappIcon
                   className='h-8 text-green-500 hover:animate-pulse transition-all' />
               </a>
+              <a target="_blank" rel="noopener noreferrer" href='https://t.me/mebel_178'>
+                <TelegramIcon
+                  className='h-8 text-blue-400 hover:animate-pulse transition-all'/>
+              </a>
             </div>
           </Column>
         </ContactsInfo>
 
         <Location>
           <img src={facade_view} alt='img' />
-          <Map lat={contacts?.lat} lon={contacts?.lan} />
+          <Map lat={contacts.lat} lon={contacts.lan} />
         </Location>
         <Feedback>
           <div>
