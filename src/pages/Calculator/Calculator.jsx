@@ -19,17 +19,21 @@ const Calculator = () => {
       enabled: false,
       qty: '1',
     },
+    profiles: {
+      type: '',
+      color: '',
+    },
   });
   console.log('doors',calculatorData);
   return (
     <Wrapper>
       <Columns>
-        <Accordion className='col-span-3 border-none' preExpanded={['sizes']}>
+        <Accordion className='col-span-4 border-none' preExpanded={['sizes']}>
           <Step1 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step2 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step3 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step4 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
-          <Step5 />
+          <Step5 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
         </Accordion>
         <PreviewDoors />
       </Columns>
@@ -38,6 +42,6 @@ const Calculator = () => {
 };
 
 const Wrapper = tw.div`flex justify-center mt-16 max-w-[1000px] w-full flex-grow`;
-const Columns = tw.div`grid grid-cols-5 w-full sm:px-4 sm:flex sm:flex-col`;
+const Columns = tw.div`grid grid-cols-7 w-full sm:px-4 sm:flex sm:flex-col`;
 
 export default Calculator;

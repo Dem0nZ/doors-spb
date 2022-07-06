@@ -1055,3 +1055,16 @@ export const data = [
     ],
   },
 ];
+
+export const profiles = [
+  {
+    name: 'standard',
+    colors: [
+      {
+        id: uuidv4(),
+        name: '',
+        color: '',
+      },
+    ]
+  }
+];
