@@ -35,7 +35,7 @@ const Calculator = () => {
           <Step4 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
           <Step5 calculatorData={calculatorData} setCalculatorData={setCalculatorData}/>
         </Accordion>
-        <PreviewDoors />
+        <PreviewDoors calculatorData={calculatorData}/>
       </Columns>
     </Wrapper>
   );

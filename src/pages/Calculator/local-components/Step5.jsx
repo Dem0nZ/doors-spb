@@ -18,7 +18,7 @@ const Step5 = ({ calculatorData, setCalculatorData }) => {
                                                           active={color.name === calculatorData?.profiles?.color}
                                                           onClick={() => setCalculatorData({
                                                             ...calculatorData,
-                                                            profiles: { ...calculatorData.profiles, color: color.name },
+                                                            profiles: { ...calculatorData.profiles, color: color.name, hex: color.color },
                                                           })} />);
   const profilesBlocks = profiles.map(profile => <Profile key={profile.name}
                                                           active={profile.name === calculatorData?.profiles?.name}

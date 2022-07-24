@@ -1078,7 +1078,7 @@ export const profiles = [
       {
         id: uuidv4(),
         name: 'Лиственница крем. структура',
-        color: '#ffffe8;',
+        color: '#ffffe8',
       },
       {
         id: uuidv4(),
@@ -1102,8 +1102,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
@@ -1142,8 +1142,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#ebd16e',
-        color: 'Золото Браш',
+        name: 'Золото Браш',
+        color: '#ebd16e',
       },
       {
         id: uuidv4(),
@@ -1163,8 +1163,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
@@ -1194,8 +1194,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
@@ -1214,8 +1214,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#ebd16e',
-        color: 'Золото Браш',
+        name: 'Золото Браш',
+        color: '#ebd16e',
       },
       {
         id: uuidv4(),
@@ -1235,8 +1235,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
@@ -1266,8 +1266,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
@@ -1307,8 +1307,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
@@ -1343,8 +1343,8 @@ export const profiles = [
       },
       {
         id: uuidv4(),
-        name: '#edeef2',
-        color: 'Белый глянец',
+        name: 'Белый глянец',
+        color: '#edeef2',
       },
       {
         id: uuidv4(),
